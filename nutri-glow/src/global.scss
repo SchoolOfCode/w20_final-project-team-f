@@ -1,0 +1,38 @@
+//variables
+$boldOrange: #ff8934;
+$darkBrown: #875c35;
+$backgroundColor: #e5e5e5;
+$backgroundForm: #fff5ed;
+$textColorPrimary: #674e3b;
+$textColorSecondary: #ca8f62;
+$smallText: #b0a297;
+$mediumText: #958678;
+
+//map
+
+$font-weights: (
+  'thin': 100,
+  'extraLight': 200,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'extra-bold': 800,
+);
+
+$font-sizes: (
+  'extraSmall': 0.75rem,
+  'small': 0.875rem,
+  'regular': 1rem,
+  'medium': 1.25rem,
+  'large': 1.5rem,
+  'extraLarge': 2rem,
+);
+
+@function fontWeight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@function fontSize($size-name) {
+  @return map-get($font-sizes, $size-name);
+}
