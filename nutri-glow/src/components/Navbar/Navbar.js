@@ -32,12 +32,9 @@ export default function Navbar() {
       </div>
       <nav>
         <div className="menuIcon" onClick={handleClick}>
-          <i
-            className={clicked ? 'fas fa-times' : 'fas fa-bars'}
-            style={{ color: '#674e3b' }}
-          ></i>
+          <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
-        <ul>{menuList}</ul>
+        <ul className={clicked ? 'menu' : 'menu close'}>{menuList}</ul>
       </nav>
       <Searchbar />
       <Link to="/profile">

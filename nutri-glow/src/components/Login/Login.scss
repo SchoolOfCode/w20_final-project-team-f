@@ -10,6 +10,7 @@
   // border-radius: 30px;
 
   @include mobile {
-    display: none;
+    width: 50px;
+    margin-left: 50px;
   }
 }

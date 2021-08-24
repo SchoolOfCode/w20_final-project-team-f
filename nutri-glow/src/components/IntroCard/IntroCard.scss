@@ -4,6 +4,12 @@
   display: flex;
   overflow: hidden;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
   .left {
     flex: 0.5;
 
@@ -15,6 +21,11 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
+
+      @include mobile {
+        justify-content: space-between;
+        padding: 30px 0 30px 40px;
+      }
     }
 
     .title {
@@ -22,12 +33,20 @@
         color: $textColorPrimary;
         font-weight: fontWeight(bold);
         font-size: 4.5rem;
+
+        @include mobile {
+          font-size: fontSize(regular);
+        }
       }
 
       h2 {
         color: $textColorSecondary;
         font-weight: fontWeight(bold);
         font-size: 4rem;
+
+        @include mobile {
+          font-size: fontSize(regular);
+        }
       }
     }
 
@@ -36,6 +55,10 @@
       display: block;
       font-size: fontSize(large);
       font-weight: fontWeight(medium);
+      @include mobile {
+        font-size: fontSize(small);
+        margin: 10px 10px 10px 0;
+      }
     }
     button {
       border: none;
@@ -43,12 +66,21 @@
       height: 40px;
       font-weight: fontWeight(medium);
       font-size: fontSize(medium);
+
+      @include mobile {
+        font-size: fontSize(small);
+        width: 100px;
+      }
     }
 
     .community {
       @include flexCenter(row);
       justify-content: space-between;
       padding: 0 10px;
+
+      @include mobile {
+        margin: 10px 10px 0 0;
+      }
 
       .imgHome {
         width: 200px;
@@ -68,6 +100,11 @@
 
     .imgContainer {
       @include flexJustify(center);
+
+      @include mobile {
+        width: 300px;
+        height: 300px;
+      }
 
       .img {
         width: 90%;
