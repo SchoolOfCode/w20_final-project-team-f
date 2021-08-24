@@ -1,0 +1,29 @@
+@import '../../global.scss';
+
+.control {
+  height: 30px;
+  overflow: hidden;
+  width: 300px;
+  // border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: $backgroundForm;
+
+  @include mobile {
+    display: none;
+  }
+  .input {
+    height: 30px;
+    border: none;
+    background-color: $backgroundForm;
+    width: 300px;
+  }
+
+  .icon {
+    color: $textColorPrimary;
+    font-size: 30px;
+  }
+}
