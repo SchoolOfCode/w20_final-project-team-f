@@ -1,0 +1,15 @@
+@import '../../global.scss';
+
+.loginButton {
+  background-color: $darkBrown;
+  width: 100px;
+  height: 30px;
+  color: $backgroundColor;
+  border: none;
+  cursor: pointer;
+  // border-radius: 30px;
+
+  @include mobile {
+    display: none;
+  }
+}

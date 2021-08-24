@@ -36,3 +36,23 @@ $font-sizes: (
 @function fontSize($size-name) {
   @return map-get($font-sizes, $size-name);
 }
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flexJustify($content) {
+  display: flex;
+  align-items: center;
+  justify-content: $content;
+}
+
+$width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
