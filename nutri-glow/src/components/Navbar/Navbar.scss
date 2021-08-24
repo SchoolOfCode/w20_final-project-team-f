@@ -2,7 +2,7 @@
 
 header {
   width: 100%;
-  height: 70px;
+  height: 4rem;
   color: $backgroundColor;
 
   display: flex;
@@ -21,6 +21,8 @@ header {
 
     .logoOne {
       color: $boldOrange;
+      font-weight: fontWeight(bold);
+      font-size: fontSize(extraLarge);
 
       @include mobile {
         font-size: 10px;
@@ -29,6 +31,8 @@ header {
 
     .logoTwo {
       color: $darkBrown;
+      font-weight: fontWeight(bold);
+      font-size: fontSize(extraLarge);
       @include mobile {
         font-size: 10px;
       }

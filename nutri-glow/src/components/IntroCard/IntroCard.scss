@@ -8,9 +8,9 @@
     flex: 0.5;
 
     .wrapper {
-      width: 90%;
-      height: 100%;
-      padding-left: 20px;
+      width: 100%;
+      height: 90%;
+      padding-left: 40px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -21,21 +21,45 @@
       h1 {
         color: $textColorPrimary;
         font-weight: fontWeight(bold);
+        font-size: 4.5rem;
       }
 
       h2 {
         color: $textColorSecondary;
         font-weight: fontWeight(bold);
+        font-size: 4rem;
       }
     }
 
     h3 {
       color: $smallText;
       display: block;
+      font-size: fontSize(large);
+      font-weight: fontWeight(medium);
     }
     button {
       border: none;
       width: 200px;
+      height: 40px;
+      font-weight: fontWeight(medium);
+      font-size: fontSize(medium);
+    }
+
+    .community {
+      @include flexCenter(row);
+      justify-content: space-between;
+      padding: 0 10px;
+
+      .imgHome {
+        width: 200px;
+        height: 70px;
+      }
+
+      h4 {
+        color: $textColorPrimary;
+        padding-left: 20px;
+        font-weight: fontWeight(regular);
+      }
     }
   }
 
@@ -46,7 +70,7 @@
       @include flexJustify(center);
 
       .img {
-        width: 100%;
+        width: 90%;
         height: 70%;
       }
     }

@@ -7,8 +7,10 @@ $textColorPrimary: #674e3b;
 $textColorSecondary: #ca8f62;
 $smallText: #b0a297;
 $mediumText: #958678;
+$accentColor: #a7c6c7;
+$buttonsActive: #efa72b;
 
-//map
+//map - created to store font sizes and font weights
 
 $font-weights: (
   'thin': 100,
@@ -29,10 +31,12 @@ $font-sizes: (
   'extraLarge': 2rem,
 );
 
+// function to usefor fontWeight
 @function fontWeight($weight-name) {
   @return map-get($font-weights, $weight-name);
 }
 
+// function to usefor fontSize
 @function fontSize($size-name) {
   @return map-get($font-sizes, $size-name);
 }

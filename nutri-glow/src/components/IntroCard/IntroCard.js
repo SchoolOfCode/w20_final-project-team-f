@@ -14,6 +14,14 @@ export default function IntroCard(props) {
             <h3>{props.text}</h3>
           </div>
           <button>{props.button}</button>
+          <div className="community">
+            <img
+              className="imgHome"
+              src="/assets/home2.png"
+              alt="community"
+            ></img>
+            <h4>Join the community</h4>
+          </div>
         </div>
       </div>
       <div className="right">
