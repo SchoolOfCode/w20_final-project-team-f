@@ -1,0 +1,9 @@
+@import '../../global.scss';
+
+.formButton {
+  background-color: $boldOrange;
+  border-radius: 30px;
+  color: $backgroundColor;
+  border: none;
+  cursor: pointer;
+}
