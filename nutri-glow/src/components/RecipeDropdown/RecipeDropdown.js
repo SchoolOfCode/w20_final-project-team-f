@@ -18,8 +18,9 @@ export default function RecipeDropdown({ handleChange, handleValue }) {
       </option>
     );
   });
+
   return (
-    <div className="dropdown">
+    <div className="allergyDropdown">
       <select onChange={(event) => handleChange(event.target.value)}>
         {intolerance}
       </select>

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import RecipeDropdown from '../components/RecipeDropdown/RecipeDropdown';
 import RecipeFormButton from '../components/RecipeFormButton/RecipeFormButton';
+import RecipeSearch from '../components/RecipeSearch/RecipeSearch';
 import './Recipes.scss';
 
 let MealType = ['Breakfast', 'Lunch', 'Dinner', 'Snack'];
@@ -15,32 +16,34 @@ let DietLabel = [
 
 let DietType = ['vegan', 'vegetarian', 'pescatarian', 'paleo', 'kosher'];
 
-const APP_ID = '143e5a61';
-const APP_KEY = '1aba1110ee2c42dcaaeccce62c1f3e22';
+export default function Recipes(props) {
+  const APP_ID = '143e5a61';
+  const APP_KEY = '1aba1110ee2c42dcaaeccce62c1f3e22';
 
-const exampleReq =
-  'https://api.edamam.com/api/recipes/v2?type=public&q=egg&app_id=143e5a61&app_key=1aba1110ee2c42dcaaeccce62c1f3e22&diet=high-fiber&health=vegan&health=vegetarian&cuisineType=Asian&mealType=Lunch';
+  const exampleReq = `https://api.edamam.com/api/recipes/v2?type=public&q=egg&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${props.label}&health=${props.type}&health=${props.health}&cuisineType=${props.cuisines}&mealType=${props.meal}`;
 
-export default function Recipes() {
   return (
     <div>
       Recipes
       <div>
-        {MealType.map((diet, index) => (
+        <RecipeSearch />
+      </div>
+      <div>
+        {MealType.map((type, index) => (
           <RecipeFormButton
-            text={diet}
-            value={diet}
-            // getValue={props.updateDiet}
+            text={type}
+            value={type}
+            getValue={props.updateMealType}
             key={index}
           />
         ))}
       </div>
       <div>
-        {DietLabel.map((diet, index) => (
+        {DietLabel.map((label, index) => (
           <RecipeFormButton
-            text={diet}
-            value={diet}
-            // getValue={props.updateDiet}
+            text={label}
+            value={label}
+            getValue={props.updateDietLabel}
             key={index}
           />
         ))}
@@ -50,12 +53,20 @@ export default function Recipes() {
           <RecipeFormButton
             text={diet}
             value={diet}
-            // getValue={props.updateDiet}
+            getValue={props.updateDietType}
             key={index}
           />
         ))}
       </div>
-      <RecipeDropdown />
+      <RecipeDropdown
+        handleChange={props.updateHealthLabel}
+        handleValue={props.updateCuisine}
+      />
+      <div>
+        <button className="searchButton" type="submit">
+          Get recipes
+        </button>
+      </div>
     </div>
   );
 }

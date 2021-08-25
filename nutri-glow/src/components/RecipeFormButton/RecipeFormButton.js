@@ -1,15 +1,15 @@
 import React from 'react';
 import './RecipeFormButton.scss';
 
-export default function RecipeForm(props) {
+export default function RecipeForm({ getValue, value, text }) {
   return (
     <div className="recipeButton">
       <button
         className="formButton"
-        value={props.value}
-        onClick={(event) => props.getValue(event.target.value)}
+        value={value}
+        onClick={(event) => getValue(event.target.value)}
       >
-        {props.text}
+        {text}
       </button>
     </div>
   );
