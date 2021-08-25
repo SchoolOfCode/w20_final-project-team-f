@@ -8,30 +8,31 @@ import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 
 function App() {
-  // state that stores user selection from recipe filters
+  //state that stores user selection from recipe filters
   const [dietLabel, setDietLabel] = useState('');
   const [mealType, setMealType] = useState('');
-  const [cuisine, setCuisine] = useState('');
+  const [cuisines, setCuisines] = useState('');
   const [healthLabel, setHealthLabel] = useState('');
   const [dietType, setDietType] = useState('');
 
   function getDietLabel(label) {
     setDietLabel(label);
   }
-  function getMealType(type) {
-    setMealType(type);
+  function getMealType(meal) {
+    setMealType(meal);
   }
 
   function getCuisine(cuisine) {
-    setCuisine(cuisine);
+    setCuisines(cuisine);
   }
 
   function getHealthLabel(health) {
     setHealthLabel(health);
   }
-  function getDietType(diet) {
-    setDietType(diet);
+  function getDietType(type) {
+    setDietType(type);
   }
+
   return (
     <div className="container">
       <Router>
@@ -52,11 +53,12 @@ function App() {
               updateDietType={getDietType}
               label={dietLabel}
               meal={mealType}
-              cuisines={cuisine}
+              cuisine={cuisines}
               health={healthLabel}
               type={dietType}
             />
           </Route>
+
           <Route path="/profile" component={Profile} />
         </Switch>
       </Router>

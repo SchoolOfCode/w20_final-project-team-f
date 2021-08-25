@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import CuisineDropdown from '../components/CuisineDropdown/CuisineDropdown';
 import RecipeDropdown from '../components/RecipeDropdown/RecipeDropdown';
 import RecipeFormButton from '../components/RecipeFormButton/RecipeFormButton';
 import './Recipes.scss';
@@ -28,15 +29,14 @@ export default function Recipes(props) {
 
   useEffect(() => {
     getRecipes();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [query]);
 
   // async function to get API data
   const getRecipes = async () => {
     const response = await fetch(
-      // `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${props.label}&health=${props.type}&health=${props.health}&cuisineType=${props.cuisines}&mealType=${props.meal}`
-      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
+      // `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${props.label}&health=${props.health}&health=${props.type}&cuisineType=${props.cuisines}&mealType=${props.meal}`
+      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&&from=0&to=6`
     );
 
     const recipeData = await response.json();
@@ -52,7 +52,6 @@ export default function Recipes(props) {
     e.preventDefault();
     setQuery(search);
   };
-
   return (
     <div>
       Recipes
@@ -101,10 +100,8 @@ export default function Recipes(props) {
         ))}
       </div>
       <div>
-        <RecipeDropdown
-          handleChange={props.updateHealthLabel}
-          handleValue={props.updateCuisine}
-        />
+        <RecipeDropdown handleChange={props.updateHealthLabel} />
+        <CuisineDropdown handleChange={props.updateCuisine} />
       </div>
       {/* //map over the recipes generated */}
       {recipes.map((recipe) => (

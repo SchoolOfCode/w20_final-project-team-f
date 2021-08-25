@@ -48,19 +48,19 @@ export const Cuisine = [
   },
   {
     name: 'Asian',
-    title: 'Crustacean Free',
+    title: 'Asian',
   },
   {
     name: 'British',
-    title: 'Dairy Free',
+    title: 'British',
   },
   {
     name: 'Caribbean',
-    title: 'Egg Free',
+    title: 'Caribbean',
   },
   {
     name: 'Central Europe',
-    title: 'Fish Free',
+    title: 'Central Europe',
   },
   {
     name: 'Chinese',
@@ -68,42 +68,42 @@ export const Cuisine = [
   },
   {
     name: 'Eastern Europe',
-    title: 'Wheat Free',
+    title: 'Eastern Europe',
   },
   {
     name: 'French',
-    title: 'Sesame Free',
+    title: 'French',
   },
   {
     name: 'Indian',
-    title: 'Shelfish Free',
+    title: 'Indian',
   },
   {
     name: 'Italian',
-    title: 'Soy Free',
+    title: 'Italian',
   },
   {
     name: 'Japanese',
-    title: 'Soy Free',
+    title: 'Japanese',
   },
   {
     name: 'Mediteranean',
-    title: 'Soy Free',
+    title: 'Mediteranean',
   },
   {
     name: 'Mexican',
-    title: 'Soy Free',
+    title: 'Mexican',
   },
   {
     name: 'Middle Eastern',
-    title: 'Soy Free',
+    title: 'Middle Eastern',
   },
   {
     name: 'Nordic',
-    title: 'Soy Free',
+    title: 'Nordic',
   },
   {
     name: 'South American',
-    title: 'Soy Free',
+    title: 'South American',
   },
 ];
