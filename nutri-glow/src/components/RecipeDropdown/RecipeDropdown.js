@@ -1,5 +1,6 @@
 import React from 'react';
 import { Intolerance } from '../../data';
+import './RecipeDropdown.scss';
 
 export default function RecipeDropdown({ handleChange }) {
   const intolerance = Intolerance.map(({ name, title }, index) => {
@@ -12,7 +13,10 @@ export default function RecipeDropdown({ handleChange }) {
 
   return (
     <div className="allergyDropdown">
-      <select onChange={(event) => handleChange(event.target.value)}>
+      <select
+        className="intoleranceSelect"
+        onChange={(event) => handleChange(event.target.value)}
+      >
         {intolerance}
       </select>
     </div>

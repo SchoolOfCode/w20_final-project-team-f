@@ -57,62 +57,62 @@ export default function Recipes(props) {
       <h1>Recipe finder</h1>
       <h2>Discover healthy recipes at just one click away</h2>
       <div className="top">
-        <div className="searchRecipe">
-          <form onSubmit={getSearch} className="searchForm">
-            <input
-              className="searchBar"
-              type="text"
-              placeholder="type ingredient"
-              value={search}
-              onChange={updateSearch}
-            ></input>
-            <button className="searchButton" type="submit">
-              Get recipes
-            </button>
-          </form>
-        </div>
-        <div>
-          <h3>Select Meal Type</h3>
-        </div>
-        <div className="selectMeal">
-          {MealType.map((type, index) => (
-            <RecipeFormButton
-              text={type}
-              value={type}
-              getValue={props.updateMealType}
-              key={index}
-            />
-          ))}
-        </div>
-        <div>
-          <h3>Select Label</h3>
-        </div>
-        <div className="selectLabel">
-          {DietLabel.map((label, index) => (
-            <RecipeFormButton
-              text={label}
-              value={label}
-              getValue={props.updateDietLabel}
-              key={index}
-            />
-          ))}
-        </div>
-        <div>
-          <h3>Select Diet type</h3>
-        </div>
-        <div className="selectDiet">
-          {DietType.map((diet, index) => (
-            <RecipeFormButton
-              text={diet}
-              value={diet}
-              getValue={props.updateDietType}
-              key={index}
-            />
-          ))}
-        </div>
-        <div className="selectDropdown">
-          <RecipeDropdown handleChange={props.updateHealthLabel} />
-          <CuisineDropdown handleChange={props.updateCuisine} />
+        <div className="recipeFilters">
+          <div className="selection">
+            <div className="searchRecipes">
+              <form onSubmit={getSearch} className="searchForm">
+                <input
+                  className="searchBar"
+                  type="text"
+                  placeholder="type ingredient"
+                  value={search}
+                  onChange={updateSearch}
+                ></input>
+                <button className="searchButton" type="submit">
+                  Get recipes
+                </button>
+              </form>
+            </div>
+            <div className="selectMeal">
+              <h3>Select Meal Type: </h3>
+              {MealType.map((type, index) => (
+                <RecipeFormButton
+                  text={type}
+                  value={type}
+                  getValue={props.updateMealType}
+                  key={index}
+                />
+              ))}
+            </div>
+            <div className="selectLabel">
+              <h3>Select Diet Label: </h3>
+              {DietLabel.map((label, index) => (
+                <RecipeFormButton
+                  text={label}
+                  value={label}
+                  getValue={props.updateDietLabel}
+                  key={index}
+                />
+              ))}
+            </div>
+            <div className="selectDiet">
+              <h3>Select Diet type: </h3>
+              {DietType.map((diet, index) => (
+                <RecipeFormButton
+                  text={diet}
+                  value={diet}
+                  getValue={props.updateDietType}
+                  key={index}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="selectDropdown">
+            <h3>Select food intolerance</h3>
+            <RecipeDropdown handleChange={props.updateHealthLabel} />
+            <h3>Select your favourite cuisine</h3>
+            <CuisineDropdown handleChange={props.updateCuisine} />
+          </div>
         </div>
       </div>
       {/* //map over the recipes generated */}

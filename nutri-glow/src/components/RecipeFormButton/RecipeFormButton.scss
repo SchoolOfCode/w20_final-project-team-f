@@ -1,16 +1,21 @@
 @import '../../global.scss';
 
 .recipeButton {
-  display: flex;
+  // display: flex;
 
-  justify-content: center;
+  // justify-content: center;
   .formButton {
-    background-color: $boldOrange;
+    background-color: $backgroundForm;
     border-radius: 10px;
-    color: $backgroundColor;
+    color: $textColorPrimary;
     border: none;
     cursor: pointer;
     width: 100px;
     height: 30px;
+  }
+
+  .formButton:hover {
+    background-color: $boldOrange;
+    color: $backgroundColor;
   }
 }

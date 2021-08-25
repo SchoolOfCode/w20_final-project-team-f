@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cuisine } from '../../data';
+import './CuisineDropdown.scss';
 
 export default function CuisineDropdown({ handleChange }) {
   const cuisine = Cuisine.map(({ name, title }, index) => {
@@ -11,7 +12,10 @@ export default function CuisineDropdown({ handleChange }) {
   });
   return (
     <div>
-      <select onChange={(event) => handleChange(event.target.value)}>
+      <select
+        className="cuisineSelect"
+        onChange={(event) => handleChange(event.target.value)}
+      >
         {cuisine}
       </select>
     </div>
