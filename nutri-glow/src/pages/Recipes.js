@@ -71,7 +71,9 @@ export default function Recipes(props) {
             </button>
           </form>
         </div>
-        <h3>Select Meal Type</h3>
+        <div>
+          <h3>Select Meal Type</h3>
+        </div>
         <div className="selectMeal">
           {MealType.map((type, index) => (
             <RecipeFormButton
@@ -121,6 +123,7 @@ export default function Recipes(props) {
             calories={recipe.recipe.calories.toFixed()}
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients}
+            url={recipe.recipe.url}
           />
         ))}
       </div>

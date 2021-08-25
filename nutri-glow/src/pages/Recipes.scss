@@ -9,8 +9,8 @@
     height: 100%;
 
     .searchRecipes {
+      @include flexJustify(center);
       .searchForm {
-        @include flexJustify(center);
         .searchBar {
           background-color: $backgroundForm;
           width: 100px;
@@ -43,9 +43,10 @@
   }
 
   .bottom {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
   }
 }
