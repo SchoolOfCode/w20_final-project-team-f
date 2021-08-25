@@ -53,65 +53,77 @@ export default function Recipes(props) {
     setQuery(search);
   };
   return (
-    <div>
-      Recipes
-      <div>
-        <form onSubmit={getSearch} className="searchForm">
-          <input
-            className="searchBar"
-            type="text"
-            placeholder="type ingredient"
-            value={search}
-            onChange={updateSearch}
-          ></input>
-          <button className="searchButton" type="submit">
-            Get recipes
-          </button>
-        </form>
-      </div>
-      <div>
-        {MealType.map((type, index) => (
-          <RecipeFormButton
-            text={type}
-            value={type}
-            getValue={props.updateMealType}
-            key={index}
-          />
-        ))}
-      </div>
-      <div>
-        {DietLabel.map((label, index) => (
-          <RecipeFormButton
-            text={label}
-            value={label}
-            getValue={props.updateDietLabel}
-            key={index}
-          />
-        ))}
-      </div>
-      <div>
-        {DietType.map((diet, index) => (
-          <RecipeFormButton
-            text={diet}
-            value={diet}
-            getValue={props.updateDietType}
-            key={index}
-          />
-        ))}
-      </div>
-      <div>
-        <RecipeDropdown handleChange={props.updateHealthLabel} />
-        <CuisineDropdown handleChange={props.updateCuisine} />
+    <div className="wrapper">
+      <h1>Recipe finder</h1>
+      <h2>Discover healthy recipes at just one click away</h2>
+      <div className="top">
+        <div className="searchRecipe">
+          <form onSubmit={getSearch} className="searchForm">
+            <input
+              className="searchBar"
+              type="text"
+              placeholder="type ingredient"
+              value={search}
+              onChange={updateSearch}
+            ></input>
+            <button className="searchButton" type="submit">
+              Get recipes
+            </button>
+          </form>
+        </div>
+        <h3>Select Meal Type</h3>
+        <div className="selectMeal">
+          {MealType.map((type, index) => (
+            <RecipeFormButton
+              text={type}
+              value={type}
+              getValue={props.updateMealType}
+              key={index}
+            />
+          ))}
+        </div>
+        <div>
+          <h3>Select Label</h3>
+        </div>
+        <div className="selectLabel">
+          {DietLabel.map((label, index) => (
+            <RecipeFormButton
+              text={label}
+              value={label}
+              getValue={props.updateDietLabel}
+              key={index}
+            />
+          ))}
+        </div>
+        <div>
+          <h3>Select Diet type</h3>
+        </div>
+        <div className="selectDiet">
+          {DietType.map((diet, index) => (
+            <RecipeFormButton
+              text={diet}
+              value={diet}
+              getValue={props.updateDietType}
+              key={index}
+            />
+          ))}
+        </div>
+        <div className="selectDropdown">
+          <RecipeDropdown handleChange={props.updateHealthLabel} />
+          <CuisineDropdown handleChange={props.updateCuisine} />
+        </div>
       </div>
       {/* //map over the recipes generated */}
-      {recipes.map((recipe) => (
-        <RecipeCard
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories.toFixed()}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients}
-        />
-      ))}
+      <div className="bottom">
+        {recipes.map((recipe) => (
+          <RecipeCard
+            title={recipe.recipe.label}
+            calories={recipe.recipe.calories.toFixed()}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
+      </div>
     </div>
   );
 }

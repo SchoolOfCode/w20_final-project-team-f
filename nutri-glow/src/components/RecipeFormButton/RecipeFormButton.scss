@@ -1,9 +1,16 @@
 @import '../../global.scss';
 
-.formButton {
-  background-color: $boldOrange;
-  border-radius: 30px;
-  color: $backgroundColor;
-  border: none;
-  cursor: pointer;
+.recipeButton {
+  display: flex;
+
+  justify-content: center;
+  .formButton {
+    background-color: $boldOrange;
+    border-radius: 10px;
+    color: $backgroundColor;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+  }
 }
