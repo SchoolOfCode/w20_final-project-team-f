@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import RecipeDropdown from '../components/RecipeDropdown/RecipeDropdown';
 import RecipeFormButton from '../components/RecipeFormButton/RecipeFormButton';
-import RecipeSearch from '../components/RecipeSearch/RecipeSearch';
 import './Recipes.scss';
 import RecipeCard from '../components/RecipeCard/RecipeCard';
 
@@ -23,27 +22,53 @@ export default function Recipes(props) {
 
   // state that holds the recipes fetched data
   const [recipes, setRecipes] = useState([]);
+  const [search, setSearch] = useState('');
+  //submit selection after clicking the button
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     getRecipes();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // async function to get API data
   const getRecipes = async () => {
     const response = await fetch(
-      // `https://api.edamam.com/api/recipes/v2?type=public&q=egg&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${props.label}&health=${props.type}&health=${props.health}&cuisineType=${props.cuisines}&mealType=${props.meal}`
-      `https://api.edamam.com/api/recipes/v2?type=public&q=egg&app_id=${APP_ID}&app_key=${APP_KEY}`
+      // `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${props.label}&health=${props.type}&health=${props.health}&cuisineType=${props.cuisines}&mealType=${props.meal}`
+      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
     );
 
     const recipeData = await response.json();
     // all data is saved in the state
     setRecipes(recipeData.hits);
   };
+
+  const updateSearch = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const getSearch = (e) => {
+    e.preventDefault();
+    setQuery(search);
+  };
+
   return (
     <div>
       Recipes
       <div>
-        <RecipeSearch />
+        <form onSubmit={getSearch} className="searchForm">
+          <input
+            className="searchBar"
+            type="text"
+            placeholder="type ingredient"
+            value={search}
+            onChange={updateSearch}
+          ></input>
+          <button className="searchButton" type="submit">
+            Get recipes
+          </button>
+        </form>
       </div>
       <div>
         {MealType.map((type, index) => (
@@ -75,14 +100,11 @@ export default function Recipes(props) {
           />
         ))}
       </div>
-      <RecipeDropdown
-        handleChange={props.updateHealthLabel}
-        handleValue={props.updateCuisine}
-      />
       <div>
-        <button className="searchButton" type="submit">
-          Get recipes
-        </button>
+        <RecipeDropdown
+          handleChange={props.updateHealthLabel}
+          handleValue={props.updateCuisine}
+        />
       </div>
       {/* //map over the recipes generated */}
       {recipes.map((recipe) => (
@@ -90,6 +112,7 @@ export default function Recipes(props) {
           title={recipe.recipe.label}
           calories={recipe.recipe.calories.toFixed()}
           image={recipe.recipe.image}
+          ingredients={recipe.recipe.ingredients}
         />
       ))}
     </div>
