@@ -19,7 +19,21 @@ function App() {
             <Home />
           </Route>
           <Route path="/articles" component={Articles} />
-          <Route path="/recipes" component={Recipes} />
+          <Route path="/recipes">
+            <Recipes
+            // updateDietLabel={getDietLabel}
+            // updateMealType={getMealType}
+            // updateCuisine={getCuisine}
+            // updateHealthLabel={getHealthLabel}
+            // updateDietType={getDietType}
+            // label={dietLabel}
+            // meal={mealType}
+            // cuisines={cuisines}
+            // health={healthLabel}
+            // type={dietType}
+            />
+          </Route>
+
           <Route path="/profile" component={Profile} />
         </Switch>
       </Router>
