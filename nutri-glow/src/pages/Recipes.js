@@ -17,7 +17,32 @@ let DietLabel = [
 
 let DietType = ['vegan', 'vegetarian', 'pescatarian', 'paleo', 'kosher'];
 
-export default function Recipes(props) {
+export default function Recipes() {
+  //state that stores user selection from recipe filters
+  const [dietLabel, setDietLabel] = useState('balanced');
+  const [mealType, setMealType] = useState('Dinner');
+  const [cuisines, setCuisines] = useState('British');
+  const [healthLabel, setHealthLabel] = useState('dairy-free')
+  const [dietType, setDietType] = useState('vegan');
+
+  function getDietLabel(label) {
+    setDietLabel(label);
+  }
+  console.log(dietType);
+  function getMealType(meal) {
+    setMealType(meal);
+  }
+
+  function getCuisine(cuisine) {
+    setCuisines(cuisine);
+  }
+
+  function getHealthLabel(health) {
+    setHealthLabel(health);
+  }
+  function getDietType(type) {
+    setDietType(type);
+  }
   const APP_ID = '143e5a61';
   const APP_KEY = '1aba1110ee2c42dcaaeccce62c1f3e22';
 
@@ -30,13 +55,13 @@ export default function Recipes(props) {
   useEffect(() => {
     getRecipes();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query]);
+  }, [query, dietLabel, mealType, cuisines, healthLabel, dietType]);
 
   // async function to get API data
   const getRecipes = async () => {
     const response = await fetch(
-      // `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${props.label}&health=${props.health}&health=${props.type}&cuisineType=${props.cuisines}&mealType=${props.meal}`
-      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&&from=0&to=6`
+      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${dietLabel}&health=${healthLabel}&health=${dietType}&cuisineType=${cuisines}&mealType=${mealType}`
+      // `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&to=6`
     );
 
     const recipeData = await response.json();
@@ -79,7 +104,7 @@ export default function Recipes(props) {
                 <RecipeFormButton
                   text={type}
                   value={type}
-                  getValue={props.updateMealType}
+                  getValue={getMealType}
                   key={index}
                 />
               ))}
@@ -90,7 +115,7 @@ export default function Recipes(props) {
                 <RecipeFormButton
                   text={label}
                   value={label}
-                  getValue={props.updateDietLabel}
+                  getValue={getDietLabel}
                   key={index}
                 />
               ))}
@@ -101,7 +126,7 @@ export default function Recipes(props) {
                 <RecipeFormButton
                   text={diet}
                   value={diet}
-                  getValue={props.updateDietType}
+                  getValue={getDietType}
                   key={index}
                 />
               ))}
@@ -109,9 +134,9 @@ export default function Recipes(props) {
           </div>
           <div className="selectDropdown">
             <h3>Select food intolerance</h3>
-            <RecipeDropdown handleChange={props.updateHealthLabel} />
+            <RecipeDropdown handleChange={getHealthLabel} />
             <h3>Select your favourite cuisine</h3>
-            <CuisineDropdown handleChange={props.updateCuisine} />
+            <CuisineDropdown handleChange={getCuisine} />
           </div>
         </div>
       </div>
