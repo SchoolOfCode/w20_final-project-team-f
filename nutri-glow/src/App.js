@@ -8,6 +8,7 @@ import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 
 function App() {
+  // state that stores user selection from recipe filters
   const [dietLabel, setDietLabel] = useState('');
   const [mealType, setMealType] = useState('');
   const [cuisine, setCuisine] = useState('');
