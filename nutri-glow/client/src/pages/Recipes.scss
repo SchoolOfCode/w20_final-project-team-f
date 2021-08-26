@@ -1,0 +1,84 @@
+@import '../global.scss';
+
+.wrapper {
+  margin-top: 20px;
+  @include flexCenter(column);
+  justify-content: center;
+  margin: 20px 0 20px 0;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+  .top {
+    width: 100%;
+    height: 100%;
+
+    .recipeFilters {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .selection {
+        flex-direction: column;
+        display: flex;
+        .searchRecipes {
+          .searchForm {
+            @include flexJustify(center);
+            .searchBar {
+              background-color: $backgroundForm;
+              width: 300px;
+              height: 30px;
+              border: none;
+              border-radius: 10px;
+            }
+
+            .searchButton {
+              background-color: $darkBrown;
+              border: none;
+              color: $backgroundColor;
+              width: 200px;
+              height: 30px;
+              border-radius: 10px;
+              margin-left: 10px;
+              cursor: pointer;
+            }
+            .searchButton:hover {
+              background-color: $boldOrange;
+              color: $backgroundColor;
+            }
+          }
+        }
+
+        .selectMeal,
+        .selectDiet,
+        .selectLabel {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 1rem;
+        }
+      }
+
+      .selectDropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 2rem;
+        margin-top: -20px;
+
+        h3 {
+          margin-bottom: 20px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

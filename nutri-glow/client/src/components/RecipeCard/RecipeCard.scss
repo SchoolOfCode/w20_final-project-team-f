@@ -1,0 +1,40 @@
+@import '../../global.scss';
+
+.recipeData {
+  width: 100%;
+  border-radius: 8px;
+  background-color: $backgroundForm;
+  padding: 15px;
+  overflow: hidden;
+
+  .recipeImage {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+  }
+
+  .itemResult {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .recipeTitle {
+      color: $textColorPrimary;
+      margin: 20px 10px 0 0;
+      font-size: fontSize(regular);
+      font-weight: 400px;
+    }
+
+    .recipeLabel {
+      text-decoration: none;
+      text-align: center;
+      width: 130px;
+      padding: 10px 0;
+      background-color: $boldOrange;
+      color: $backgroundColor;
+      font-size: fontSize(small);
+      margin-top: 20px;
+      align-self: flex-start;
+    }
+  }
+}
