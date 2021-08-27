@@ -6,14 +6,8 @@
   justify-content: center;
   margin: 20px 0 20px 0;
 
-  // h2 {
-  //   margin-bottom: 30px;
-  // }
   .top {
-    // width: 100%;
-    // height: 100%;
     display: flex;
-    // flex-direction: row;
 
     .recipeFilters {
       display: flex;
@@ -32,19 +26,25 @@
         margin-left: 20px;
 
         .recipeIntro {
-          // margin-left: 20px;
+          margin-left: 20px;
           margin-bottom: 20px;
 
-          h1 {
-            color: $textColorPrimary;
-          }
-
           h2 {
-            color: $boldOrange;
+            color: $textColorPrimary;
+            font-size: 4rem;
+            font-weight: fontWeight(bold);
           }
 
-          p {
+          h3 {
+            color: $boldOrange;
+            font-size: fontSize(large);
+            font-weight: fontWeight(medium);
+          }
+
+          h4 {
             color: $textColorPrimary;
+            font-size: fontSize(regular);
+            font-weight: fontWeight(regular);
           }
         }
 
@@ -60,7 +60,7 @@
             }
 
             .searchButton {
-              background-color: $darkBrown;
+              background-color: $boldOrange;
               border: none;
               color: $backgroundColor;
               width: 200px;
@@ -95,9 +95,9 @@
             .selectMeal,
             .selectDiet,
             .selectLabel {
-              display: flex;
-              flex-direction: row;
+              flex-wrap: wrap;
               justify-content: space-between;
+              @include flexCenter(row);
               padding: 1rem;
             }
 
@@ -108,10 +108,8 @@
         }
 
         .selectDropdown {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          margin-left: 50px;
+          @include flexCenter(row);
+          margin: 10px 0 0 0;
 
           .health {
             margin-right: 30px;

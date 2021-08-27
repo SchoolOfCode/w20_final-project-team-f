@@ -86,12 +86,12 @@ export default function Recipes() {
         <div className="recipeFilters">
           <div className="filtersWrapper">
             <div className="recipeIntro">
-              <h1>Find the perfect recipe</h1>
-              <h2>Tell Us what ingredient you need to use up</h2>
-              <p>
+              <h2>Find the perfect recipe</h2>
+              <h3>Tell Us what ingredient you need to use up</h3>
+              <h4>
                 Type the first ingredient you want to use up in the search box
                 and pick the best match from the drop down.
-              </p>
+              </h4>
             </div>
             <div className="searchRecipes">
               <form onSubmit={getSearch} className="searchForm">
@@ -115,7 +115,7 @@ export default function Recipes() {
               <div className="selection">
                 <div className="buttonFilters">
                   <div className="selectMeal">
-                    <h3> Meal Type</h3>
+                    <p> Meal Type</p>
                     {MealType.map((type, index) => (
                       <RecipeFormButton
                         text={type}
@@ -126,7 +126,7 @@ export default function Recipes() {
                     ))}
                   </div>
                   <div className="selectLabel">
-                    <h3>Diet Label</h3>
+                    <p>Diet Label</p>
                     {DietLabel.map((label, index) => (
                       <RecipeFormButton
                         text={label}
@@ -137,7 +137,7 @@ export default function Recipes() {
                     ))}
                   </div>
                   <div className="selectDiet">
-                    <h3>Diet type</h3>
+                    <p>Diet type</p>
                     {DietType.map((diet, index) => (
                       <RecipeFormButton
                         text={diet}
@@ -150,11 +150,11 @@ export default function Recipes() {
                 </div>
                 <div className="selectDropdown">
                   <div className="health">
-                    <h3>Allergies</h3>
+                    <p>Allergies</p>
                     <RecipeDropdown handleChange={getHealthLabel} />
                   </div>
                   <div className="cuisine">
-                    <h3>Favourite Cuisine</h3>
+                    <p>Favourite Cuisine</p>
                     <CuisineDropdown handleChange={getCuisine} />
                   </div>
                 </div>
