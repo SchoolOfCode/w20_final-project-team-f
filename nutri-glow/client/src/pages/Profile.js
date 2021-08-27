@@ -1,11 +1,10 @@
 import React from 'react';
-import RangeSlider from '../components/RangeSlider/RangeSlider';
+import ProfileIntro from '../components/ProfileIntro/ProfileIntro';
 
 export default function Profile() {
   return (
     <div>
-      Profile
-      <RangeSlider />
+      <ProfileIntro />
     </div>
   );
 }

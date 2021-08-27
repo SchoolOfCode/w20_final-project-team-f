@@ -122,12 +122,12 @@ export const ProfileCard = [
   },
   {
     icon: <BsFillLightningFill />,
-    quest: 'How are your energy levels?',
+    quest: 'How are your energy levels today?',
     slider: <RangeSlider />,
   },
   {
     icon: <FaBed />,
-    quest: 'How many hours did you sleep?',
+    quest: 'How many hours did you sleep today?',
     slider: <RangeSlider />,
   },
   {
