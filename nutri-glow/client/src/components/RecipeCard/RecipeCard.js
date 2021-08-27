@@ -6,15 +6,26 @@ export default function RecipeCard({ recipe }) {
   const [show, setShow] = useState(false);
   const { label, image, url, ingredients } = recipe.recipe;
   return (
-    <div className="recipeData">
-      <img className="recipeImage" src={image} alt="recipe" />
-      <div className="itemResult">
-        <h1 className="recipeTitle">{label}</h1>
-        <a class="recipeLabel" href={url}>
-          View Full Recipe
-        </a>
+    <div className="displayRecipe">
+      <div className="recipeData">
+        <div className="detailsLeft">
+          <img className="recipeImage" src={image} alt="recipe" />
+        </div>
+        <div className="detailsRight">
+          <div className="itemResult">
+            <h3 className="recipeTitle">{label}</h3>
+            <a class="recipeLabel" href={url}>
+              View Full Recipe
+            </a>
+          </div>
+          <div className="ingredientButton">
+            <button className="buttonRecipe" onClick={() => setShow(!show)}>
+              Ingredients
+            </button>
+          </div>
+        </div>
       </div>
-      <button onClick={() => setShow(!show)}>Ingredients</button>
+
       {show && <RecipeDetails ingredients={ingredients} />}
     </div>
   );
