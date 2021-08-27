@@ -93,7 +93,6 @@ export default function Recipes() {
                 and pick the best match from the drop down.
               </p>
             </div>
-
             <div className="searchRecipes">
               <form onSubmit={getSearch} className="searchForm">
                 <input
@@ -108,7 +107,10 @@ export default function Recipes() {
                 </button>
               </form>
             </div>
-            <button onClick={() => setShow(!show)}>Filters</button>
+
+            <button className="filterButton" onClick={() => setShow(!show)}>
+              Filters
+            </button>
             {show && (
               <div className="selection">
                 <div className="buttonFilters">
@@ -174,15 +176,7 @@ export default function Recipes() {
       <div className="bottom">
         {recipes !== [] &&
           recipes.map((recipe) => (
-            <RecipeCard
-              // title={recipe.recipe.label}
-              // calories={recipe.recipe.calories.toFixed()}
-              // image={recipe.recipe.image}
-              // ingredients={recipe.recipe.ingredients}
-              // url={recipe.recipe.url}
-              key={uuidv4()}
-              recipe={recipe}
-            />
+            <RecipeCard key={uuidv4()} recipe={recipe} />
           ))}
       </div>
     </div>
