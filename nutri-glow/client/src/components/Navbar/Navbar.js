@@ -6,6 +6,9 @@ import Login from '../Login/Login';
 import { MenuList } from './MenuList';
 
 export default function Navbar() {
+
+  const user = null;
+
   const [clicked, setClicked] = useState(false);
   const menuList = MenuList.map(({ url, title }, index) => {
     return (
