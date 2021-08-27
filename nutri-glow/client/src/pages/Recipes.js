@@ -4,6 +4,7 @@ import RecipeDropdown from '../components/RecipeDropdown/RecipeDropdown';
 import RecipeFormButton from '../components/RecipeFormButton/RecipeFormButton';
 import './Recipes.scss';
 import RecipeCard from '../components/RecipeCard/RecipeCard';
+import { v4 as uuidv4 } from 'uuid';
 
 let MealType = ['Breakfast', 'Lunch', 'Dinner', 'Snack'];
 let DietLabel = [
@@ -22,8 +23,8 @@ export default function Recipes() {
   const [dietLabel, setDietLabel] = useState('balanced');
   const [mealType, setMealType] = useState('Dinner');
   const [cuisines, setCuisines] = useState('British');
-  const [healthLabel, setHealthLabel] = useState('dairy-free')
-  const [dietType, setDietType] = useState('vegan');
+  const [healthLabel, setHealthLabel] = useState('alcohol-free');
+  const [dietType, setDietType] = useState('vegetarian');
 
   function getDietLabel(label) {
     setDietLabel(label);
@@ -52,6 +53,8 @@ export default function Recipes() {
   //submit selection after clicking the button
   const [query, setQuery] = useState('');
 
+  const [show, setShow] = useState(false);
+
   useEffect(() => {
     getRecipes();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -60,7 +63,7 @@ export default function Recipes() {
   // async function to get API data
   const getRecipes = async () => {
     const response = await fetch(
-      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${dietLabel}&health=${healthLabel}&health=${dietType}&cuisineType=${cuisines}&mealType=${mealType}`
+      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${dietLabel}&health=${healthLabel}&health=${dietType}&cuisineType=${cuisines}&mealType=${mealType}&to=6`
       // `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&to=6`
     );
 
@@ -79,17 +82,24 @@ export default function Recipes() {
   };
   return (
     <div className="wrapper">
-      <h1>Recipe finder</h1>
-      <h2>Discover healthy recipes at just one click away</h2>
       <div className="top">
         <div className="recipeFilters">
-          <div className="selection">
+          <div className="filtersWrapper">
+            <div className="recipeIntro">
+              <h1>Find the perfect recipe</h1>
+              <h2>Tell Us what ingredient you need to use up</h2>
+              <p>
+                Type the first ingredient you want to use up in the search box
+                and pick the best match from the drop down.
+              </p>
+            </div>
+
             <div className="searchRecipes">
               <form onSubmit={getSearch} className="searchForm">
                 <input
                   className="searchBar"
                   type="text"
-                  placeholder="type ingredient"
+                  placeholder="Enter ingredient"
                   value={search}
                   onChange={updateSearch}
                 ></input>
@@ -98,59 +108,82 @@ export default function Recipes() {
                 </button>
               </form>
             </div>
-            <div className="selectMeal">
-              <h3>Select Meal Type: </h3>
-              {MealType.map((type, index) => (
-                <RecipeFormButton
-                  text={type}
-                  value={type}
-                  getValue={getMealType}
-                  key={index}
-                />
-              ))}
-            </div>
-            <div className="selectLabel">
-              <h3>Select Diet Label: </h3>
-              {DietLabel.map((label, index) => (
-                <RecipeFormButton
-                  text={label}
-                  value={label}
-                  getValue={getDietLabel}
-                  key={index}
-                />
-              ))}
-            </div>
-            <div className="selectDiet">
-              <h3>Select Diet type: </h3>
-              {DietType.map((diet, index) => (
-                <RecipeFormButton
-                  text={diet}
-                  value={diet}
-                  getValue={getDietType}
-                  key={index}
-                />
-              ))}
-            </div>
+            <button onClick={() => setShow(!show)}>Filters</button>
+            {show && (
+              <div className="selection">
+                <div className="buttonFilters">
+                  <div className="selectMeal">
+                    <h3> Meal Type</h3>
+                    {MealType.map((type, index) => (
+                      <RecipeFormButton
+                        text={type}
+                        value={type}
+                        getValue={getMealType}
+                        key={index}
+                      />
+                    ))}
+                  </div>
+                  <div className="selectLabel">
+                    <h3>Diet Label</h3>
+                    {DietLabel.map((label, index) => (
+                      <RecipeFormButton
+                        text={label}
+                        value={label}
+                        getValue={getDietLabel}
+                        key={index}
+                      />
+                    ))}
+                  </div>
+                  <div className="selectDiet">
+                    <h3>Diet type</h3>
+                    {DietType.map((diet, index) => (
+                      <RecipeFormButton
+                        text={diet}
+                        value={diet}
+                        getValue={getDietType}
+                        key={index}
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="selectDropdown">
+                  <div className="health">
+                    <h3>Allergies</h3>
+                    <RecipeDropdown handleChange={getHealthLabel} />
+                  </div>
+                  <div className="cuisine">
+                    <h3>Favourite Cuisine</h3>
+                    <CuisineDropdown handleChange={getCuisine} />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
-          <div className="selectDropdown">
-            <h3>Select food intolerance</h3>
-            <RecipeDropdown handleChange={getHealthLabel} />
-            <h3>Select your favourite cuisine</h3>
-            <CuisineDropdown handleChange={getCuisine} />
+        </div>
+        <div className="rightFilters">
+          <div className="rimgContainer">
+            <img
+              className="imgFilters"
+              src="/assets/recipe.png"
+              alt="cooking-baby"
+            ></img>
           </div>
         </div>
       </div>
       {/* //map over the recipes generated */}
       <div className="bottom">
-        {recipes.map((recipe) => (
-          <RecipeCard
-            title={recipe.recipe.label}
-            calories={recipe.recipe.calories.toFixed()}
-            image={recipe.recipe.image}
-            ingredients={recipe.recipe.ingredients}
-            url={recipe.recipe.url}
-          />
-        ))}
+        {recipes !== [] &&
+          recipes.map((recipe) => (
+            <RecipeCard
+              // title={recipe.recipe.label}
+              // calories={recipe.recipe.calories.toFixed()}
+              // image={recipe.recipe.image}
+              // ingredients={recipe.recipe.ingredients}
+              // url={recipe.recipe.url}
+              key={uuidv4()}
+              recipe={recipe}
+            />
+          ))}
       </div>
     </div>
   );
