@@ -33,7 +33,6 @@ function App() {
             // type={dietType}
             />
           </Route>
-
           <Route path="/profile" component={Profile} />
         </Switch>
       </Router>

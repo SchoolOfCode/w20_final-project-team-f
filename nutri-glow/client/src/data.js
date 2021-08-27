@@ -1,3 +1,9 @@
+import { RiMentalHealthFill } from 'react-icons/ri';
+import RangeSlider from './components/RangeSlider/RangeSlider';
+import { BsFillLightningFill } from 'react-icons/bs';
+import { RiRestaurantFill } from 'react-icons/ri';
+import { FaBed } from 'react-icons/fa';
+
 export const Intolerance = [
   {
     name: 'celery-free',
@@ -105,5 +111,28 @@ export const Cuisine = [
   {
     name: 'South American',
     title: 'South American',
+  },
+];
+
+export const ProfileCard = [
+  {
+    icon: <RiMentalHealthFill />,
+    quest: 'How is your mental health today?',
+    slider: <RangeSlider />,
+  },
+  {
+    icon: <BsFillLightningFill />,
+    quest: 'How are your energy levels?',
+    slider: <RangeSlider />,
+  },
+  {
+    icon: <FaBed />,
+    quest: 'How many hours did you sleep?',
+    slider: <RangeSlider />,
+  },
+  {
+    icon: <RiRestaurantFill />,
+    quest: 'How is your apetite doing today?',
+    slider: <RangeSlider />,
   },
 ];
