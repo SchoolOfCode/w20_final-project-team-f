@@ -38,13 +38,23 @@
 
       .topCard {
         border-radius: 50px;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         background-color: $accentColor;
         @include flexJustify(center);
 
         .icon {
-          size: 2x;
+          font-size: 30px;
+        }
+      }
+
+      .centerCard {
+        margin: 20px;
+
+        h2 {
+          color: $textColorPrimary;
+          font-size: fontSize(medium);
+          font-weight: fontWeight(medium);
         }
       }
     }
