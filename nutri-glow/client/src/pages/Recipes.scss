@@ -8,6 +8,7 @@
 
   .top {
     display: flex;
+    width: 100%;
 
     .recipeFilters {
       display: flex;
@@ -134,7 +135,7 @@
 
   .bottom {
     margin-top: 50px;
-    width: 90%;
+    width: 70%;
     display: grid;
     grid-gap: 25px;
     grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));

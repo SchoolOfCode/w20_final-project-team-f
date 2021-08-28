@@ -109,7 +109,7 @@ export default function Recipes() {
             </div>
 
             <button className="filterButton" onClick={() => setShow(!show)}>
-              Filters
+              Display Filters
             </button>
             {show && (
               <div className="selection">
@@ -175,9 +175,9 @@ export default function Recipes() {
       {/* //map over the recipes generated */}
       <div className="bottom">
         {recipes !== [] &&
-          recipes.map((recipe) => (
-            <RecipeCard key={uuidv4()} recipe={recipe} />
-          ))}
+          recipes
+            .slice(0, 10)
+            .map((recipe) => <RecipeCard key={uuidv4()} recipe={recipe} />)}
       </div>
     </div>
   );
