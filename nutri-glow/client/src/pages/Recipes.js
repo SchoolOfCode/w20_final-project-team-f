@@ -176,7 +176,7 @@ export default function Recipes() {
       <div className="bottom">
         {recipes !== [] &&
           recipes
-            .slice(0, 10)
+            .slice(0, 12)
             .map((recipe) => <RecipeCard key={uuidv4()} recipe={recipe} />)}
       </div>
     </div>
