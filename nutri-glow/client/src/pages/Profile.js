@@ -1,35 +1,37 @@
 import React, { useLayoutEffect } from 'react';
 import { useState, useEffect }  from 'react';
-import './Recipes.scss';
-import RecipeCard from '../components/RecipeCard/RecipeCard';
+import './RecRecipe.scss';
+import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';
 
 
 export default function Profile() {
 
-  const [dietLabel, setDietLabel] = useState('balanced');
+  // const [dietLabel, setDietLabel] = useState('balanced');
   const [mealType, setMealType] = useState('Dinner');
-  const [cuisines, setCuisines] = useState('Italian');
-  const [healthLabel, setHealthLabel] = useState('dairy-free')
-  const [dietType, setDietType] = useState('vegan');
+  // const [cuisines, setCuisines] = useState('Italian');
+  // const [healthLabel, setHealthLabel] = useState('dairy-free')
+  // const [dietType, setDietType] = useState('vegan');
+  const query = "tasty";
 
-  function getDietLabel(label) {
-    setDietLabel(label);
-  }
-  console.log(dietType);
-  function getMealType(meal) {
-    setMealType(meal);
-  }
 
-  function getCuisine(cuisine) {
-    setCuisines(cuisine);
-  }
+  // function getDietLabel(label) {
+  //   setDietLabel(label);
+  // // }
+  // // console.log(dietType);
+  // function getMealType(meal) {
+  //   setMealType(meal);
+  // }
 
-  function getHealthLabel(health) {
-    setHealthLabel(health);
-  }
-  function getDietType(type) {
-    setDietType(type);
-  }
+  // function getCuisine(cuisine) {
+  //   setCuisines(cuisine);
+  // }
+
+  // function getHealthLabel(health) {
+  //   setHealthLabel(health);
+  // }
+  // function getDietType(type) {
+  //   setDietType(type);
+  // }
 
 
 //  const [recipe, setRecipe] = useState([]);
@@ -53,18 +55,18 @@ const APP_KEY = '1aba1110ee2c42dcaaeccce62c1f3e22';
 
  // state that holds the recipes fetched data
  const [recipes, setRecipes] = useState([]);
- const [search, setSearch] = useState('');
- //submit selection after clicking the button
- const [query, setQuery] = useState('');
+//  const [search, setSearch] = useState('');
+//  //submit selection after clicking the button
+//  const [query, setQuery] = useState('');
 
 useEffect(() => {
   getRecipes();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-}, [query, dietLabel, mealType, cuisines, healthLabel, dietType]);
+}, [mealType]);
 
 const getRecipes = async () => {
   const response = await fetch(
-    `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${dietLabel}&health=${healthLabel}&health=${dietType}&cuisineType=${cuisines}&mealType=${mealType}`
+    `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${mealType}`
        // `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&to=6`
   );
 
@@ -73,19 +75,19 @@ const getRecipes = async () => {
   setRecipes(recipeData.hits);
 };
 
-const updateSearch = (e) => {
-  setSearch(e.target.value);
-};
+// const updateSearch = (e) => {
+//   setSearch(e.target.value);
+// };
 
-const getSearch = (e) => {
-  e.preventDefault();
-  setQuery(search);
-};
+// const getSearch = (e) => {
+//   e.preventDefault();
+//   setQuery(search);
+// };
 
   return (
   <div className="bottom">
         {recipes.slice(0, 3).map((recipe) => (
-          <RecipeCard
+          <RecRecipeCard
             title={recipe.recipe.label}
             calories={recipe.recipe.calories.toFixed()}
             image={recipe.recipe.image}
