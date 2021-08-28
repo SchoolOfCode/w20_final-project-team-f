@@ -20,18 +20,7 @@ function App() {
           </Route>
           <Route path="/articles" component={Articles} />
           <Route path="/recipes">
-            <Recipes
-            // updateDietLabel={getDietLabel}
-            // updateMealType={getMealType}
-            // updateCuisine={getCuisine}
-            // updateHealthLabel={getHealthLabel}
-            // updateDietType={getDietType}
-            // label={dietLabel}
-            // meal={mealType}
-            // cuisines={cuisines}
-            // health={healthLabel}
-            // type={dietType}
-            />
+            <Recipes />
           </Route>
 
           <Route path="/profile" component={Profile} />

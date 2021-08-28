@@ -6,6 +6,7 @@ import './Recipes.scss';
 import RecipeCard from '../components/RecipeCard/RecipeCard';
 import { v4 as uuidv4 } from 'uuid';
 
+// recipe filters data selection
 let MealType = ['Breakfast', 'Lunch', 'Dinner', 'Snack'];
 let DietLabel = [
   'balanced',
@@ -26,6 +27,7 @@ export default function Recipes() {
   const [healthLabel, setHealthLabel] = useState('alcohol-free');
   const [dietType, setDietType] = useState('vegetarian');
 
+  // functions that are used to set the state the new state to match the user selection
   function getDietLabel(label) {
     setDietLabel(label);
   }
@@ -53,8 +55,10 @@ export default function Recipes() {
   //submit selection after clicking the button
   const [query, setQuery] = useState('');
 
+  //state to display the filter buttons when clicking a button
   const [show, setShow] = useState(false);
 
+  // useEffect fetch data from API
   useEffect(() => {
     getRecipes();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -72,10 +76,12 @@ export default function Recipes() {
     setRecipes(recipeData.hits);
   };
 
+  // set search state to match inputed value
   const updateSearch = (e) => {
     setSearch(e.target.value);
   };
 
+  // set query state to match the search value inputted by the user
   const getSearch = (e) => {
     e.preventDefault();
     setQuery(search);
