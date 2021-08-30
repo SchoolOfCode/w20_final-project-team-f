@@ -6,8 +6,8 @@ export default function ArticleCard({ myth }) {
   // const {title, desc} = myth
   return (
     <div className="articleCard">
-      <div className="imgContainer">
-        <img src={myth.img} alt="" />
+      <div className="imgArticle">
+        <img className="mythImage" src={myth.img} alt="" />
       </div>
       <div className="textWrapper">
         <h4>{myth.title}</h4>

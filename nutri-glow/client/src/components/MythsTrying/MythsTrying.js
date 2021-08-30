@@ -6,8 +6,8 @@ import './MythsTrying.scss';
 export default function MythsTrying() {
   return (
     <div className="mythsContainer">
-      {/* <div className="left">
-        <img src="/assets/big.png" alt="" />
+      {/* <div className="leftMyths">
+        <img  className="bigImage" src="/assets/big.png" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero
           laborum alias neque labore quibusdam ad laudantium voluptatibus minima
@@ -16,7 +16,7 @@ export default function MythsTrying() {
           repudiandae!adhlafhasfhahfm,mdbvasjlflsjfhlSFALJHFSDKJGHSKGHAGHKJSG
         </p>
       </div> */}
-      <div className="right">
+      <div className="rightMyths">
         {myths1.map((myth) => (
           <ArticleCard myth={myth} />
         ))}
