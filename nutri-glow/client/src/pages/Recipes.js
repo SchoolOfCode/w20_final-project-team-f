@@ -115,7 +115,7 @@ export default function Recipes() {
             </div>
 
             <button className="filterButton" onClick={() => setShow(!show)}>
-              Display Filters
+              {show ? 'Close filters' : 'Display filters'}
             </button>
             {show && (
               <div className="selection">

@@ -11,12 +11,14 @@
     font-size: fontSize(extraLarge);
     font-weight: fontWeight(bold);
     color: $textColorPrimary;
+    margin-top: 20px;
   }
 
   h2 {
     font-size: fontSize(large);
     font-weight: fontWeight(medium);
     color: $boldOrange;
+    margin-top: 20px;
   }
 
   ul {
@@ -24,18 +26,21 @@
     padding: 0;
     list-style: none;
     display: flex;
+    margin-top: 20px;
   }
 
   .articleContainer {
-    width: 70%;
+    width: 100%;
     @include flexJustify(center);
     flex-wrap: wrap;
+    margin: 20px;
 
     .item {
-      width: 220px;
-      height: 150px;
+      width: 300px;
+      height: 200px;
       border-radius: 20px;
-      border: 1px solid rbg(240, 234, 234);
+      border: 5px solid rbg(240, 234, 234);
+      box-shadow: 0px 4px 15px rgba(103, 78, 59, 0.25);
       margin: 10px 20px;
       @include flexJustify(center);
       color: $backgroundColor;
@@ -50,8 +55,9 @@
       }
 
       img {
-        width: 80%;
-        height: 80%;
+        width: 90%;
+        height: 90%;
+        border-radius: 20px;
         object-fit: cover;
         z-index: 1; // show h3 title when hovering
       }

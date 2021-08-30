@@ -22,7 +22,7 @@ export default function RecipeCard({ recipe }) {
           </div>
           <div className="ingredientButton">
             <button className="buttonRecipe" onClick={() => setShow(!show)}>
-              Ingredients
+              {show ? 'Close ingredients' : 'Show ingredients'}
             </button>
           </div>
         </div>

@@ -174,3 +174,10 @@ export const article3 = [
     url: '/foods3',
   },
 ];
+
+export const myths1 = [
+  {
+    title: 'Myths 1',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  },
+];

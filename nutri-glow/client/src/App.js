@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Articles from './pages/Articles';
 import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
+import MythsTrying from './components/MythsTrying/MythsTrying';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
 
           <Route path="/profile" component={Profile} />
+          <Route path="/myths1">
+            <MythsTrying />
+          </Route>
         </Switch>
       </Router>
     </div>
