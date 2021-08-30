@@ -107,3 +107,42 @@ export const Cuisine = [
     title: 'South American',
   },
 ];
+
+export const article1 = [
+  {
+    id: 1,
+    title: 'Myths and facts',
+    img: '/assets/myths.jpeg',
+  },
+
+  {
+    id: 2,
+    title: 'Nutrition boost',
+    img: 'assets/nutrition.jpeg',
+  },
+
+  {
+    id: 3,
+    title: 'Best foods to eat',
+    img: 'assets/foods.png',
+  },
+];
+
+export const article2 = [
+  {
+    id: 1,
+    title: 'Myths and facts',
+    img: '/assets/myths.png',
+  },
+
+  {
+    id: 2,
+    title: 'Nutrition boost',
+    img: '/assets/nutrition.png',
+  },
+  {
+    id: 2,
+    title: 'Best foods to eat',
+    img: '/assets/foods1.png',
+  },
+];
