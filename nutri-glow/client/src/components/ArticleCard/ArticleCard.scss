@@ -1,0 +1,46 @@
+@import '../../global.scss';
+
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  margin-top: 50px;
+  overflow: hidden;
+
+  .imgContainer {
+    width: 90%;
+    height: 90%;
+
+    .img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .textWrapper {
+    display: flex;
+    @include flexCenter(column);
+    justify-content: space-between;
+    overflow: hidden;
+
+    h4 {
+      color: $textColorPrimary;
+      font-size: fontSize(regular);
+    }
+
+    p {
+      color: $textColorSecondary;
+      font-size: 12px;
+
+      button {
+        background: transparent;
+        border-color: transparent;
+        text-transform: capitalize;
+        color: $boldOrange;
+        font-size: fontSize(regular);
+        cursor: pointer;
+      }
+    }
+  }
+}
