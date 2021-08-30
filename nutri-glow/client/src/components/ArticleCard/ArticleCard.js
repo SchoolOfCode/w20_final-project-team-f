@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import './ArticleCard.scss';
 
-export default function ArticleCard({ myth }) {
+export default function ArticleCard({ data }) {
   const [readMore, setReadMore] = useState(false);
-  // const {title, desc} = myth
+
   return (
     <div className="articleCard">
       <div className="imgArticle">
-        <img className="mythImage" src={myth.img} alt="" />
+        <img className="mythImage" src={data.img} alt="" />
       </div>
       <div className="textWrapper">
-        <h4>{myth.title}</h4>
+        <h4>{data.title}</h4>
         <p>
-          {readMore ? myth.desc : `${myth.desc.substring(0, 150)}...`}
+          {readMore ? data.desc : `${data.desc.substring(0, 150)}...`}
           <button onClick={() => setReadMore(!readMore)}>
             {readMore ? 'show less' : 'read more'}
           </button>

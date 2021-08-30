@@ -17,8 +17,8 @@ export default function MythsTrying() {
         </p>
       </div> */}
       <div className="rightMyths">
-        {myths1.map((myth) => (
-          <ArticleCard myth={myth} />
+        {myths1.map((data) => (
+          <ArticleCard data={data} />
         ))}
       </div>
     </div>

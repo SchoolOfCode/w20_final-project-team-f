@@ -1,0 +1,15 @@
+@import '../../global.scss';
+
+.foodsContainer {
+  display: flex;
+  //   width: 100%;
+  @include flexCenter(row);
+  justify-content: center;
+
+  .rightFoods {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

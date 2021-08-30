@@ -7,6 +7,8 @@ import Articles from './pages/Articles';
 import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 import MythsTrying from './components/MythsTrying/MythsTrying';
+import NutritionTrying from './components/NutritionTrying/NutritionTrying';
+import FoodsTrying from './components/FoodsTrying/FoodsTrying';
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
           <Route path="/profile" component={Profile} />
           <Route path="/myths1">
             <MythsTrying />
+          </Route>
+          <Route path="/nutrition1">
+            <NutritionTrying />
+          </Route>
+          <Route path="/foods1">
+            <FoodsTrying />
           </Route>
         </Switch>
       </Router>
