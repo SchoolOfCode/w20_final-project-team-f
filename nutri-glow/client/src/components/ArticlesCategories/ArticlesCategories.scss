@@ -1,0 +1,68 @@
+@import '../../global.scss';
+
+.articles {
+  //   background-color: $backgroundColor;
+  margin-top: 50px;
+  @include flexCenter(column);
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: fontSize(extraLarge);
+    font-weight: fontWeight(bold);
+    color: $textColorPrimary;
+  }
+
+  h2 {
+    font-size: fontSize(large);
+    font-weight: fontWeight(medium);
+    color: $boldOrange;
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  .articleContainer {
+    width: 70%;
+    @include flexJustify(center);
+    flex-wrap: wrap;
+
+    .item {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid rbg(240, 234, 234);
+      margin: 10px 20px;
+      @include flexJustify(center);
+      color: $backgroundColor;
+      position: relative;
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      h3 {
+        position: absolute;
+        font-size: fontSize(regular);
+        color: $boldOrange;
+      }
+
+      img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        z-index: 1; // show h3 title when hovering
+      }
+
+      &:hover {
+        background-color: $backgroundForm;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

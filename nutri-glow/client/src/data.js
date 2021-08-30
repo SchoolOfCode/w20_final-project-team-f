@@ -113,18 +113,21 @@ export const article1 = [
     id: 1,
     title: 'Myths and facts',
     img: '/assets/myths.jpeg',
+    url: '/myths1',
   },
 
   {
     id: 2,
     title: 'Nutrition boost',
     img: 'assets/nutrition.jpeg',
+    url: '/nutrition1',
   },
 
   {
     id: 3,
     title: 'Best foods to eat',
     img: 'assets/foods.png',
+    url: '/foods1',
   },
 ];
 
@@ -133,16 +136,41 @@ export const article2 = [
     id: 1,
     title: 'Myths and facts',
     img: '/assets/myths.png',
+    url: '/myths2',
   },
 
   {
     id: 2,
     title: 'Nutrition boost',
     img: '/assets/nutrition.png',
+    url: 'nutrition2',
   },
   {
     id: 2,
     title: 'Best foods to eat',
     img: '/assets/foods1.png',
+    url: '/foods2',
+  },
+];
+
+export const article3 = [
+  {
+    id: 1,
+    title: 'Myths and facts',
+    img: '/assets/nutrition1.png',
+    url: '/myths3',
+  },
+
+  {
+    id: 2,
+    title: 'Nutrition boost',
+    img: '/assets/myths1.jpeg',
+    url: '/nutrition3',
+  },
+  {
+    id: 2,
+    title: 'Best foods to eat',
+    img: '/assets/foods2.jpeg',
+    url: '/foods3',
   },
 ];
