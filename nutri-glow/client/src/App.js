@@ -6,9 +6,8 @@ import Home from './pages/Home';
 import Articles from './pages/Articles';
 import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
-import MythsTrying from './components/MythsTrying/MythsTrying';
-import NutritionTrying from './components/NutritionTrying/NutritionTrying';
-import FoodsTrying from './components/FoodsTrying/FoodsTrying';
+import ArticleCard from './components/ArticleCard/ArticleCard';
+import { myths1, nutrition1, foods1 } from '././data';
 
 function App() {
   return (
@@ -28,13 +27,25 @@ function App() {
 
           <Route path="/profile" component={Profile} />
           <Route path="/myths1">
-            <MythsTrying />
+            <div className="rightMyths">
+              {myths1.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
           </Route>
           <Route path="/nutrition1">
-            <NutritionTrying />
+            <div className="rightNutrition">
+              {nutrition1.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
           </Route>
           <Route path="/foods1">
-            <FoodsTrying />
+            <div className="rightFoods">
+              {foods1.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
           </Route>
         </Switch>
       </Router>

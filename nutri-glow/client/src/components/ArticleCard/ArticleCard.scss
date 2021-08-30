@@ -3,8 +3,7 @@
 .articleCard {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 400px;
+  width: 100%;
   margin-top: 50px;
   margin-left: 20px;
   overflow: hidden;
@@ -13,7 +12,7 @@
   .imgArticle {
     width: 100%;
 
-    flex: 0.6;
+    flex: 0.55;
     overflow: hidden;
 
     .mythImage {
@@ -23,7 +22,7 @@
   }
 
   .textWrapper {
-    flex: 0.4;
+    flex: 0.45;
     @include flexCenter(column);
     // justify-content: space-between;
     overflow: hidden;
