@@ -1,0 +1,30 @@
+@import '../global.scss';
+
+.wrapper{
+  width: 100vw;
+  @include flexCenter(column);
+  justify-content: center;
+
+  
+
+  .recRecipes{
+    
+
+    .recRecipesTitle{
+      color: $textColorPrimary
+    }
+
+    .recRecipesCards{
+      width: 100vw;
+      display: grid;
+      grid-gap: 25px;
+      grid-template: auto/repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .recRecipesButton{
+
+    }
+
+  }
+
+}

@@ -1,8 +1,7 @@
 import React, { useLayoutEffect } from 'react';
 import { useState, useEffect }  from 'react';
-import './RecRecipe.scss';
 import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';
-
+import './Profile.scss';
 
 export default function Profile() {
 
@@ -87,9 +86,7 @@ const getRecipes = async () => {
   return (
   <div className="wrapper">
     <div className="recRecipes">
-      <div className="recRecipesTitle">
-        <h2>Recommended recipes</h2>
-      </div>
+      <h1 className="recRecipesTitle">Recommended <br/> recipes</h1>
       <div className="recRecipesCards">
         {recipes.slice(0, 3).map((recipe) => (
           <RecRecipeCard

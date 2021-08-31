@@ -1,40 +1,42 @@
 @import '../../global.scss';
 
-.recipeData {
+.recipeCard{
   width: 100%;
-  border-radius: 8px;
   background-color: $backgroundForm;
-  padding: 15px;
+  @include flexCenter(column);
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
 
-  .recipeImage {
-    width: 100%;
-    height: 300px;
-    border-radius: 4px;
-  }
-
-  .itemResult {
+  .recipeCardLeft{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex: 0.5;
+    overflow: hidden;
 
-    .recipeTitle {
-      color: $textColorPrimary;
-      margin: 20px 10px 0 0;
-      font-size: fontSize(regular);
-      font-weight: 400px;
+    .recipeCardImg{
+      width: 100%;
+      height: 100%;
     }
 
-    .recipeLabel {
-      text-decoration: none;
-      text-align: center;
-      width: 130px;
-      padding: 10px 0;
-      background-color: $boldOrange;
-      color: $backgroundColor;
-      font-size: fontSize(small);
-      margin-top: 20px;
-      align-self: flex-start;
-    }
   }
+
+  .recipeCardRight{
+    display: flex;
+    flex: 0.5;
+    overflow: hidden;
+
+    .recipeCardData{
+    
+      .recipeCardTitle{
+        color: $textColorPrimary;
+        margin: 0 0 0 20px;
+        font-size: fontSize(regular);
+        font-weight: fontWeight(regular);
+        margin-bottom: 20px;
+      }
+
+    }
+
+  }
+
 }
