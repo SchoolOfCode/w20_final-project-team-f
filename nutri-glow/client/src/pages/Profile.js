@@ -85,7 +85,12 @@ const getRecipes = async () => {
 // };
 
   return (
-  <div className="bottom">
+  <div className="wrapper">
+    <div className="recRecipes">
+      <div className="recRecipesTitle">
+        <h2>Recommended recipes</h2>
+      </div>
+      <div className="recRecipesCards">
         {recipes.slice(0, 3).map((recipe) => (
           <RecRecipeCard
             title={recipe.recipe.label}
@@ -95,6 +100,10 @@ const getRecipes = async () => {
             url={recipe.recipe.url}
           />
         ))}
+      </div>
+      <div className="recRecipesButton">
+      </div>
+    </div>
   </div>
 )
 }
