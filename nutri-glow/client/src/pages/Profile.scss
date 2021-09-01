@@ -4,15 +4,13 @@
   width: 100vw;
   @include flexCenter(column);
   justify-content: center;
-  
 
   .recRecipes{
-    
 
     .recRecipesTitle{
       color: $textColorPrimary;
       margin-bottom: 40px;
-      
+
     }
 
     .recRecipesCards{
@@ -21,7 +19,7 @@
       display: grid;
       grid-gap: 25px;
       grid-template: auto/repeat(auto-fit, minmax(150px, 1fr));
-
+      margin-bottom: 40px;
     }
 
     .recRecipesButton{

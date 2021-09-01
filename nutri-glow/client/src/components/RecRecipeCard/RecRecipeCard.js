@@ -9,7 +9,7 @@ export default function RecipeCard({
   url,
 }) {
   return (
-    <a href={url}>
+    <a className="recipeCardAnchor" href={url}>
     <div className="recipeCard">
       <div className="recipeCardLeft">
         <img className="recipeCardImg"  src={image} alt="recipe"/>

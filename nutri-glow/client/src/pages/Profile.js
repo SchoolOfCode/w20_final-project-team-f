@@ -1,5 +1,7 @@
 import React, { useLayoutEffect } from 'react';
 import { useState, useEffect }  from 'react';
+import { Link } from 'react-router-dom';
+import RecipesButton from '../components/RecipesButton/RecipesButton';
 import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';
 import './Profile.scss';
 
@@ -100,6 +102,11 @@ const getRecipes = async () => {
         ))}
       </div>
       <div className="recRecipesButton">
+      <Link to="/recipes">
+        <RecipesButton
+          name="Discover all"
+        />
+      </Link>
       </div>
     </div>
   </div>
