@@ -3,7 +3,9 @@ import { useState, useEffect }  from 'react';
 import { Link } from 'react-router-dom';
 import RecipesButton from '../components/RecipesButton/RecipesButton';
 import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';
+import QuoteBlock from '../components/QuoteBlock/QuoteBlock';
 import './Profile.scss';
+
 
 export default function Profile() {
 
@@ -89,7 +91,10 @@ const getRecipes = async () => {
 
   <div className="wrapper">
     <div className="profileQuote">
-    
+    <QuoteBlock
+      text='"In giving birth to our babies, we may find that we give birth to new possibilities within ourselves."'
+      author="- Myla and Jon Kabat-Zinn"
+    />
     </div>
     <div className="recRecipes">
       <h1 className="recRecipesTitle">Recommended <br/> recipes</h1>
