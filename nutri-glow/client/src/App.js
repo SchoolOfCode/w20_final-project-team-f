@@ -24,7 +24,6 @@ function App() {
           <Route path="/recipes">
             <Recipes />
           </Route>
-
           <Route path="/profile" component={Profile} />
           <Route path="/myths1">
             <div className="rightMyths">
