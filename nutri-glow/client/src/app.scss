@@ -5,4 +5,16 @@
   }
   scrollbar-width: none;
   scroll-behavior: smooth;
+
+  .rightMyths,
+  .rightNutrition,
+  .rightFoods {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-gap: 30px;
+    padding: 30px;
+    margin-top: 30px;
+    grid-template: auto/repeat(auto-fit, minmax(350px, 1fr));
+  }
 }

@@ -1,0 +1,40 @@
+@import '../../global.scss';
+
+.mythsContainer {
+  display: flex;
+  //   width: 100%;
+  @include flexCenter(row);
+  justify-content: center;
+
+  //   .leftMyths {
+  //     display: flex;
+  //     @include flexCenter(column);
+  //     flex: 0.5;
+  //     margin-left: 20px;
+
+  //     .bigImage {
+  //       width: 20px;
+  //       height: 20px;
+  //     }
+
+  //     p {
+  //       color: $textColorPrimary;
+  //       font-size: fontSize(regular);
+  //       font-weight: fontWeight(regular);
+  //     }
+  //   }
+
+  .rightMyths {
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    // flex: 0.5;
+    // display: grid;
+    // grid-gap: 40px;
+    // padding: 40px;
+    // grid-template: auto/repeat(auto-fit, minmax(400px, 3fr));
+  }
+}

@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Articles from './pages/Articles';
 import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
+import ArticleCard from './components/ArticleCard/ArticleCard';
+import { myths1, nutrition1, foods1 } from '././data';
 
 function App() {
   return (
@@ -20,21 +22,31 @@ function App() {
           </Route>
           <Route path="/articles" component={Articles} />
           <Route path="/recipes">
-            <Recipes
-            // updateDietLabel={getDietLabel}
-            // updateMealType={getMealType}
-            // updateCuisine={getCuisine}
-            // updateHealthLabel={getHealthLabel}
-            // updateDietType={getDietType}
-            // label={dietLabel}
-            // meal={mealType}
-            // cuisines={cuisines}
-            // health={healthLabel}
-            // type={dietType}
-            />
+            <Recipes />
           </Route>
 
           <Route path="/profile" component={Profile} />
+          <Route path="/myths1">
+            <div className="rightMyths">
+              {myths1.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/nutrition1">
+            <div className="rightNutrition">
+              {nutrition1.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/foods1">
+            <div className="rightFoods">
+              {foods1.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
         </Switch>
       </Router>
     </div>

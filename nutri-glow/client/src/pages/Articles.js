@@ -1,5 +1,10 @@
 import React from 'react';
+import ArticleCategories from '../components/ArticlesCategories/ArticleCategories';
 
 export default function Articles() {
-  return <div>Articless</div>;
+  return (
+    <div>
+      <ArticleCategories />
+    </div>
+  );
 }
