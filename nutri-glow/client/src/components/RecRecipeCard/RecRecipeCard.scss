@@ -3,7 +3,7 @@
 .recipeCardAnchor{
 
   .recipeCard{
-    width: 95%;
+    width: 100%;
     background-color: $backgroundForm;
     @include flexCenter(column);
     overflow: hidden;
