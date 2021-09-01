@@ -2,23 +2,22 @@
 .displayRecipe {
   border-radius: 8px;
   background-color: $backgroundForm;
-  padding: 15px;
   @include flexCenter(column);
   .recipeData {
     width: 100%;
     border-radius: 8px;
     background-color: $backgroundForm;
-    padding: 15px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
 
     .detailsLeft {
       flex: 0.5;
+      overflow: hidden;
       .recipeImage {
         width: 100%;
-        height: 200px;
-        border-radius: 4px;
+        height: 100%;
+        border-radius: 8px;
       }
     }
     .detailsRight {

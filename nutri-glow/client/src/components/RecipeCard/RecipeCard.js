@@ -3,7 +3,9 @@ import './RecipeCard.scss';
 import RecipeDetails from '../RecipeDetails/RecipeDetails';
 
 export default function RecipeCard({ recipe }) {
+  // state to show ingredient list
   const [show, setShow] = useState(false);
+  //props passed through from the fetched API data
   const { label, image, url, ingredients } = recipe.recipe;
   return (
     <div className="displayRecipe">
@@ -20,7 +22,7 @@ export default function RecipeCard({ recipe }) {
           </div>
           <div className="ingredientButton">
             <button className="buttonRecipe" onClick={() => setShow(!show)}>
-              Ingredients
+              {show ? 'Close ingredients' : 'Show ingredients'}
             </button>
           </div>
         </div>

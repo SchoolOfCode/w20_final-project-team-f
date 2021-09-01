@@ -4,10 +4,11 @@
   margin-top: 20px;
   @include flexCenter(column);
   justify-content: center;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
 
   .top {
     display: flex;
+    width: 100%;
 
     .recipeFilters {
       display: flex;
@@ -50,6 +51,7 @@
 
         .searchRecipes {
           margin-left: 20px;
+          overflow: hidden;
           .searchForm {
             @include flexJustify(center);
             .searchBar {
@@ -90,6 +92,7 @@
           flex-direction: column;
           display: flex;
           justify-content: center;
+          margin-left: 50px;
 
           .buttonFilters {
             .selectMeal,
@@ -134,9 +137,10 @@
 
   .bottom {
     margin-top: 50px;
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-gap: 25px;
+    padding: 25px;
     grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
   }
 }

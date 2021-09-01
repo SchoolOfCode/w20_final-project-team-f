@@ -6,7 +6,10 @@ import Login from '../Login/Login';
 import { MenuList } from './MenuList';
 
 export default function Navbar() {
+  //state for the hamburger menu bars
   const [clicked, setClicked] = useState(false);
+
+  //mapping through the MenuList object to display link into the nav bar
   const menuList = MenuList.map(({ url, title }, index) => {
     return (
       <li key={index}>
@@ -37,6 +40,8 @@ export default function Navbar() {
         <ul className={clicked ? 'menu' : 'menu close'}>{menuList}</ul>
       </nav>
       <Searchbar />
+
+      {/* login button component that links to the profile page for now */}
       <Link to="/profile">
         <Login />
       </Link>

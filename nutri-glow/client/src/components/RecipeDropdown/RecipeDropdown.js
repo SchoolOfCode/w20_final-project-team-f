@@ -2,6 +2,8 @@ import React from 'react';
 import { Intolerance } from '../../data';
 import './RecipeDropdown.scss';
 
+//allergy dropdown selection component
+
 export default function RecipeDropdown({ handleChange }) {
   const intolerance = Intolerance.map(({ name, title }, index) => {
     return (
