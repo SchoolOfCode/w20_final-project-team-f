@@ -88,6 +88,9 @@ const getRecipes = async () => {
   return (
 
   <div className="wrapper">
+    <div className="profileQuote">
+    
+    </div>
     <div className="recRecipes">
       <h1 className="recRecipesTitle">Recommended <br/> recipes</h1>
       <div className="recRecipesCards">
