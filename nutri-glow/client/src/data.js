@@ -1,3 +1,9 @@
+import { RiMentalHealthFill } from 'react-icons/ri';
+import RangeSlider from './components/RangeSlider/RangeSlider';
+import { BsFillLightningFill } from 'react-icons/bs';
+import { RiRestaurantFill } from 'react-icons/ri';
+import { FaBed } from 'react-icons/fa';
+
 export const Intolerance = [
   {
     name: 'celery-free',
@@ -105,5 +111,194 @@ export const Cuisine = [
   {
     name: 'South American',
     title: 'South American',
+  },
+];
+
+export const ProfileCard = [
+  {
+    icon: <RiMentalHealthFill />,
+    quest: 'How is your mental health today?',
+    slider: <RangeSlider />,
+  },
+  {
+    icon: <BsFillLightningFill />,
+    quest: 'How are your energy levels today?',
+    slider: <RangeSlider />,
+  },
+  {
+    icon: <FaBed />,
+    quest: 'How many hours did you sleep today?',
+    slider: <RangeSlider />,
+  },
+  {
+    icon: <RiRestaurantFill />,
+    quest: 'How is your apetite doing today?',
+    slider: <RangeSlider />,
+  },
+];
+
+export const article1 = [
+  {
+    id: 1,
+    title: 'Myths and facts',
+    img: '/assets/myths.jpeg',
+    url: '/myths1',
+  },
+
+  {
+    id: 2,
+    title: 'Nutrition boost',
+    img: 'assets/nutrition.jpeg',
+    url: '/nutrition1',
+  },
+
+  {
+    id: 3,
+    title: 'Best foods to eat',
+    img: 'assets/foods.png',
+    url: '/foods1',
+  },
+];
+
+export const article2 = [
+  {
+    id: 1,
+    title: 'Myths and facts',
+    img: '/assets/myths.png',
+    url: '/myths2',
+  },
+
+  {
+    id: 2,
+    title: 'Nutrition boost',
+    img: '/assets/nutrition.png',
+    url: 'nutrition2',
+  },
+  {
+    id: 2,
+    title: 'Best foods to eat',
+    img: '/assets/foods1.png',
+    url: '/foods2',
+  },
+];
+
+export const article3 = [
+  {
+    id: 1,
+    title: 'Myths and facts',
+    img: '/assets/nutrition1.png',
+    url: '/myths3',
+  },
+
+  {
+    id: 2,
+    title: 'Nutrition boost',
+    img: '/assets/myths1.jpeg',
+    url: '/nutrition3',
+  },
+  {
+    id: 2,
+    title: 'Best foods to eat',
+    img: '/assets/foods2.jpeg',
+    url: '/foods3',
+  },
+];
+
+export const myths1 = [
+  {
+    title: 'Myths 1',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card1.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card2.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card3.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card4.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card5.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card6.png',
+  },
+];
+
+export const nutrition1 = [
+  {
+    title: 'Myths 1',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/nutrition2.jpeg',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card2.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card3.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card4.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card5.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card6.png',
+  },
+];
+
+export const foods1 = [
+  {
+    title: 'Myths 1',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/nutrition2.jpeg',
+  },
+  {
+    title: 'Pinnapple ois bad for you',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card2.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/foods2.jpeg',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card4.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card5.png',
+  },
+  {
+    title: 'Myths 2',
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    img: '/assets/card6.png',
   },
 ];

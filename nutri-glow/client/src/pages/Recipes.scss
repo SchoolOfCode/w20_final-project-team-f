@@ -4,23 +4,54 @@
   margin-top: 20px;
   @include flexCenter(column);
   justify-content: center;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
 
-  h2 {
-    margin-bottom: 30px;
-  }
   .top {
+    display: flex;
     width: 100%;
-    height: 100%;
 
     .recipeFilters {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      .selection {
-        flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0.5;
+
+      .filtersWrapper {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
         display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 20px;
+
+        .recipeIntro {
+          margin-left: 20px;
+          margin-bottom: 20px;
+
+          h2 {
+            color: $textColorPrimary;
+            font-size: 4rem;
+            font-weight: fontWeight(bold);
+          }
+
+          h3 {
+            color: $boldOrange;
+            font-size: fontSize(large);
+            font-weight: fontWeight(medium);
+          }
+
+          h4 {
+            color: $textColorPrimary;
+            font-size: fontSize(regular);
+            font-weight: fontWeight(regular);
+          }
+        }
+
         .searchRecipes {
+          margin-left: 20px;
+          overflow: hidden;
           .searchForm {
             @include flexJustify(center);
             .searchBar {
@@ -28,16 +59,14 @@
               width: 300px;
               height: 30px;
               border: none;
-              border-radius: 10px;
             }
 
             .searchButton {
-              background-color: $darkBrown;
+              background-color: $boldOrange;
               border: none;
               color: $backgroundColor;
               width: 200px;
               height: 30px;
-              border-radius: 10px;
               margin-left: 10px;
               cursor: pointer;
             }
@@ -48,27 +77,59 @@
           }
         }
 
-        .selectMeal,
-        .selectDiet,
-        .selectLabel {
+        .filterButton {
+          background-color: $backgroundForm;
+          border: none;
+          color: $textColorPrimary;
+          width: 200px;
+          height: 30px;
+          margin-left: 10px;
+          cursor: pointer;
+          margin: 20px 0 0 20px;
+        }
+
+        .selection {
+          flex-direction: column;
           display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          padding: 1rem;
+          justify-content: center;
+          margin-left: 50px;
+
+          .buttonFilters {
+            .selectMeal,
+            .selectDiet,
+            .selectLabel {
+              flex-wrap: wrap;
+              justify-content: space-between;
+              @include flexCenter(row);
+              padding: 1rem;
+            }
+
+            .selectLabel {
+              padding: 10px;
+            }
+          }
+        }
+
+        .selectDropdown {
+          @include flexCenter(row);
+          margin: 10px 0 0 0;
+
+          .health {
+            margin-right: 30px;
+          }
         }
       }
+    }
 
-      .selectDropdown {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem;
-        padding: 2rem;
-        margin-top: -20px;
+    .rightFilters {
+      flex: 0.5;
+      .rimgContainer {
+        @include flexJustify(center);
+        margin-top: 30px;
 
-        h3 {
-          margin-bottom: 20px;
-          margin-top: 10px;
+        .imgFilters {
+          width: 70%;
+          height: 70%;
         }
       }
     }
@@ -79,6 +140,7 @@
     width: 100%;
     display: grid;
     grid-gap: 25px;
+    padding: 25px;
     grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
   }
 }

@@ -1,3 +1,6 @@
+
+import React from 'react';
+import ProfileIntro from '../components/ProfileIntro/ProfileIntro';
 import React, { useLayoutEffect } from 'react';
 import { useState, useEffect }  from 'react';
 import { Link } from 'react-router-dom';
@@ -88,7 +91,9 @@ const getRecipes = async () => {
 // };
 
   return (
-
+  <div>
+    <ProfileIntro />
+  </div>
   <div className="wrapper">
     <div className="profileQuote">
     <QuoteBlock
