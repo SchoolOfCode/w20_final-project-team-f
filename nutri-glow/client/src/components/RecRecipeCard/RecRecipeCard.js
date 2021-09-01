@@ -9,6 +9,7 @@ export default function RecipeCard({
   url,
 }) {
   return (
+    <a href={url}>
     <div className="recipeCard">
       <div className="recipeCardLeft">
         <img className="recipeCardImg"  src={image} alt="recipe"/>
@@ -19,6 +20,7 @@ export default function RecipeCard({
         </div>
       </div>
     </div>
+    </a>
 
   )
 

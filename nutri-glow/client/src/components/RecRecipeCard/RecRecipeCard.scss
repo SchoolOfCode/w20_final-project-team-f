@@ -14,7 +14,6 @@
     overflow: hidden;
 
     .recipeCardImg{
-      width: 100%;
       height: 100%;
     }
 
@@ -33,6 +32,7 @@
         font-size: fontSize(regular);
         font-weight: fontWeight(regular);
         margin-bottom: 20px;
+        text-decoration: none;
       }
 
     }
