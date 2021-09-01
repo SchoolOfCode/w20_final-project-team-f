@@ -21,7 +21,6 @@ export default function ArticleCard({ data }) {
     // </div>
     <article className="articleCard">
       <img className="mythImage" src={data.img} alt="" />
-
       <div className="textWrapper">
         <header>
           <h4>{data.title}</h4>
