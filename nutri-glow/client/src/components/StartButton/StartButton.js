@@ -9,7 +9,5 @@ export default function StartButton({ text }) {
       <Link className="startButton" to="/login" className="btn btn-primary">{text}</Link>
     </div>
   )
-
-
 }
 

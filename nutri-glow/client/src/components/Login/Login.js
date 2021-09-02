@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import { auth } from '../../firebase';
 import './Login.scss'
 import Home from '../../pages/Home';
+import Signup from '../Signup/Signup'
+import { Link } from 'react-router-dom'
 
 require('react-dom');
 window.React2 = require('react');
@@ -49,20 +51,8 @@ function Login() {
         <input ref={emailRef} type="email" />
         <label>Password</label>
         <input ref={passwordRef} type="password" />
-        <label>Are you?</label>
-        <select id="cars" name="cars">
-          <option value="volvo">Trying to conceive</option>
-          <option value="saab">Currently pregnant</option>
-          <option value="fiat">Mother within the last year</option>
-        </select>
-        <label>Goals</label>
-        <select id="cars" name="cars">
-          <option value="volvo">Goals</option>
-          <option value="saab">Goals 2</option>
-          <option value="fiat">Goals 3</option>
-        </select>
         <button onClick={signIn}>Sign in </button>
-        <h6>Not yet register? <span onClick={signUp} className="signin__link">Sign up</span></h6>
+        <h6>Not yet registered? <Link to="/signup" className="btn btn-primary">Sign Up</Link></h6>
       </form>
 
     </div>
@@ -70,3 +60,5 @@ function Login() {
 }
 
 export default Login
+
+{/* <h6>Not yet register? <span onClick={<Signup />} className="signin__link">Sign up</span></h6> */ }

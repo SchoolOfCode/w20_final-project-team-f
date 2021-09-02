@@ -10,6 +10,7 @@ import ArticleCard from './components/ArticleCard/ArticleCard';
 import { myths1, nutrition1, foods1 } from '././data';
 import Login from './components/Login/Login';
 import { auth } from './firebase';
+import Signup from './components/Signup/Signup';
 
 function App() {
 
@@ -47,16 +48,16 @@ function App() {
               {user ? <Profile /> : <Login />}
             </div>
           </Route>
-
-
+          <Route path="/signup">
+            <div className="container">
+              {user ? <Profile /> : <Signup />}
+            </div>
+          </Route>
           <Route path="/articles" component={Articles} />
           <Route path="/recipes">
             <Recipes />
           </Route>
-
           <Route path="/profile" component={Profile} />
-
-
 
           <Route path="/myths1">
             <div className="rightMyths">
