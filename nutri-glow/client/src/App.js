@@ -1,5 +1,5 @@
 import './app.scss';
-import React from 'react';
+import { React, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
@@ -8,10 +8,32 @@ import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 import ArticleCard from './components/ArticleCard/ArticleCard';
 import { myths1, nutrition1, foods1 } from '././data';
+import Login from './components/Login/Login';
+import { auth } from './firebase';
 
 function App() {
+
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+      const user = {
+        uid: userAuth?.uid,
+        email: userAuth?.email
+      }
+      if (userAuth) {
+        console.log(userAuth)
+        setUser(user)
+      } else {
+        setUser(null)
+      }
+    })
+    return unsubscribe
+  }, [])
+
   return (
-    <div className="container">
+
+    <div>
       <Router>
         <nav>
           <Navbar />
@@ -20,12 +42,22 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
+          <Route path="/login">
+            <div className="container">
+              {user ? <Profile /> : <Login />}
+            </div>
+          </Route>
+
+
           <Route path="/articles" component={Articles} />
           <Route path="/recipes">
             <Recipes />
           </Route>
 
           <Route path="/profile" component={Profile} />
+
+
+
           <Route path="/myths1">
             <div className="rightMyths">
               {myths1.map((data) => (
@@ -47,8 +79,13 @@ function App() {
               ))}
             </div>
           </Route>
+
+
+
         </Switch>
       </Router>
+
+
     </div>
   );
 }

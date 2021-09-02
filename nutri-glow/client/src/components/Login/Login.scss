@@ -1,16 +1,36 @@
-@import '../../global.scss';
+// @import '../../global.scss';
 
-.loginButton {
-  background-color: $darkBrown;
-  width: 90px;
-  height: 30px;
-  color: $backgroundColor;
-  border: none;
-  cursor: pointer;
-  // border-radius: 30px;
+// .loginButton {
+//   background-color: $darkBrown;
+//   width: 90px;
+//   height: 30px;
+//   color: $backgroundColor;
+//   border: none;
+//   cursor: pointer;
+//   // border-radius: 30px;
 
-  @include mobile {
-    width: 50px;
-    margin-left: 50px;
-  }
+//   @include mobile {
+//     width: 50px;
+//     margin-left: 50px;
+//   }
+// }
+
+
+.signin{
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signin>form{
+  display: grid;
+  flex-direction: column;
+}
+.signin>form>input{
+  margin-bottom: 5px
+  ;
+}
+
+.signin__link:hover{
+  text-decoration: underline;
 }

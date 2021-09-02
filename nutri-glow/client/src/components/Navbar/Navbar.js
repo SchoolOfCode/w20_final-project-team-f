@@ -4,6 +4,7 @@ import './Navbar.scss';
 import Searchbar from '../Searchbar/Searchbar';
 import Login from '../Login/Login';
 import { MenuList } from './MenuList';
+import Signout from '../Signout/Signout';
 
 export default function Navbar() {
   //state for the hamburger menu bars
@@ -43,7 +44,7 @@ export default function Navbar() {
 
       {/* login button component that links to the profile page for now */}
       <Link to="/profile">
-        <Login />
+        <Signout />
       </Link>
     </header>
   );
