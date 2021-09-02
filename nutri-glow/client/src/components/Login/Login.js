@@ -38,9 +38,6 @@ function Login() {
 
 
 
-
-
-
   return (
     <div className="signin">
 
@@ -48,8 +45,22 @@ function Login() {
 
       <form action="">
         <h1>Sign in</h1>
+        <label>Email</label>
         <input ref={emailRef} type="email" />
+        <label>Password</label>
         <input ref={passwordRef} type="password" />
+        <label>Are you?</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Trying to conceive</option>
+          <option value="saab">Currently pregnant</option>
+          <option value="fiat">Mother within the last year</option>
+        </select>
+        <label>Goals</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Goals</option>
+          <option value="saab">Goals 2</option>
+          <option value="fiat">Goals 3</option>
+        </select>
         <button onClick={signIn}>Sign in </button>
         <h6>Not yet register? <span onClick={signUp} className="signin__link">Sign up</span></h6>
       </form>

@@ -4,7 +4,10 @@ import './Navbar.scss';
 import Searchbar from '../Searchbar/Searchbar';
 import Login from '../Login/Login';
 import { MenuList } from './MenuList';
-import Signout from '../Signout/Signout';
+import ProfileMenu from '../ProfileMenu/ProfileMenu';
+
+
+
 
 export default function Navbar() {
   //state for the hamburger menu bars
@@ -39,13 +42,18 @@ export default function Navbar() {
           <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
         <ul className={clicked ? 'menu' : 'menu close'}>{menuList}</ul>
+
       </nav>
       <Searchbar />
 
+      {/* <ProfileMenu /> */}
+
       {/* login button component that links to the profile page for now */}
-      <Link to="/profile">
-        <Signout />
-      </Link>
+      {/* <Link to="/profile">
+        <ProfileMenu />
+      </Link> */}
+
+
     </header>
   );
 }
