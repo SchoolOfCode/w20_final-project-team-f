@@ -15,6 +15,9 @@ import ProfileMenu from './components/ProfileMenu/ProfileMenu';
 
 function App() {
 
+  // track user authentication status
+  // user authentication status determines if profile page is displayed
+
   const [user, setUser] = useState(null)
 
   useEffect(() => {

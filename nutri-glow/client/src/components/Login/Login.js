@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { auth } from '../../firebase';
 import './Login.scss'
-import Home from '../../pages/Home';
 import Signup from '../Signup/Signup'
 import { Link } from 'react-router-dom'
 
+// form to capture user credential
+// when user fills form, login and access is given to profile page
+// if user detail is incorrect, return error message to user and prompt to try again
+// if user doesn't have a pre-existing account, provide option to sign up
+
 function Login() {
 
+  // capture user input value for later use
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
@@ -21,6 +26,7 @@ function Login() {
       console.log(err)
     })
   }
+
   const signIn = e => {
     e.preventDefault();
     auth.signInWithEmailAndPassword(
@@ -33,11 +39,8 @@ function Login() {
     })
   }
 
-
-
   return (
     <div className="signin">
-      {/* form to capture user detail for login */}
       <form action="">
         <h1>Sign in</h1>
         <label>Email</label>

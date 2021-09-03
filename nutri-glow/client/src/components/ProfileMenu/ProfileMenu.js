@@ -3,17 +3,10 @@ import { auth } from '../../firebase';
 import { Link } from 'react-router-dom';
 import './ProfileMenu.scss';
 
+// when user is logged in, display profile icon in navbar
+// when clicked, profile icon should dropdown menu with options (i.e. edit profile, settings, logout, etc.)
 
 const ProfileMenu = () => {
-
-    // function userProfileToggle() {
-    //     <a href="#" className="profile-menu-item">
-
-    //     </a>
-    // }
-
-
-
     return (
         <div className="dropdownBox">
             <div className="profile-icon">

@@ -1,17 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { auth } from '../../firebase';
 // import { db } from 'firebase'
+
 import './Signup.scss'
-import { Link } from 'react-router-dom';
 
 
+// testing early Hook problem/error as per React docs
 require('react-dom');
 window.React2 = require('react');
 console.log(window.React1 === window.React2);
 
 
+// form to capture user credential
+// when user fills form, account is created and access is given to profile page
+// prompt user if user detail exists already
+// prompt user if input parameter doesn't match expectation (i.e. incomplete nos. of password characters)
+// if user already has a pre-existing account, provide option to login
+
+
 function Signup() {
 
+    // capture user input value for later use
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
     const fullNameRef = useRef(null);
@@ -54,11 +63,11 @@ function Signup() {
         })
     }
 
-
+    // return form to capture user sign up details
 
     return (
         <div className="signupForm">
-            <form className="signupForm2" action="">
+            <form action="">
                 <div className="signupHeader">
                     <h1 id="signup">Sign up</h1>
                     <h3 id="signupTag">It's free and easy</h3>
@@ -86,7 +95,7 @@ function Signup() {
                 <label className="signupLabel">Password</label>
                 <input ref={passwordRef} type="password" />
                 <button id="createAccount" onClick={signUp}>Create Account </button>
-                <h6>Already have an account? <a href="/login" className="signupLink">Login</a></h6>
+                <h6 className="alreadyHaveAccount">Already have an account? <a href="/login" className="signupLink">Login</a></h6>
             </form>
 
         </div>
@@ -96,6 +105,3 @@ function Signup() {
 export default Signup;
 
 
-
-
-{/* <h6>Already have an account? <span onClick={<Login />} className="signin__link">Login</span></h6> */ }
