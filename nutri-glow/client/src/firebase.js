@@ -1,29 +1,10 @@
-// import firebase from 'firebase';
+
 // // import { initializeApp } from "@firebase/app"
 // // authenticate module for firebase
 // import 'firebase/auth';
 
-// // require("dotenv").config()
+import firebase from 'firebase';
 
-// const app = firebase.initializeApp({
-//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-//   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-//   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-//   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-//   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-//   appId: process.env.REACT_APP_FIREBASE_APP_ID,
-// });
-
-// // specific authentication instance
-// export const auth = app.auth();
-
-// // general firebase reusable throughout the app
-// export default app;
-
-// // testing firebase
-
-
-import firebase from 'firebase'
 
 var firebaseConfig = {
   apiKey: "AIzaSyAybahzXmnkcg4e08M7nSF_cyHiJWCUrLM",
@@ -35,7 +16,12 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+// // access to firebase database
+
 const db = firebase.firestore();
+
+// // specific authentication instance
 const auth = firebase.auth();
 export { auth };
 export default db;

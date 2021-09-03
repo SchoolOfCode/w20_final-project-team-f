@@ -5,11 +5,6 @@ import Home from '../../pages/Home';
 import Signup from '../Signup/Signup'
 import { Link } from 'react-router-dom'
 
-require('react-dom');
-window.React2 = require('react');
-console.log(window.React1 === window.React2);
-
-
 function Login() {
 
   const emailRef = useRef(null);
@@ -42,9 +37,7 @@ function Login() {
 
   return (
     <div className="signin">
-
-
-
+      {/* form to capture user detail for login */}
       <form action="">
         <h1>Sign in</h1>
         <label>Email</label>
@@ -60,5 +53,3 @@ function Login() {
 }
 
 export default Login
-
-{/* <h6>Not yet register? <span onClick={<Signup />} className="signin__link">Sign up</span></h6> */ }

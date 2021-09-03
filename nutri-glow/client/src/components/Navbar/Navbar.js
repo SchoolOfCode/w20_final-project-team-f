@@ -46,7 +46,7 @@ export default function Navbar() {
       </nav>
       <Searchbar />
 
-      {/* <ProfileMenu /> */}
+
 
       {/* login button component that links to the profile page for now */}
       {/* <Link to="/profile">

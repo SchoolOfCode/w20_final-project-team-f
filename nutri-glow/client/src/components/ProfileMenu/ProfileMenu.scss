@@ -1,6 +1,54 @@
 @import '../../global.scss';
 
-.action .menu.active{
-    visibility: visible;
-    opacity: 1;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+.dropdownBox{
+    position: relative;
+    margin: 0 auto;
+    padding:  30px 50px ;
+    width: 300px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+margin-top: 50px;
+}
+
+.dropdownBox::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    transform: rotate(-45deg);
+
+}
+
+.dropdownBox ul {
+    padding-left: 0;
+}
+
+.dropdownBox ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom:  25px;
+
+}
+
+a{
+    text-decoration: none;
+    transition:  .5s;
+    color: #000;
+
+}
+
+

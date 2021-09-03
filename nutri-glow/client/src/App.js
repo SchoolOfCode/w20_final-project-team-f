@@ -11,6 +11,7 @@ import { myths1, nutrition1, foods1 } from '././data';
 import Login from './components/Login/Login';
 import { auth } from './firebase';
 import Signup from './components/Signup/Signup';
+import ProfileMenu from './components/ProfileMenu/ProfileMenu';
 
 function App() {
 
