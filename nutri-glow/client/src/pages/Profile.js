@@ -91,6 +91,7 @@ const getRecipes = async () => {
 // };
 
   return (
+<div>
   <div>
     <ProfileIntro />
   </div>
@@ -123,5 +124,6 @@ const getRecipes = async () => {
       </div>
     </div>
   </div>
+</div>
 )
 }
