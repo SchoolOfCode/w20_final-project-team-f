@@ -78,6 +78,22 @@ function Signup() {
                 <input ref={emailRef} type="email" />
                 <label className="signupLabel">Age</label>
                 <input ref={ageRef} type="number" />
+                <label className="signupLabel">What is your height?</label>
+                <select ref={stageRef} id="height" name="height">
+                    <option value="blank"></option>
+                    <option value="<4">Less than 4ft</option>
+                    <option value="4to5">0</option>
+                    <option value="5to5.5">Between 5ft and 5ft6</option>
+                    <option value="5.6and above">5ft7 and above</option>
+                </select>
+                <label className="signupLabel">What is your weight?</label>
+                <select ref={stageRef} id="height" name="height">
+                    <option value="blank"></option>
+                    <option value="60-89">60-89kg</option>
+                    <option value="90-119">90-119kg</option>
+                    <option value="120-300">100-300kg</option>
+                    <option value="300+">300kg+</option>
+                </select>
                 <label className="signupLabel">Are you?</label>
                 <select ref={stageRef} id="motherhood-stage" name="stage">
                     <option value="blank"></option>
@@ -91,6 +107,12 @@ function Signup() {
                     <option value="goal1">Goals</option>
                     <option value="goal2">Goals 2</option>
                     <option value="goal3">Goals 3</option>
+                </select>
+                <label className="signupLabel">Do you have any medical conditions?</label>
+                <select id="medical-conditions" name="medical-conditions">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="not-sure">I'm not sure</option>
                 </select>
                 <label className="signupLabel">Password</label>
                 <input ref={passwordRef} type="password" />
