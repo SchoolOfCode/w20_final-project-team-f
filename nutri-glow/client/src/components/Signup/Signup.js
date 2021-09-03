@@ -57,35 +57,36 @@ function Signup() {
 
 
     return (
-        <div className="signin">
-            <form action="">
-
-                <h1>Register</h1>
-
-                <label>Full Name</label>
+        <div className="signupForm">
+            <form className="signupForm2" action="">
+                <div className="signupHeader">
+                    <h1 id="signup">Sign up</h1>
+                    <h3 id="signupTag">It's free and easy</h3>
+                </div>
+                <label className="signupLabel">Full Name</label>
                 <input ref={fullNameRef} type="text" />
-                <label>Email</label>
+                <label className="signupLabel">Email</label>
                 <input ref={emailRef} type="email" />
-                <label>Age</label>
+                <label className="signupLabel">Age</label>
                 <input ref={ageRef} type="number" />
-                <label>Are you?</label>
+                <label className="signupLabel">Are you?</label>
                 <select ref={stageRef} id="motherhood-stage" name="stage">
                     <option value="blank"></option>
                     <option value="tryingToConceive">Trying to conceive</option>
                     <option value="pregnant">Currently pregnant</option>
                     <option value="mother">Mother within the last 5 years</option>
                 </select>
-                <label>Goals</label>
+                <label className="signupLabel">Goals</label>
                 <select ref={goalsRef} id="goals" name="goals">
                     <option value="blank"></option>
                     <option value="goal1">Goals</option>
                     <option value="goal2">Goals 2</option>
                     <option value="goal3">Goals 3</option>
                 </select>
-                <label>Password</label>
+                <label className="signupLabel">Password</label>
                 <input ref={passwordRef} type="password" />
-                <button onClick={signUp}>Sign Up </button>
-                <h6>Already have an account? <Link className="login-link" to="/login" className="btn btn-primary">Login</Link></h6>
+                <button id="createAccount" onClick={signUp}>Create Account </button>
+                <h6>Already have an account? <a href="/login" className="signupLink">Login</a></h6>
             </form>
 
         </div>
