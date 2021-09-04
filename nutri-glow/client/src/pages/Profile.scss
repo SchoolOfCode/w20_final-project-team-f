@@ -1,0 +1,33 @@
+@import '../global.scss';
+
+.wrapper{
+  width: 100vw;
+  @include flexCenter(column);
+  justify-content: center;
+
+  .recRecipes{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .recRecipesTitle{
+      color: $textColorPrimary;
+      margin-bottom: 40px;
+
+    }
+
+    .recRecipesCards{
+      box-shadow: 2px;
+      width: 90vw;
+      display: grid;
+      grid-gap: 25px;
+      grid-template: auto/repeat(auto-fit, minmax(150px, 1fr));
+      margin-bottom: 40px;
+    }
+
+    .recRecipesButton{
+
+    }
+
+  }
+
+}

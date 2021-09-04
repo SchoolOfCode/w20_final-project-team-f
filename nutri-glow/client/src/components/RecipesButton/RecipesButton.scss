@@ -1,0 +1,13 @@
+@import '../../global.scss';
+
+.recipesButton {
+  background-color: $boldOrange;
+  width: 200px;
+  height: 50px;
+  color: $backgroundColor;
+  font-size: regular;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  // border-radius: 30px;
+}
