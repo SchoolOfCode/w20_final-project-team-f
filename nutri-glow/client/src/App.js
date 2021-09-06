@@ -12,6 +12,7 @@ import Login from './components/Login/Login';
 import { auth } from './firebase';
 import Signup from './components/Signup/Signup';
 import ProfileMenu from './components/ProfileMenu/ProfileMenu';
+import PregTracker from './pages/PregTracker';
 
 function App() {
   // track user authentication status
@@ -60,6 +61,9 @@ function App() {
             <Recipes />
           </Route>
           <Route path="/profile" component={Profile} />
+          <Route path="/tracker">
+            <PregTracker />
+          </Route>
 
           <Route path="/myths1">
             <div className="rightMyths">
