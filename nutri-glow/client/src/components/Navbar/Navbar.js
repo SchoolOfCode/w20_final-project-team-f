@@ -53,12 +53,9 @@ export default function Navbar() {
       </nav>
       <Searchbar />
       {/* display login button if user isn't logged in and profile menu when logged in */}
-      <div onClick={setIsLoggedIn}>
+      <div onClick={handleProfileMenuDisplay}>
         {isLoggedIn ? <ProfileMenu /> : <LogInButton />}
       </div>
-
-
-
     </header>
   );
 }
