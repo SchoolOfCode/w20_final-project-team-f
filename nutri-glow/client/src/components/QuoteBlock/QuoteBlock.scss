@@ -1,40 +1,39 @@
 @import '../../global.scss';
 
-.quoteBlockContainer{
-    width: 100vw;
-    height: 250px;
-    background-color: $backgroundForm;
-    @include flexCenter(column);
-    overflow: hidden;
+.quoteBlockContainer {
+  width: 100vw;
+  height: 250px;
+  background-color: $backgroundForm;
+  @include flexCenter(column);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+
+  .quoteBlockLeft {
     display: flex;
-    flex-direction: row;
+    flex: 0.15;
+    overflow: hidden;
 
-    .quoteBlockLeft{
-        display: flex;
-        flex: 0.15;
-        overflow: hidden;
+    .quoteBlockImage {
+      height: 150px;
+      //   width: 100%;
+    }
+  }
 
-        .quoteBlockImage{
-            height: 150px;
-        };
+  .quoteBlockRight {
+    display: flex;
+    flex: 0.85;
+    overflow: hidden;
+    margin: 50px;
 
+    .quoteText {
+      color: $textColorPrimary;
+      text-align: left;
     }
 
-    .quoteBlockRight{
-        display: flex;
-        flex: 0.85;
-        overflow: hidden;
-        margin: 50px;
-        
-
-        .quoteText{
-            color: $textColorPrimary;
-            text-align: left;
-        };
-
-        .quoteAuthor{
-            color: $textColorPrimary;
-            text-align: right;
-        }
+    .quoteAuthor {
+      color: $textColorPrimary;
+      text-align: right;
     }
+  }
 }
