@@ -111,6 +111,12 @@
           .buttonForm {
             margin-top: 10px;
             margin-bottom: 10px;
+            border: $boldOrange;
+            background-color: $boldOrange;
+            color: $backgroundColor;
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
           }
 
           h4 {
@@ -138,17 +144,3 @@
     }
   }
 }
-
-// .alreadyHaveAccount{
-//     padding: 500px;
-// }
-// $boldOrange: #ff8934;
-// $darkBrown: #875c35;
-// $backgroundColor: #e5e5e5;
-// $backgroundForm: #fff5ed;
-// $textColorPrimary: #674e3b;
-// $textColorSecondary: #ca8f62;
-// $smallText: #b0a297;
-// $mediumText: #958678;
-// $accentColor: #a7c6c7;
-// $buttonsActive: #efa72b;
