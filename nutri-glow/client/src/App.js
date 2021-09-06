@@ -14,31 +14,29 @@ import Signup from './components/Signup/Signup';
 import ProfileMenu from './components/ProfileMenu/ProfileMenu';
 
 function App() {
-
   // track user authentication status
   // user authentication status determines if profile page is displayed
 
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       const user = {
         uid: userAuth?.uid,
-        email: userAuth?.email
-      }
+        email: userAuth?.email,
+      };
       if (userAuth) {
-        console.log(userAuth)
-        setUser(user)
+        console.log(userAuth);
+        setUser(user);
       } else {
-        setUser(null)
+        setUser(null);
       }
-    })
-    return unsubscribe
-  }, [])
+    });
+    return unsubscribe;
+  }, []);
 
   return (
-
-    <div>
+    <div className="container">
       <Router>
         <nav>
           <Navbar />
@@ -48,12 +46,12 @@ function App() {
             <Home />
           </Route>
           <Route path="/login">
-            <div className="container">
+            <div className="containerLogin">
               {user ? <Profile /> : <Login />}
             </div>
           </Route>
           <Route path="/signup">
-            <div className="container">
+            <div className="containerSignup">
               {user ? <Profile /> : <Signup />}
             </div>
           </Route>
@@ -84,13 +82,8 @@ function App() {
               ))}
             </div>
           </Route>
-
-
-
         </Switch>
       </Router>
-
-
     </div>
   );
 }
