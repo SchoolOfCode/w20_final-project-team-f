@@ -49,7 +49,7 @@ function App() {
           </Route>
           <Route path="/login">
             <div className="container">
-              {user ? <Profile /> : <Login />}
+              {user ? <Profile /> : <Login isLoggedIn={false} />}
             </div>
           </Route>
           <Route path="/signup">
@@ -84,13 +84,8 @@ function App() {
               ))}
             </div>
           </Route>
-
-
-
         </Switch>
       </Router>
-
-
     </div>
   );
 }

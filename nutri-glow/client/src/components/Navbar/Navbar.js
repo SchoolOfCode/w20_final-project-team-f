@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
+import { NavBarMenuList } from './NavBarMenuList';
 import Searchbar from '../Searchbar/Searchbar';
+import SignoutButton from '../SignoutButton/SignoutButton';
+import Signup from '../Signup/Signup';
 import Login from '../Login/Login';
-import { MenuList } from './MenuList';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
-
+import { set } from 'mongoose';
 
 
 
@@ -14,7 +16,7 @@ export default function Navbar() {
   const [clicked, setClicked] = useState(false);
 
   //mapping through the MenuList object to display link into the nav bar
-  const menuList = MenuList.map(({ url, title }, index) => {
+  const navBarMenuList = NavBarMenuList.map(({ url, title }, index) => {
     return (
       <li key={index}>
         <Link exact to={url} activeClassName="active">
@@ -41,18 +43,11 @@ export default function Navbar() {
         <div className="menuIcon" onClick={handleClick}>
           <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
-        <ul className={clicked ? 'menu' : 'menu close'}>{menuList}</ul>
+        <ul className={clicked ? 'menu' : 'menu close'}>{navBarMenuList}</ul>
 
       </nav>
       <Searchbar />
-
-
-
-      {/* login button component that links to the profile page for now */}
-      {/* <Link to="/profile">
-        <ProfileMenu />
-      </Link> */}
-
+      <ProfileMenu />
 
     </header>
   );

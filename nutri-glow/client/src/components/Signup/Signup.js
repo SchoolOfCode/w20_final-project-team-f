@@ -35,33 +35,11 @@ function Signup() {
             passwordRef.current.value
         ).then(user => {
             console.log(user)
-
-            // stateObj.dispatch({ type: ACTIONS.SET_USERID, payload: User.user.uid })
-
-            // db.child(User.user.uid).set({
-            //     displayFullName: fullNameRef.current.value,
-            //     age: ageRef.current.value,
-            //     stage: stageRef.current.value,
-            //     goals: goalsRef.current.value,
-
-            // })
-            // history.push("/profile");
-
         }).catch(err => {
             console.log(err)
         })
     }
-    const signIn = e => {
-        e.preventDefault();
-        auth.signInWithEmailAndPassword(
-            emailRef.current.value,
-            passwordRef.current.value
-        ).then(user => {
-            console.log(user)
-        }).catch(err => {
-            console.log(err)
-        })
-    }
+
 
     // return form to capture user sign up details
 
