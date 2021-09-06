@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { auth } from '../../firebase';
-import './Login.scss'
+import './LoginForm.scss'
 import Signup from '../Signup/Signup'
 import { Link } from 'react-router-dom'
 import LogInButton from '../LoginButton/LoginButton';

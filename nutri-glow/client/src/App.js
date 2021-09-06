@@ -8,7 +8,7 @@ import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 import ArticleCard from './components/ArticleCard/ArticleCard';
 import { myths1, nutrition1, foods1 } from '././data';
-import Login from './components/Login/Login';
+import Login from './components/LoginForm/LoginForm';
 import { auth } from './firebase';
 import Signup from './components/Signup/Signup';
 import ProfileMenu from './components/ProfileMenu/ProfileMenu';
@@ -62,7 +62,6 @@ function App() {
             <Recipes />
           </Route>
           <Route path="/profile" component={Profile} />
-
           <Route path="/myths1">
             <div className="rightMyths">
               {myths1.map((data) => (
