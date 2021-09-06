@@ -3,17 +3,22 @@ import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import { NavBarMenuList } from './NavBarMenuList';
 import Searchbar from '../Searchbar/Searchbar';
-import SignoutButton from '../SignoutButton/SignoutButton';
-import Signup from '../Signup/Signup';
-import Login from '../Login/Login';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
-import { set } from 'mongoose';
+import LogInButton from '../LoginButton/LoginButton';
 
 
 
 export default function Navbar() {
   //state for the hamburger menu bars
   const [clicked, setClicked] = useState(false);
+  // state for login or profile menu display
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleProfileMenuDisplay = () => {
+    setIsLoggedIn(true);
+  };
+
+
 
   //mapping through the MenuList object to display link into the nav bar
   const navBarMenuList = NavBarMenuList.map(({ url, title }, index) => {
@@ -47,7 +52,12 @@ export default function Navbar() {
 
       </nav>
       <Searchbar />
-      <ProfileMenu />
+      {/* display login button if user isn't logged in and profile menu when logged in */}
+      <div onClick={setIsLoggedIn}>
+        {isLoggedIn ? <ProfileMenu /> : <LogInButton />}
+      </div>
+
+
 
     </header>
   );

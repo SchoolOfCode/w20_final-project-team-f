@@ -2,7 +2,8 @@ import { React, useState } from 'react'
 import { auth } from '../../firebase';
 import { Link } from 'react-router-dom';
 import './ProfileMenu.scss';
-import { Menu, MenuItem } from '@material-ui/core';
+import { Menu, MenuItem, Avatar } from '@material-ui/core';
+import AccountCircleSharpIcon from '@material-ui/icons/AccountCircle'
 
 import "./ProfileMenu.scss"
 
@@ -25,15 +26,16 @@ const ProfileMenu = () => {
         setAnchorEl(null);
     }
 
-
-
     return (
 
         <div className="profileMenu">
 
-            <button onClick={handleOpenProfileMenu} aria-controls="profile-menu">Profile</button>
 
-            <Menu id="profile-menu" onClose={handleCloseProfileMenu} anchorEl={anchorEl} open={Boolean(anchorEl)} >
+            <Avatar alt="Woman Avatar" src="/assets/princess.jpg" onClick={handleOpenProfileMenu} aria-controls="profile-menu" />
+            {/* <AccountCircleSharpIcon  ></AccountCircleSharpIcon> */}
+            {/* <button >Profile</button> */}
+
+            <Menu style={{ marginTop: '50px' }} id="profile-menu" onClose={handleCloseProfileMenu} anchorEl={anchorEl} open={Boolean(anchorEl)} >
                 <MenuItem onClick={handleCloseProfileMenu}>My Profile</MenuItem>
                 <MenuItem onClick={handleCloseProfileMenu}>Settings</MenuItem>
                 <MenuItem onClick={handleCloseProfileMenu}>Contact</MenuItem>
