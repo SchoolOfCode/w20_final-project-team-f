@@ -13,4 +13,8 @@ export const MenuList = [
     title: 'Recipes',
     url: '/recipes',
   },
+  {
+    title: 'Pregnancy Tracker',
+    url: '/tracker',
+  },
 ];

@@ -8,6 +8,7 @@ import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 import ArticleCard from './components/ArticleCard/ArticleCard';
 import { myths1, nutrition1, foods1 } from '././data';
+import PregTracker from './pages/PregTracker';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             <Recipes />
           </Route>
           <Route path="/profile" component={Profile} />
+          <Route path="/tracker">
+            <PregTracker />
+          </Route>
           <Route path="/myths1">
             <div className="rightMyths">
               {myths1.map((data) => (
