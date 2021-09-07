@@ -1,4 +1,7 @@
 import React from 'react';
+import { auth } from '../firebase';
+import ProfileMenu from '../components/ProfileMenu/ProfileMenu';
+import SignoutButton from '../components/SignoutButton/SignoutButton';
 import ProfileIntro from '../components/ProfileIntro/ProfileIntro';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -67,5 +70,8 @@ export default function Profile() {
         </div>
       </div>
     </div>
+
   );
 }
+
+export default Profile;

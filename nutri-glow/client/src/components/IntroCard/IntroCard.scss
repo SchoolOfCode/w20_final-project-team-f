@@ -26,71 +26,70 @@
         justify-content: space-between;
         padding: 30px 0 30px 40px;
       }
-    }
+      .title {
+        h1 {
+          color: $textColorPrimary;
+          font-weight: fontWeight(bold);
+          font-size: 4.5rem;
 
-    .title {
-      h1 {
-        color: $textColorPrimary;
-        font-weight: fontWeight(bold);
-        font-size: 4.5rem;
+          @include mobile {
+            font-size: fontSize(regular);
+          }
+        }
 
-        @include mobile {
-          font-size: fontSize(regular);
+        h2 {
+          color: $textColorSecondary;
+          font-weight: fontWeight(bold);
+          font-size: 4rem;
+
+          @include mobile {
+            font-size: fontSize(regular);
+          }
         }
       }
 
-      h2 {
-        color: $textColorSecondary;
-        font-weight: fontWeight(bold);
-        font-size: 4rem;
-
+      h3 {
+        color: $smallText;
+        display: block;
+        font-size: fontSize(large);
+        font-weight: fontWeight(medium);
         @include mobile {
-          font-size: fontSize(regular);
+          font-size: fontSize(small);
+          margin: 10px 10px 10px 0;
         }
       }
-    }
-
-    h3 {
-      color: $smallText;
-      display: block;
-      font-size: fontSize(large);
-      font-weight: fontWeight(medium);
-      @include mobile {
-        font-size: fontSize(small);
-        margin: 10px 10px 10px 0;
-      }
-    }
-    button {
-      border: none;
-      width: 200px;
-      height: 40px;
-      font-weight: fontWeight(medium);
-      font-size: fontSize(medium);
-
-      @include mobile {
-        font-size: fontSize(small);
-        width: 100px;
-      }
-    }
-
-    .community {
-      @include flexCenter(row);
-      justify-content: space-between;
-      padding: 0 10px;
-
-      @include mobile {
-        margin: 10px 10px 0 0;
-      }
-
-      .imgHome {
+      button {
+        border: none;
         width: 200px;
-        height: 70px;
+        height: 40px;
+        font-weight: fontWeight(medium);
+        font-size: fontSize(medium);
+
+        @include mobile {
+          font-size: fontSize(small);
+          width: 100px;
+        }
       }
 
-      h4 {
-        color: $textColorPrimary;
-        padding-left: 20px;
-        font-weight: fontWeight(regular);
+      .community {
+        @include flexCenter(row);
+        justify-content: space-between;
+        padding: 0 10px;
+
+        @include mobile {
+          margin: 10px 10px 0 0;
+        }
+
+        .imgHome {
+          width: 200px;
+          height: 70px;
+        }
+
+        h4 {
+          color: $textColorPrimary;
+          padding-left: 20px;
+          font-weight: fontWeight(regular);
+        }
       }
     }
   }
