@@ -1,0 +1,22 @@
+@import '../../global.scss';
+
+.blockContainer {
+  background-color: $backgroundForm;
+  width: 100vw;
+  height: 250px;
+  margin-top: 20px;
+
+  .blockWrapper {
+    margin: 50px;
+    h1 {
+      color: $boldOrange;
+      font-size: fontSize(medium);
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      color: $textColorPrimary;
+      font-size: fontSize(small);
+    }
+  }
+}
