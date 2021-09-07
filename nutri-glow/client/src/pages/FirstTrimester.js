@@ -31,7 +31,7 @@ export default function FirstTrimester() {
       <BabyInfo
         title="Your baby within the first trimester"
         desc="No, there’s no baby or embryo in sight. At least not yet — just an anxious egg and a whole bunch of eager sperm at their respective starting gates.But in weeks 1 and 2 of pregnancy — the week of and immediately following your last menstrual period — your body is working hard to gear up for the event that paves the way for baby: the big O, or ovulation.Right now, your uterus has begun preparing for the arrival of a fertilized egg, though you won't know for sure if that egg has successfully matched up with sperm until next month."
-        img="/assets/block.png"
+        img="/assets/yourBaby.png"
       />
     </div>
   );
