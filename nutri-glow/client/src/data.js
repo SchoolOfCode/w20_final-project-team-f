@@ -519,3 +519,26 @@ export const trimesterCard = [
     url: '/trimester3',
   },
 ];
+
+export const tipsCard = [
+  {
+    id: 1,
+    img: '/assets/tips1.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 2,
+    img: '/assets/tips2.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 3,
+    img: '/assets/tips3.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 4,
+    img: '/assets/tips4.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+];
