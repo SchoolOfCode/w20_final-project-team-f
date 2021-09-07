@@ -4,22 +4,22 @@
 
 import firebase from 'firebase';
 
-var firebaseConfig = {
-  apiKey: 'AIzaSyAybahzXmnkcg4e08M7nSF_cyHiJWCUrLM',
-  authDomain: 'nutriglow-5ac08.firebaseapp.com',
-  projectId: 'nutriglow-5ac08',
-  storageBucket: 'nutriglow-5ac08.appspot.com',
-  messagingSenderId: '822565803546',
-  appId: '1:822565803546:web:9bb336d62d8fa207f2a3a3',
+const firebaseConfig = {
+  apiKey: "AIzaSyBeBPo1KJpNnGYpr9FOhdWEDynNEJEfteY",
+  authDomain: "aminascode-f3ebd.firebaseapp.com",
+  projectId: "aminascode-f3ebd",
+  storageBucket: "aminascode-f3ebd.appspot.com",
+  messagingSenderId: "408245361435",
+  appId: "1:408245361435:web:74ae67a06470e178e811be",
+  measurementId: "G-3QP6PH58M6"
 };
 // Initialize Firebase
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
-// // access to firebase database
+// get database from firebase store
+// const database = firebase.firestore()
 
-const db = firebase.firestore();
-
-// // specific authentication instance
 const auth = firebase.auth();
-export { auth };
-export default db;
+const db = firebase.database().ref("profile");
+export {auth,db}

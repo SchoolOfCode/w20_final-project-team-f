@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { auth } from '../../firebase';
+import { auth ,db } from "../../firebase";
+import { useHistory } from "react-router-dom";
 // import { db } from 'firebase'
 
 import './Signup.scss';
+
 
 // testing early Hook problem/error as per React docs
 require('react-dom');
@@ -17,15 +19,35 @@ console.log(window.React1 === window.React2);
 
 function Signup() {
   // capture user input value for later use
+
+  let history = useHistory();
+
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const fullNameRef = useRef(null);
   const ageRef = useRef(null);
   const stageRef = useRef(null);
   const goalsRef = useRef(null);
-
+  const heightRef= useRef(null)
+  const weightRef= useRef(null)
+  const medicalRef= useRef(null)
   const signUp = (e) => {
     e.preventDefault();
+
+
+    console.log(
+      emailRef.current.value, 
+      passwordRef.current.value,
+      fullNameRef.current.value,
+      ageRef.current.value,
+      stageRef.current.value,
+      goalsRef.current.value,
+      heightRef.current.value,
+      weightRef.current.value,
+      medicalRef.current.value
+
+      )
+
     auth
       .createUserWithEmailAndPassword(
         emailRef.current.value,
@@ -34,35 +56,39 @@ function Signup() {
       .then((user) => {
         console.log(user);
 
-        // stateObj.dispatch({ type: ACTIONS.SET_USERID, payload: User.user.uid })
-
-        // db.child(User.user.uid).set({
-        //     displayFullName: fullNameRef.current.value,
-        //     age: ageRef.current.value,
-        //     stage: stageRef.current.value,
-        //     goals: goalsRef.current.value,
-
-        // })
-        // history.push("/profile");
+        db.child(user.user.uid).set({
+            displayFullName: fullNameRef.current.value,
+            age: ageRef.current.value,
+            stage: stageRef.current.value,
+            goals: goalsRef.current.value,
+            height: heightRef.current.value,
+            weight: weightRef.current.value,
+            medical:medicalRef.current.value
+        })
+        history.push("/profile");
       })
       .catch((err) => {
         console.log(err);
       });
   };
-  const signIn = (e) => {
-    e.preventDefault();
-    auth
-      .signInWithEmailAndPassword(
-        emailRef.current.value,
-        passwordRef.current.value
-      )
-      .then((user) => {
-        console.log(user);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+
+
+
+  
+  // const signIn = (e) => {
+  //   e.preventDefault();
+  //   auth
+  //     .signInWithEmailAndPassword(
+  //       emailRef.current.value,
+  //       passwordRef.current.value
+  //     )
+  //     .then((user) => {
+  //       console.log(user);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
 
   // return form to capture user sign up details
 
@@ -93,7 +119,7 @@ function Signup() {
               <div className="bodyDetails">
                 <div className="heightForm">
                   <label className="signupLabel">What is your height?</label>
-                  <select ref={stageRef} id="height" name="height">
+                  <select ref={heightRef} id="height" name="height">
                     <option value="blank"></option>
                     <option value="<4">Less than 4ft</option>
                     <option value="4to5">0</option>
@@ -103,7 +129,7 @@ function Signup() {
                 </div>
                 <div className="weightForm">
                   <label className="signupLabel">What is your weight?</label>
-                  <select ref={stageRef} id="height" name="height">
+                  <select ref={weightRef} id="height" name="height">
                     <option value="blank"></option>
                     <option value="60-89">60-89kg</option>
                     <option value="90-119">90-119kg</option>
@@ -137,7 +163,7 @@ function Signup() {
               <label className="signupLabel">
                 Do you have any medical conditions?
               </label>
-              <select id="medical-conditions" name="medical-conditions">
+              <select ref={medicalRef} id="medical-conditions" name="medical-conditions">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
                 <option value="not-sure">I'm not sure</option>

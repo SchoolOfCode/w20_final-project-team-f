@@ -118,6 +118,8 @@ export const ProfileCard = [
   {
     icon: <RiMentalHealthFill />,
     quest: 'How is your mental health today?',
+  
+
     slider: <RangeSlider />,
   },
   {

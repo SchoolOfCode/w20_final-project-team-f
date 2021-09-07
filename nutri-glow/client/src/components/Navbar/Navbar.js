@@ -5,6 +5,7 @@ import Searchbar from '../Searchbar/Searchbar';
 import Login from '../Login/Login';
 import { MenuList } from './MenuList';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
+import { auth } from '../../firebase';
 
 
 
@@ -38,6 +39,7 @@ export default function Navbar() {
         </Link>
       </div>
       <nav>
+        <button onClick={()=>auth.signOut()}>HELLO</button>
         <div className="menuIcon" onClick={handleClick}>
           <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>

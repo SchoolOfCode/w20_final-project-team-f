@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import IntroCard from '../components/IntroCard/IntroCard';
 import StartButton from '../components/StartButton/StartButton';
+import { auth, db } from '../firebase';
 
 export default function Home() {
+
+
+  
+
+
+
   return (
     <div>
       <IntroCard
