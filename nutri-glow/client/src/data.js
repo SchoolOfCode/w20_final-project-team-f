@@ -542,3 +542,30 @@ export const tipsCard = [
     desc: 'Learn more about the first months of pregnancy.',
   },
 ];
+
+export const symptomsCard = [
+  {
+    id: 1,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 2,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 3,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 4,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+];

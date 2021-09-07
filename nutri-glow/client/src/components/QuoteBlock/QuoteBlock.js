@@ -5,7 +5,7 @@ const QuoteBlock = (props) => {
   return (
     <div className="quoteBlockContainer">
       <div className="quoteBlockLeft">
-        <img className="quoteBlockImage" src="/assets/pregImge.png" alt="" />
+        <img className="quoteBlockImage" src="/assets/quote.png" alt="" />
       </div>
       <div className="quoteBlockRight">
         <h2 className="quoteText">{props.text}</h2>

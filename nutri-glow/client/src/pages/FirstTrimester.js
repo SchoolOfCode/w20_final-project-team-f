@@ -5,6 +5,7 @@ import StartButton from '../components/StartButton/StartButton';
 import TrackerBlock from '../components/TrackerBlock/TrackerBlock';
 import BabyInfo from '../components/BabyInfo/BabyInfo';
 import Tips from '../components/Tips/Tips';
+import Symptoms from '../components/Symptoms/Symptoms';
 
 export default function FirstTrimester() {
   return (
@@ -36,6 +37,8 @@ export default function FirstTrimester() {
       />
 
       <Tips />
+
+      <Symptoms />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import TrackerBlock from '../components/TrackerBlock/TrackerBlock';
 import TrackerCategories from '../components/TrackerCategories/TrackerCategories';
 import TrackerIntro from '../components/TrackerIntro/TrackerIntro';
+import QuoteBlock from '../components/QuoteBlock/QuoteBlock';
 
 export default function PregTracker() {
   return (
@@ -26,6 +27,10 @@ export default function PregTracker() {
       />
 
       <TrackerCategories />
+      <QuoteBlock
+        text='"In giving birth to our babies, we may find that we give birth to new possibilities within ourselves."'
+        author="- Myla and Jon Kabat-Zinn"
+      />
     </div>
   );
 }
