@@ -1,0 +1,63 @@
+@import '../../global.scss';
+
+.tipsIntro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: #f5f1ed;
+
+  .tipsTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    h1 {
+      color: $textColorPrimary;
+      font-weight: fontWeight(bold);
+      font-size: 3.5rem;
+    }
+  }
+  .tipsCardContainer {
+    width: 100%;
+    @include flexJustify(center);
+    // flex-wrap: wrap;
+    // margin: 30px;
+
+    .itemTipsContainer {
+      width: 250px;
+      height: 300px;
+      border-radius: 20px;
+      border: 5px solid rbg(240, 234, 234);
+      box-shadow: 0px 4px 15px rgba(103, 78, 59, 0.25);
+      background-color: white;
+      margin: 20px 20px;
+      @include flexJustify(center);
+      flex-direction: column;
+      //   position: relative;
+
+      .tipsContainerImage {
+        flex: 0.6;
+        width: 50%;
+        height: 40%;
+        @include flexJustify(center);
+
+        .tipsImage {
+          width: 100%;
+        }
+      }
+      .textTipsContainer {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        background-color: $backgroundForm;
+        flex: 0.4;
+
+        p {
+          color: $textColorPrimary;
+          font-size: fontSize(regular);
+          //   position: absolute;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

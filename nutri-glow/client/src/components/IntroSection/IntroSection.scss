@@ -29,6 +29,16 @@
           color: $textColorPrimary;
         }
       }
+
+      .buttonSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .introSectionBack {
+          margin-left: 20px;
+        }
+      }
     }
   }
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import './Tips.scss';
-import { tipsCard1 } from '../../data';
+import './TipsSecond.scss';
+import { tipsCard2 } from '../../data';
 
-export default function Tips() {
+export default function TipsSecond() {
   return (
     <div className="tipsIntro">
       <div className="tipsTitle">
         <h1>Useful tips during this trimester</h1>
       </div>
       <div className="tipsCardContainer">
-        {tipsCard1.map((data) => (
+        {tipsCard2.map((data) => (
           <div className="itemTipsContainer">
             <div className="tipsContainerImage">
               <img className="tipsImage" src={data.img} alt="" />

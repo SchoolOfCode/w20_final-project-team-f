@@ -520,7 +520,7 @@ export const trimesterCard = [
   },
 ];
 
-export const tipsCard = [
+export const tipsCard1 = [
   {
     id: 1,
     img: '/assets/tips1.png',
@@ -543,7 +543,107 @@ export const tipsCard = [
   },
 ];
 
-export const symptomsCard = [
+export const tipsCard2 = [
+  {
+    id: 1,
+    img: '/assets/tips1.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 2,
+    img: '/assets/tips2.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 3,
+    img: '/assets/tips3.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 4,
+    img: '/assets/tips4.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+];
+
+export const tipsCard3 = [
+  {
+    id: 1,
+    img: '/assets/tips1.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 2,
+    img: '/assets/tips2.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 3,
+    img: '/assets/tips3.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+  {
+    id: 4,
+    img: '/assets/tips4.png',
+    desc: 'Learn more about the first months of pregnancy.',
+  },
+];
+
+export const symptomsCard1 = [
+  {
+    id: 1,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 2,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 3,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 4,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+];
+
+export const symptomsCard2 = [
+  {
+    id: 1,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 2,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 3,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+  {
+    id: 4,
+    title: 'Morning sickness',
+    desc: 'Learn more about the first months of pregnancy.',
+    img: '/assets/symptopms.png',
+  },
+];
+
+export const symptomsCard3 = [
   {
     id: 1,
     title: 'Morning sickness',

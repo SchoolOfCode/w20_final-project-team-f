@@ -20,6 +20,8 @@ import {
 } from '././data';
 import PregTracker from './pages/PregTracker';
 import FirstTrimester from './pages/FirstTrimester';
+import SecondTrimester from './pages/SecondTrimester';
+import ThirdTrimester from './pages/ThirdTrimester';
 
 function App() {
   return (
@@ -105,6 +107,12 @@ function App() {
           </Route>
           <Route parth="/trimester1">
             <FirstTrimester />
+          </Route>
+          <Route parth="/trimester2">
+            <SecondTrimester />
+          </Route>
+          <Route parth="/trimester3">
+            <ThirdTrimester />
           </Route>
         </Switch>
       </Router>

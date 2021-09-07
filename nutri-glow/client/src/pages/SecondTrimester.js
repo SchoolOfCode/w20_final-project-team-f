@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import StartButton from '../components/StartButton/StartButton';
 import TrackerBlock from '../components/TrackerBlock/TrackerBlock';
 import BabyInfo from '../components/BabyInfo/BabyInfo';
-import Tips from '../components/Tips/Tips';
-import Symptoms from '../components/Symptoms/Symptoms';
+import SymptomsSecond from '../components/SymptonsSecond/SymptomsSecond';
+import TipsSecond from '../components/TipsSecond/TipsSecond';
 
-export default function FirstTrimester() {
+export default function SecondTrimester() {
   return (
     <div>
       <IntroSection
@@ -18,11 +18,6 @@ export default function FirstTrimester() {
         button={
           <Link to={'/signup'}>
             <StartButton text={'Create Account'} />
-          </Link>
-        }
-        back={
-          <Link to={'/tracker'}>
-            <StartButton text={'Back to Tracker'} />
           </Link>
         }
       />
@@ -41,9 +36,9 @@ export default function FirstTrimester() {
         img="/assets/yourBaby.png"
       />
 
-      <Tips />
+      <TipsSecond />
 
-      <Symptoms />
+      <SymptomsSecond />
     </div>
   );
 }

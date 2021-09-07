@@ -1,0 +1,66 @@
+@import '../../global.scss';
+
+.symptomsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  .symptomsTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    h1 {
+      color: $textColorPrimary;
+      font-weight: fontWeight(bold);
+      font-size: 3.5rem;
+    }
+  }
+  .symptomsCardContainer {
+    width: 100%;
+    @include flexJustify(center);
+    flex-wrap: wrap;
+    margin: 30px;
+    width: 90vw;
+    display: grid;
+    grid-gap: 30px;
+    grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
+    margin-bottom: 40px;
+
+    .itemSymptomsContainer {
+      border-radius: 20px;
+      border: 5px solid rbg(240, 234, 234);
+      box-shadow: 0px 4px 15px rgba(103, 78, 59, 0.25);
+      background-color: white;
+      margin: 20px 20px;
+      @include flexCenter(row);
+      overflow: hidden;
+      display: flex;
+
+      .symptomsContainerImage {
+        flex: 0.5;
+        display: flex;
+
+        .symptomsImage {
+          height: 100%;
+        }
+      }
+      .textSymptomsContainer {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        flex: 0.5;
+        flex-direction: column;
+
+        h4 {
+          color: $textColorPrimary;
+          font-size: fontSize(regular);
+        }
+        p {
+          color: $textColorSecondary;
+          font-size: fontSize(small);
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Symptoms.scss';
-import { symptomsCard } from '../../data';
+import { symptomsCard1 } from '../../data';
 
 export default function Symptoms() {
   return (
@@ -9,7 +9,7 @@ export default function Symptoms() {
         <h1>Symptoms during this stage</h1>
       </div>
       <div className="symptomsCardContainer">
-        {symptomsCard.map((data) => (
+        {symptomsCard1.map((data) => (
           <div className="itemSymptomsContainer">
             <div className="symptomsContainerImage">
               <img className="symptomsImage" src={data.img} alt="" />
