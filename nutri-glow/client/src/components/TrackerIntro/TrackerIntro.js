@@ -19,7 +19,7 @@ export default function TrackerIntro(props) {
       </div>
       <div className="rightTracker">
         <div className="imgTracker">
-          <img src="/assets/tracker1.png" alt="tracker"></img>
+          <img src={props.img} alt="tracker"></img>
         </div>
       </div>
     </div>

@@ -19,6 +19,7 @@ import {
   nutrition3,
 } from '././data';
 import PregTracker from './pages/PregTracker';
+import FirstTrimester from './pages/FirstTrimester';
 
 function App() {
   return (
@@ -101,6 +102,9 @@ function App() {
                 <ArticleCard data={data} />
               ))}
             </div>
+          </Route>
+          <Route parth="/trimester1">
+            <FirstTrimester />
           </Route>
         </Switch>
       </Router>
