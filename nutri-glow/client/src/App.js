@@ -7,7 +7,17 @@ import Articles from './pages/Articles';
 import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 import ArticleCard from './components/ArticleCard/ArticleCard';
-import { myths1, nutrition1, foods1 } from '././data';
+import {
+  myths1,
+  nutrition1,
+  foods1,
+  myths2,
+  foods2,
+  nutrition2,
+  myths3,
+  foods3,
+  nutrition3,
+} from '././data';
 import PregTracker from './pages/PregTracker';
 
 function App() {
@@ -46,6 +56,48 @@ function App() {
           <Route path="/foods1">
             <div className="rightFoods">
               {foods1.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/myths2">
+            <div className="rightMyths">
+              {myths2.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/nutrition2">
+            <div className="rightMyths">
+              {nutrition2.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/foods2">
+            <div className="rightMyths">
+              {foods2.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/myths3">
+            <div className="rightMyths">
+              {myths3.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/nutrition3">
+            <div className="rightMyths">
+              {nutrition3.map((data) => (
+                <ArticleCard data={data} />
+              ))}
+            </div>
+          </Route>
+          <Route path="/foods3">
+            <div className="rightMyths">
+              {foods3.map((data) => (
                 <ArticleCard data={data} />
               ))}
             </div>
