@@ -1,16 +1,104 @@
 @import '../../global.scss';
 
-.loginButton {
-  background-color: $darkBrown;
-  width: 90px;
-  height: 30px;
-  color: $backgroundColor;
-  border: none;
-  cursor: pointer;
-  // border-radius: 30px;
+// .loginButton {
+//   background-color: $darkBrown;
+//   width: 90px;
+//   height: 30px;
+//   color: $backgroundColor;
+//   border: none;
+//   cursor: pointer;
+//   // border-radius: 30px;
 
-  @include mobile {
-    width: 50px;
-    margin-left: 50px;
+//   @include mobile {
+//     width: 50px;
+//     margin-left: 50px;
+//   }
+// }
+
+.loginContainer {
+  display: flex;
+  overflow: hidden;
+
+  .leftLogin {
+    flex: 0.5;
+
+    .loginWrapper {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 200px;
+      padding-top: 100px;
+
+      .loginHeader {
+        h1 {
+          color: $textColorPrimary;
+          font-size: 4rem;
+        }
+      }
+
+      .loginFormContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .loginForm {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .loginLabel {
+            color: $textColorPrimary;
+          }
+
+          .emailLogin {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+          }
+
+          .passwordLogin {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+          }
+
+          .loginButton {
+            border: $boldOrange;
+            background-color: $boldOrange;
+            color: $backgroundColor;
+            height: 30px;
+            width: 300px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: fontSize(regular);
+          }
+
+          h4 {
+            color: $textColorPrimary;
+
+            a {
+              color: $boldOrange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rightLogin {
+    flex: 0.5;
+
+    .loginImageContainer {
+      @include flexJustify(center);
+
+      .loginImage {
+        width: 80%;
+        height: 60%;
+      }
+    }
   }
 }

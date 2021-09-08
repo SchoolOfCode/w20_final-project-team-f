@@ -1,0 +1,146 @@
+@import '../../global.scss';
+
+.signupContainer {
+  display: flex;
+  overflow: hidden;
+
+  .leftForm {
+    flex: 0.5;
+    background-color: #f5f1ed;
+    margin-left: 30px;
+    overflow: hidden;
+    .formWrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 100px;
+
+      .signupHeader {
+        h1 {
+          color: $textColorPrimary;
+          font-weight: fontWeight(bold);
+          font-size: 4rem;
+        }
+
+        h2 {
+          color: $textColorSecondary;
+          font-weight: fontWeight(bold);
+          font-size: 3rem;
+        }
+      }
+
+      .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .signupForm {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .signupLabel {
+            color: $textColorPrimary;
+          }
+
+          select {
+            // background-color: $backgroundForm;
+          }
+
+          input {
+            // background-color: $backgroundForm;
+          }
+
+          .nameForm {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .details {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .emailForm {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .ageForm {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          .bodyDetails {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .heightForm {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .weightForm {
+              display: flex;
+              flex-direction: column;
+              margin-left: 30px;
+            }
+          }
+
+          .stages {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .pregStage {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .goalsForm {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          .buttonForm {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: $boldOrange;
+            background-color: $boldOrange;
+            color: $backgroundColor;
+            height: 30px;
+            width: 400px;
+            cursor: pointer;
+          }
+
+          h4 {
+            color: $textColorPrimary;
+            font-size: fontSize(regular);
+
+            a {
+              color: $boldOrange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rightContainer {
+    flex: 0.5;
+
+    .formImageContainer {
+      @include flexJustify(center);
+      .imageForm {
+        width: 80%;
+        height: 60%;
+      }
+    }
+  }
+}

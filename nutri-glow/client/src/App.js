@@ -1,5 +1,5 @@
 import './app.scss';
-import React from 'react';
+import { React, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
@@ -7,6 +7,7 @@ import Articles from './pages/Articles';
 import Recipes from './pages/Recipes';
 import Profile from './pages/Profile';
 import ArticleCard from './components/ArticleCard/ArticleCard';
+<<<<<<< HEAD
 import {
   myths1,
   nutrition1,
@@ -22,8 +23,36 @@ import PregTracker from './pages/PregTracker';
 import FirstTrimester from './pages/FirstTrimester';
 import SecondTrimester from './pages/SecondTrimester';
 import ThirdTrimester from './pages/ThirdTrimester';
+=======
+import { myths1, nutrition1, foods1 } from '././data';
+import Login from './components/Login/Login';
+import { auth } from './firebase';
+import Signup from './components/Signup/Signup';
+import ProfileMenu from './components/ProfileMenu/ProfileMenu';
+>>>>>>> master
 
 function App() {
+  // track user authentication status
+  // user authentication status determines if profile page is displayed
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+      const user = {
+        uid: userAuth?.uid,
+        email: userAuth?.email,
+      };
+      if (userAuth) {
+        console.log(userAuth);
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+    return unsubscribe;
+  }, []);
+
   return (
     <div className="container">
       <Router>
@@ -34,14 +63,28 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
+          <Route path="/login">
+            <div className="containerLogin">
+              {user ? <Profile /> : <Login />}
+            </div>
+          </Route>
+          <Route path="/signup">
+            <div className="containerSignup">
+              {user ? <Profile /> : <Signup />}
+            </div>
+          </Route>
           <Route path="/articles" component={Articles} />
           <Route path="/recipes">
             <Recipes />
           </Route>
           <Route path="/profile" component={Profile} />
+<<<<<<< HEAD
           <Route path="/tracker">
             <PregTracker />
           </Route>
+=======
+
+>>>>>>> master
           <Route path="/myths1">
             <div className="rightMyths">
               {myths1.map((data) => (
