@@ -1,0 +1,44 @@
+@import '../../global.scss';
+
+.blockContainer {
+  background-color: $backgroundForm;
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  padding-right: 50px;
+  display: flex;
+  overflow: hidden;
+
+  .leftblockContainer {
+    flex: 0.5;
+    .imgBlockContainer {
+      @include flexJustify(center);
+      .imgBlock {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+
+  .rightblockContainer {
+    flex: 0.5;
+    .blockWrapper {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h1 {
+        color: $boldOrange;
+        font-size: fontSize(medium);
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $textColorPrimary;
+        font-size: fontSize(small);
+      }
+    }
+  }
+}

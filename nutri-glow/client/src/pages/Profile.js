@@ -1,13 +1,17 @@
 import { React, useState, useEffect } from 'react';
 import { auth } from '../firebase';
-import ProfileMenu from '../components/ProfileMenu/ProfileMenu';
-import SignoutButton from '../components/SignoutButton/SignoutButton';
+// import ProfileMenu from '../components/ProfileMenu/ProfileMenu';
+// import SignoutButton from '../components/SignoutButton/SignoutButton';
 import ProfileIntro from '../components/ProfileIntro/ProfileIntro';
+
+import { useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
 import RecipesButton from '../components/RecipesButton/RecipesButton';
 import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';
 import QuoteBlock from '../components/QuoteBlock/QuoteBlock';
 import './Profile.scss';
+import CravingsSlider from '../components/CravingsSlider/CravingsSlider';
 
 export default function Profile() {
   const [mealType, setMealType] = useState('Dinner');
@@ -46,6 +50,7 @@ export default function Profile() {
             author="- Myla and Jon Kabat-Zinn"
           />
         </div>
+
         <div className="recRecipes">
           <h1 className="recRecipesTitle">
             Recommended <br /> recipes
@@ -68,6 +73,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <CravingsSlider />
     </div>
   );
 }

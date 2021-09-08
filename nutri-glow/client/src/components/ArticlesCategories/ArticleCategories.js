@@ -56,9 +56,13 @@ export default function ArticleCategories() {
       <div className="articleContainer">
         {data.map((data) => (
           <Link exact to={data.url}>
-            <div className="item">
-              <img src={data.img} alt="" />
-              <h3>{data.title}</h3>
+            <div className="itemArticleContainer">
+              <div className="articleContainerImage">
+                <img className="articleCardImage" src={data.img} alt="" />
+              </div>
+              <div className="textArticleContainer">
+                <h3>{data.title}</h3>
+              </div>
             </div>
           </Link>
         ))}

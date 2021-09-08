@@ -1,34 +1,31 @@
 @import '../../global.scss';
 
-.recipeCardAnchor{
+.recipeCardAnchor {
+  text-decoration: none;
 
-  .recipeCard{
+  .recipeCard {
     width: 100%;
     background-color: $backgroundForm;
-    @include flexCenter(column);
+    @include flexCenter(row);
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
 
-    .recipeCardLeft{
+    .recipeCardLeft {
       display: flex;
       flex: 0.5;
       overflow: hidden;
 
-      .recipeCardImg{
+      .recipeCardImg {
         height: 100%;
       }
-
     }
 
-    .recipeCardRight{
+    .recipeCardRight {
       display: flex;
       flex: 0.5;
       overflow: hidden;
 
-      .recipeCardData{
-
-        .recipeCardTitle{
+      .recipeCardData {
+        .recipeCardTitle {
           color: $textColorPrimary;
           margin: 0 0 0 20px;
           font-size: fontSize(regular);
@@ -36,11 +33,7 @@
           margin-bottom: 20px;
           text-decoration: none;
         }
-
       }
-
     }
-
   }
-
 }
