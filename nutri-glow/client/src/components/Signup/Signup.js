@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { RiNurseFill } from 'react-icons/ri';
 import { auth } from '../../firebase';
 // import { db } from 'firebase'
 
@@ -19,7 +20,8 @@ function Signup() {
   // capture user input value for later use
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const fullNameRef = useRef(null);
+  const firstNameRef = useRef(null);
+  const surnameRef = useRef(null);
   const ageRef = useRef(null);
   const stageRef = useRef(null);
   const goalsRef = useRef(null);
@@ -52,8 +54,12 @@ function Signup() {
           <div className="formContainer">
             <form action="" className="signupForm">
               <div className="nameForm">
-                <label className="signupLabel">Full Name</label>
-                <input ref={fullNameRef} type="text" />
+                <label className="signupLabel">First Name</label>
+                <input ref={firstNameRef} type="text" />
+              </div>
+              <div className="surnameForm">
+                <label className="signupLabel">Surname</label>
+                <input ref={surnameRef} type="text" />
               </div>
               <div className="details">
                 <div className="emailForm">
@@ -71,7 +77,7 @@ function Signup() {
                   <select ref={stageRef} id="height" name="height">
                     <option value="blank"></option>
                     <option value="<4">Less than 4ft</option>
-                    <option value="4to5">0</option>
+                    <option value="4to5">Between 4ft and 5ft</option>
                     <option value="5to5.5">Between 5ft and 5ft6</option>
                     <option value="5.6and above">5ft7 and above</option>
                   </select>
@@ -89,7 +95,9 @@ function Signup() {
               </div>
               <div className="stages">
                 <div className="pregStage">
-                  <label className="signupLabel">Stage of pregnancy</label>
+                  <label className="signupLabel">
+                    Current stage of journey
+                  </label>
                   <select ref={stageRef} id="motherhood-stage" name="stage">
                     <option value="blank"></option>
                     <option value="tryingToConceive">Trying to conceive</option>
@@ -103,9 +111,13 @@ function Signup() {
                   <label className="signupLabel">Goals</label>
                   <select ref={goalsRef} id="goals" name="goals">
                     <option value="blank"></option>
-                    <option value="goal1">Goals</option>
-                    <option value="goal2">Goals 2</option>
-                    <option value="goal3">Goals 3</option>
+                    <option value="goal1">
+                      I want to get pregnancy health and nutrition advice
+                    </option>
+                    <option value="goal2">I want to lose weight</option>
+                    <option value="goal3">
+                      I want to connect with other mothers
+                    </option>
                   </select>
                 </div>
               </div>
@@ -113,6 +125,7 @@ function Signup() {
                 Do you have any medical conditions?
               </label>
               <select id="medical-conditions" name="medical-conditions">
+                <option value="blank"></option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
                 <option value="not-sure">I'm not sure</option>

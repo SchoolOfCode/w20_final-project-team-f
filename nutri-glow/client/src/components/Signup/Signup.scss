@@ -16,7 +16,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding-left: 100px;
+      padding-left: 30px;
 
       .signupHeader {
         h1 {
@@ -60,6 +60,11 @@
             flex-direction: column;
           }
 
+          .surnameForm {
+            display: flex;
+            flex-direction: column;
+          }
+
           .details {
             display: flex;
             flex-direction: row;
@@ -95,7 +100,7 @@
           .stages {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             .pregStage {
               display: flex;
