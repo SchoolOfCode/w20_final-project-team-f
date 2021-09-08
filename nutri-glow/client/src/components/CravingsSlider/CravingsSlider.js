@@ -33,9 +33,7 @@ export default function CravingsSlider() {
             <div className="cravingsContainer">
               <div className="itemCravings">
                 <div className="leftCravingsContainer">
-                  <div className="cravingImgContainer">
-                    <img src={data.img} alt="" className="cravingsImage" />
-                  </div>
+                  <img src={data.img} alt="" className="cravingsImage" />
                 </div>
                 <div className="rightCravings">
                   <div className="textCravings">
