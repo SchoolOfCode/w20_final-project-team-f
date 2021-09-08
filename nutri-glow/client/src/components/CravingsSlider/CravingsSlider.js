@@ -15,41 +15,51 @@ export default function CravingsSlider() {
     }
   }
   return (
-    <div className="cravings">
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
-        {cravings.map((data) => (
-          <div className="cravingsContainer">
-            <div className="itemCravings">
-              <div className="leftCravingsContainer">
-                <div className="cravingImgContainer">
-                  <img src={data.img} alt="" className="cravingsImage" />
+    <div className="cravingsSection">
+      <div className="introCravings">
+        <h1>Its okay to have cravings</h1>
+        <h2>We have you covered</h2>
+        <p>
+          Substitute your naughty cravings for healthier ones! You can still
+          enjoy a treat here and there, just make it healthy.
+        </p>
+      </div>
+      <div className="cravings">
+        <div
+          className="slider"
+          style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+        >
+          {cravings.map((data) => (
+            <div className="cravingsContainer">
+              <div className="itemCravings">
+                <div className="leftCravingsContainer">
+                  <div className="cravingImgContainer">
+                    <img src={data.img} alt="" className="cravingsImage" />
+                  </div>
                 </div>
-              </div>
-              <div className="rightCravings">
-                <div className="textCravings">
-                  <h2>{data.title}</h2>
-                  <p>{data.desc}</p>
+                <div className="rightCravings">
+                  <div className="textCravings">
+                    <h3>{data.title}</h3>
+                    <p>{data.desc}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <img
+          className="arrow left"
+          src="/assets/arrowLeft.png"
+          alt=""
+          onClick={() => handleClick('left')}
+        />
+        <img
+          className="arrow right"
+          src="/assets/arrowRight.png"
+          alt=""
+          onClick={() => handleClick('right')}
+        />
       </div>
-      <img
-        className="arrow left"
-        src="/assets/arrowLeft.png"
-        alt=""
-        onClick={() => handleClick('left')}
-      />
-      <img
-        className="arrow right"
-        src="/assets/arrowRight.png"
-        alt=""
-        onClick={() => handleClick('right')}
-      />
     </div>
   );
 }
