@@ -1,0 +1,91 @@
+@import '../../global.scss';
+.cravingsSection {
+  .introCravings {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 20px;
+    h1 {
+      color: $textColorPrimary;
+      font-weight: fontWeight(bold);
+    }
+
+    h2 {
+      color: $textColorSecondary;
+    }
+    p {
+      color: $textColorPrimary;
+    }
+  }
+
+  .cravings {
+    @include flexJustify(center);
+    position: relative;
+    height: 500px;
+
+    .arrow {
+      height: 70px;
+      position: absolute;
+      cursor: pointer;
+
+      &.left {
+        left: 80px;
+      }
+
+      &.right {
+        right: 80px;
+      }
+    }
+
+    .slider {
+      height: 375px;
+      display: flex;
+      position: absolute;
+      left: 0; // changing the size you can move it as a .slider
+      transition: all 1s ease-out;
+
+      .cravingsContainer {
+        width: 100vw;
+        @include flexJustify(center);
+
+        .itemCravings {
+          border-radius: 20px;
+          background-color: $accentColor;
+          @include flexCenter(row);
+          overflow: hidden;
+          width: 60%;
+
+          .leftCravingsContainer {
+            flex: 0.5;
+            display: flex;
+            overflow: hidden;
+
+            .cravingsImage {
+              height: 100%;
+            }
+          }
+
+          .rightCravings {
+            display: flex;
+            flex: 0.5;
+
+            .textCravings {
+              display: flex;
+              flex-direction: column;
+
+              h3 {
+                color: $textColorPrimary;
+                font-weight: fontWeight(bold);
+              }
+
+              p {
+                color: $textColorPrimary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
