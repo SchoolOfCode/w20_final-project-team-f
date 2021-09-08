@@ -4,9 +4,7 @@ import './Navbar.scss';
 import { NavBarMenuList } from './NavBarMenuList';
 import Searchbar from '../Searchbar/Searchbar';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
-import LogInButton from '../LoginButton/LoginButton';
-
-
+import LoginButton from '../LoginButton/LoginButton';
 
 export default function Navbar() {
   //state for the hamburger menu bars
@@ -17,8 +15,6 @@ export default function Navbar() {
   const handleProfileMenuDisplay = () => {
     setIsLoggedIn(true);
   };
-
-
 
   //mapping through the MenuList object to display link into the nav bar
   const navBarMenuList = NavBarMenuList.map(({ url, title }, index) => {
@@ -49,12 +45,11 @@ export default function Navbar() {
           <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
         <ul className={clicked ? 'menu' : 'menu close'}>{navBarMenuList}</ul>
-
       </nav>
       <Searchbar />
       {/* display login button if user isn't logged in and profile menu when logged in */}
       <div onClick={handleProfileMenuDisplay}>
-        {isLoggedIn ? <ProfileMenu /> : <LogInButton />}
+        {isLoggedIn ? <ProfileMenu /> : <LoginButton />}
       </div>
     </header>
   );

@@ -22,7 +22,7 @@ import PregTracker from './pages/PregTracker';
 import FirstTrimester from './pages/FirstTrimester';
 import SecondTrimester from './pages/SecondTrimester';
 import ThirdTrimester from './pages/ThirdTrimester';
-import Login from './components/Login/Login';
+import LoginForm from './components/LoginForm/LoginForm';
 import { auth } from './firebase';
 import Signup from './components/Signup/Signup';
 // import ProfileMenu from './components/ProfileMenu/ProfileMenu';
@@ -61,7 +61,7 @@ function App() {
           </Route>
           <Route path="/login">
             <div className="containerLogin">
-              {user ? <Profile /> : <Login />}
+              {user ? <Profile /> : <LoginForm />}
             </div>
           </Route>
           <Route path="/signup">
