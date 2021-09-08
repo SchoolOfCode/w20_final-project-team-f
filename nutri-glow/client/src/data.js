@@ -117,25 +117,19 @@ export const Cuisine = [
 export const ProfileCard = [
   {
     icon: <RiMentalHealthFill />,
-    quest: 'How is your mental health today?',
-  
-
-    slider: <RangeSlider />,
+    id: 1
   },
   {
     icon: <BsFillLightningFill />,
-    quest: 'How are your energy levels today?',
-    slider: <RangeSlider />,
+    id: 2
   },
   {
     icon: <FaBed />,
-    quest: 'How many hours did you sleep today?',
-    slider: <RangeSlider />,
+    id: 3
   },
   {
     icon: <RiRestaurantFill />,
-    quest: 'How is your apetite doing today?',
-    slider: <RangeSlider />,
+    id: 4
   },
 ];
 
@@ -152,6 +146,7 @@ export const article1 = [
     title: 'Nutrition boost',
     img: 'assets/nutrition.jpeg',
     url: '/nutrition1',
+    
   },
 
   {
