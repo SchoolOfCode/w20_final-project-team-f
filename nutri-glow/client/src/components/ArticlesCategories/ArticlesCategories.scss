@@ -1,8 +1,7 @@
 @import '../../global.scss';
 
 .articles {
-  //   background-color: $backgroundColor;
-  margin-top: 50px;
+  margin-top: 20px;
   @include flexCenter(column);
   justify-content: space-between;
   align-items: center;
@@ -62,7 +61,7 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        flex: 0.5;
+        flex: 0.4;
 
         h3 {
           color: $boldOrange;
