@@ -25,6 +25,7 @@
     flex: 0.85;
     overflow: hidden;
     margin: 50px;
+    flex-direction: column;
 
     .quoteText {
       color: $textColorPrimary;

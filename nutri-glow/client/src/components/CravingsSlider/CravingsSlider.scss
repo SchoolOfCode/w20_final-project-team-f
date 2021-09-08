@@ -1,0 +1,76 @@
+@import '../../global.scss';
+
+.cravings {
+  @include flexJustify(center);
+  position: relative;
+  height: 800px;
+
+  .arrow {
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+
+    &.left {
+      left: 100px;
+    }
+
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 375px;
+    display: flex;
+    position: absolute;
+    left: 0; // changing the size you can move it as a .slider
+    transition: all 1s ease-out;
+
+    .cravingsContainer {
+      width: 100vw;
+      @include flexJustify(center);
+
+      .itemCravings {
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        @include flexJustify(center);
+        background-color: $accentColor;
+        // flex-direction: column;
+
+        .leftCravingsContainer {
+          //   width: 100%;
+          height: 100%;
+          @include flexJustify(center);
+          flex: 0.8;
+
+          .cravingsImage {
+            width: 400px;
+            // height: 80%;
+          }
+        }
+
+        .rightCravings {
+          flex: 0.4;
+          height: 100%;
+          @include flexJustify(center);
+
+          .textCravings {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+              color: $textColorPrimary;
+              font-weight: fontWeight(bold);
+            }
+
+            p {
+              color: $textColorPrimary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

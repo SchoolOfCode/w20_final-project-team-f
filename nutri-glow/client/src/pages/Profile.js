@@ -6,6 +6,7 @@ import RecipesButton from '../components/RecipesButton/RecipesButton';
 import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';
 import QuoteBlock from '../components/QuoteBlock/QuoteBlock';
 import './Profile.scss';
+import CravingsSlider from '../components/CravingsSlider/CravingsSlider';
 
 export default function Profile() {
   const [mealType, setMealType] = useState('Dinner');
@@ -44,6 +45,7 @@ export default function Profile() {
             author="- Myla and Jon Kabat-Zinn"
           />
         </div>
+
         <div className="recRecipes">
           <h1 className="recRecipesTitle">
             Recommended <br /> recipes
@@ -66,6 +68,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <CravingsSlider />
     </div>
   );
 }

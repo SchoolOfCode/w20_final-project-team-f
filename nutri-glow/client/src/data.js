@@ -669,3 +669,42 @@ export const symptomsCard3 = [
     img: '/assets/symptopms.png',
   },
 ];
+
+export const cravings = [
+  {
+    id: 1,
+    img: '/assets/foods.png',
+    desc: 'Try carrots instead of chocolate',
+    title: 'Carrots are good',
+  },
+  {
+    id: 2,
+    img: '/assets/foods.png',
+    desc: 'Try carrots instead of chocolate',
+    title: 'Carrots are good',
+  },
+  {
+    id: 3,
+    img: '/assets/foods.png',
+    desc: 'Try carrots instead of chocolate',
+    title: 'Carrots are good',
+  },
+  {
+    id: 4,
+    img: '/assets/foods.png',
+    desc: 'Try carrots instead of chocolate',
+    title: 'Carrots are good',
+  },
+  {
+    id: 5,
+    img: '/assets/foods.png',
+    desc: 'Try carrots instead of chocolate',
+    title: 'Carrots are good',
+  },
+  {
+    id: 6,
+    img: '/assets/foods.png',
+    desc: 'Try carrots instead of chocolate',
+    title: 'Carrots are good',
+  },
+];
