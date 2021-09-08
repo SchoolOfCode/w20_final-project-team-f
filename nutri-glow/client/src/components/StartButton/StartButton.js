@@ -1,12 +1,10 @@
 import { React } from 'react';
+<<<<<<< HEAD
+=======
+// import Login from '../Login/Login';
+>>>>>>> 9e1db21e02798578c1517d9d03f6bb9793a49d62
 import './StartButton.scss';
-import { Link } from 'react-router-dom';
 
 export default function StartButton({ text }) {
-  return (
-    <div>
-      <Link className="startButton" to="/signup" className="btn btn-primary">{text}</Link>
-    </div>
-  )
+  return <button className="startButton">{text}</button>;
 }
-

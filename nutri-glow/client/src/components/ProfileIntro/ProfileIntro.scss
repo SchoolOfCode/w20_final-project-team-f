@@ -1,0 +1,70 @@
+@import '../../global.scss';
+
+.profileIntro {
+  @include flexCenter(column);
+  background-color: white;
+  margin: 20px;
+
+  h1 {
+    color: $textColorPrimary;
+    font-size: fontSize(extraLarge);
+    font-weight: fontWeight(bold);
+  }
+
+  h2 {
+    color: $textColorSecondary;
+    font-size: fontSize(large);
+    font-weight: fontWeight(medium);
+    margin-bottom: 10px;
+  }
+
+  .containerIntro {
+    width: 100%;
+    height: 100%;
+    @include flexJustify(center);
+
+    .cardContainer {
+      width: 250px;
+      height: 100%;
+      //   border-radius: 10px;
+      //   box-shadow: 0px 0px 15px -8px black;
+      box-shadow: 0px 4px 15px rgba(103, 78, 59, 0.25);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 20px;
+      align-items: center;
+
+      .topCard {
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        background-color: $accentColor;
+        @include flexJustify(center);
+        margin: 10px;
+
+        .icon {
+          font-size: 30px;
+        }
+      }
+
+      .centerCard {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+
+        h2 {
+          color: $textColorPrimary;
+          font-size: fontSize(medium);
+          font-weight: fontWeight(medium);
+        }
+      }
+
+      .bottomCard {
+        margin: 10px;
+      }
+    }
+  }
+}
