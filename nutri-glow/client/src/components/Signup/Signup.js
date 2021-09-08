@@ -20,7 +20,8 @@ function Signup() {
   // capture user input value for later use
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const fullNameRef = useRef(null);
+  const firstNameRef = useRef(null);
+  const surnameRef = useRef(null);
   const ageRef = useRef(null);
   const stageRef = useRef(null);
   const goalsRef = useRef(null);
@@ -47,8 +48,10 @@ function Signup() {
           <h1 id="signup">Sign up</h1>
           <h3 id="signupTag">It's free and easy</h3>
         </div>
-        <label className="signupLabel">Full Name</label>
-        <input ref={fullNameRef} type="text" />
+        <label className="signupLabel">First Name</label>
+        <input ref={firstNameRef} type="text" />
+        <label className="signupLabel">Surname</label>
+        <input ref={surnameRef} type="text" />
         <div className="details">
           <div className="emailForm">
             <label className="signupLabel">Email</label>
@@ -83,7 +86,7 @@ function Signup() {
         </div>
         <div className="stages">
           <div className="pregStage">
-            <label className="signupLabel">Stage of pregnancy</label>
+            <label className="signupLabel">Current Stage</label>
             <select ref={stageRef} id="motherhood-stage" name="stage">
               <option value="blank"></option>
               <option value="tryingToConceive">Trying to conceive</option>
@@ -97,9 +100,9 @@ function Signup() {
             <label className="signupLabel">Goals</label>
             <select ref={goalsRef} id="goals" name="goals">
               <option value="blank"></option>
-              <option value="goal1">Goals</option>
-              <option value="goal2">Goals 2</option>
-              <option value="goal3">Goals 3</option>
+              <option value="goal1">I want to get pregnancy health and nutrition advice</option>
+              <option value="goal2">I want to lose weight</option>
+              <option value="goal3">I want to connect with other mothers</option>
             </select>
           </div>
         </div>
@@ -107,6 +110,7 @@ function Signup() {
           Do you have any medical conditions?
         </label>
         <select id="medical-conditions" name="medical-conditions">
+          <option value="blank"></option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
           <option value="not-sure">I'm not sure</option>
