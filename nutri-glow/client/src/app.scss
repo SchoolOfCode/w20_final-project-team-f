@@ -19,3 +19,13 @@
     grid-template: auto/repeat(auto-fit, minmax(350px, 1fr));
   }
 }
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap{
+  flex: 1;
+}
