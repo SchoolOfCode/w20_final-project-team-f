@@ -5,13 +5,13 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBeBPo1KJpNnGYpr9FOhdWEDynNEJEfteY",
-  authDomain: "aminascode-f3ebd.firebaseapp.com",
-  projectId: "aminascode-f3ebd",
-  storageBucket: "aminascode-f3ebd.appspot.com",
-  messagingSenderId: "408245361435",
-  appId: "1:408245361435:web:74ae67a06470e178e811be",
-  measurementId: "G-3QP6PH58M6"
+  apiKey: "AIzaSyCvRRGNTWJXAYvMmk5y6Wn832oIyhZr0CA",
+  authDomain: "team-nutri-glow.firebaseapp.com",
+  projectId: "team-nutri-glow",
+  storageBucket: "team-nutri-glow.appspot.com",
+  messagingSenderId: "688866165176",
+  appId: "1:688866165176:web:17767798a1d992cbb50f4d",
+  measurementId: "G-YFRJSTFBS6"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
