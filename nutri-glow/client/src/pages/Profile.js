@@ -4,7 +4,7 @@ import { auth } from '../firebase';
 // import SignoutButton from '../components/SignoutButton/SignoutButton';
 import ProfileIntro from '../components/ProfileIntro/ProfileIntro';
 
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 import RecipesButton from '../components/RecipesButton/RecipesButton';
