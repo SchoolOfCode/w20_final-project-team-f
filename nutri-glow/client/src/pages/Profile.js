@@ -1,5 +1,19 @@
-import React from 'react';
+import { React, useState } from 'react';
+import { auth } from '../firebase';
+import ProfileMenu from '../components/ProfileMenu/ProfileMenu';
+import LogInButton from '../components/LoginButton/LoginButton';
 
-export default function Profile() {
-  return <div>Profile</div>;
+
+
+const Profile = () => {
+
+  return (
+    <div>
+      <div>Profile</div>
+
+    </div>
+  );
 }
+
+
+export default Profile;

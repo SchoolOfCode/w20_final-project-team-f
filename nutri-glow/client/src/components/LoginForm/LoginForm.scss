@@ -1,0 +1,106 @@
+@import '../../global.scss';
+
+// .loginButton {
+//   background-color: $darkBrown;
+//   width: 90px;
+//   height: 30px;
+//   color: $backgroundColor;
+//   border: none;
+//   cursor: pointer;
+//   // border-radius: 30px;
+
+//   @include mobile {
+//     width: 50px;
+//     margin-left: 50px;
+//   }
+// }
+
+
+.signin{
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.signin>form{
+  display: grid;
+  flex-direction: column;
+  
+}
+.signin>form>input{
+  margin-bottom: 5px
+  ;
+}
+
+.signin__link:hover{
+  text-decoration: underline;
+}
+
+
+.signupForm{
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.signupForm>form{
+  display: grid;
+  flex-direction: column;
+  padding: 50px, 50px, 50px, 500px;
+}
+.signupForm>form>input{
+  margin-bottom: 5px
+  ;
+}
+
+.signupLink:hover{
+  text-decoration: underline;
+}
+
+#signup{
+color: $darkBrown;
+}
+
+#signupTag{
+  color: $boldOrange
+}
+
+.signupLabel{
+  color: $darkBrown ;
+}
+
+#createAccount{
+  background-color: $boldOrange;
+  color: #fff;
+  border: none;
+  width: 130px;
+  height: 40px;
+}
+
+#createAccount:hover{
+  cursor: pointer;
+  background-color: $darkBrown;
+  color: $boldOrange;
+}
+
+.signupHeader{
+  padding-left: 0px;
+}
+
+
+// .alreadyHaveAccount{
+//     padding: 500px;
+// }
+// $boldOrange: #ff8934;
+// $darkBrown: #875c35;
+// $backgroundColor: #e5e5e5;
+// $backgroundForm: #fff5ed;
+// $textColorPrimary: #674e3b;
+// $textColorSecondary: #ca8f62;
+// $smallText: #b0a297;
+// $mediumText: #958678;
+// $accentColor: #a7c6c7;
+// $buttonsActive: #efa72b;

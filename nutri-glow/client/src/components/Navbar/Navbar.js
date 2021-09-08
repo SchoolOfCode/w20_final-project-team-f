@@ -1,16 +1,27 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
+import { NavBarMenuList } from './NavBarMenuList';
 import Searchbar from '../Searchbar/Searchbar';
-import Login from '../Login/Login';
-import { MenuList } from './MenuList';
+import ProfileMenu from '../ProfileMenu/ProfileMenu';
+import LogInButton from '../LoginButton/LoginButton';
+
+
 
 export default function Navbar() {
   //state for the hamburger menu bars
   const [clicked, setClicked] = useState(false);
+  // state for login or profile menu display
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleProfileMenuDisplay = () => {
+    setIsLoggedIn(true);
+  };
+
+
 
   //mapping through the MenuList object to display link into the nav bar
-  const menuList = MenuList.map(({ url, title }, index) => {
+  const navBarMenuList = NavBarMenuList.map(({ url, title }, index) => {
     return (
       <li key={index}>
         <Link exact to={url} activeClassName="active">
@@ -37,14 +48,14 @@ export default function Navbar() {
         <div className="menuIcon" onClick={handleClick}>
           <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
-        <ul className={clicked ? 'menu' : 'menu close'}>{menuList}</ul>
+        <ul className={clicked ? 'menu' : 'menu close'}>{navBarMenuList}</ul>
+
       </nav>
       <Searchbar />
-
-      {/* login button component that links to the profile page for now */}
-      <Link to="/profile">
-        <Login />
-      </Link>
+      {/* display login button if user isn't logged in and profile menu when logged in */}
+      <div onClick={handleProfileMenuDisplay}>
+        {isLoggedIn ? <ProfileMenu /> : <LogInButton />}
+      </div>
     </header>
   );
 }
