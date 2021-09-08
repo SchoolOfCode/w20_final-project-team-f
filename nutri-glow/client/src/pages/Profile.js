@@ -1,9 +1,8 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import { auth } from '../firebase';
 import ProfileMenu from '../components/ProfileMenu/ProfileMenu';
 import SignoutButton from '../components/SignoutButton/SignoutButton';
 import ProfileIntro from '../components/ProfileIntro/ProfileIntro';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import RecipesButton from '../components/RecipesButton/RecipesButton';
 import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';

@@ -9,9 +9,10 @@ import Profile from './pages/Profile';
 import ArticleCard from './components/ArticleCard/ArticleCard';
 import { myths1, nutrition1, foods1 } from '././data';
 import Login from './components/LoginForm/LoginForm';
+import Footer from './components/Footer/Footer';
 import { auth } from './firebase';
 import Signup from './components/Signup/Signup';
-import ProfileMenu from './components/ProfileMenu/ProfileMenu';
+
 
 function App() {
   // track user authentication status
@@ -88,6 +89,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer />
     </div>
   );
 }
