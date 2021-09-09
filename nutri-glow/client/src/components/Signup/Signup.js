@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { auth } from '../../firebase';
-import { db } from 'firebase';
+// import { db } from 'firebase';
 // import { RiNurseFill } from 'react-icons/ri';
 
 // import { db } from 'firebase'

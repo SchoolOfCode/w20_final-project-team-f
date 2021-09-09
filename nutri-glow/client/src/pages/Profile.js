@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import { auth } from '../firebase';
+// import { auth } from '../firebase';
 // import ProfileMenu from '../components/ProfileMenu/ProfileMenu';
 // import SignoutButton from '../components/SignoutButton/SignoutButton';
 import ProfileIntro from '../components/ProfileIntro/ProfileIntro';
