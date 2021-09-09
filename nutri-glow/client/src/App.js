@@ -152,8 +152,8 @@ function App() {
             <ThirdTrimester />
           </Route>
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

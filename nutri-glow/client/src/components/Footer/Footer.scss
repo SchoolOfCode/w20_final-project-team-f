@@ -1,51 +1,125 @@
 @import '../../global.scss';
-.main-footer{
-background-color: $backgroundColor;
-color: $mediumText;
-position: relative;
-bottom: 0;
-width: 100%;
+.mainFooter {
+  background-color: $backgroundColor;
+  //   position: relative;
+  bottom: 0;
+  width: 100%;
+
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .descriptionContainer {
+      .logoFooter {
+        display: flex;
+        flex-direction: row;
+
+        .text1 {
+          color: $boldOrange;
+          font-weight: fontWeight(bold);
+        }
+
+        .text2 {
+          color: $textColorPrimary;
+          font-weight: fontWeight(bold);
+        }
+      }
+      p {
+        color: $textColorPrimary;
+        margin-top: 10px;
+      }
+    }
+
+    .featureContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .headerFeature {
+        color: $boldOrange;
+      }
+
+      h5 {
+        color: $textColorPrimary;
+        text-decoration: none;
+      }
+    }
+
+    .touchContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .headerTouch {
+        color: $boldOrange;
+      }
+
+      .location {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .iconFooter {
+          color: $boldOrange;
+        }
+
+        h5 {
+          color: $textColorPrimary;
+        }
+      }
+
+      .email {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .iconFooter {
+          color: $boldOrange;
+        }
+        h5 {
+          color: $textColorPrimary;
+        }
+      }
+
+      .phone {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .iconFooter {
+          color: $boldOrange;
+        }
+        h5 {
+          color: $textColorPrimary;
+        }
+      }
+    }
+
+    .socialMedia {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h4 {
+        color: $textColorPrimary;
+      }
+
+      .socialMediaIcons {
+        color: $boldOrange;
+
+        a {
+          text-decoration: none;
+          color: $boldOrange;
+        }
+      }
+    }
+  }
+
+  .createdBy {
+    color: $textColorPrimary;
+    margin-left: 20px;
+  }
 }
-
-.description-paragraph{
-    margin: 3px 3px 3px 3px;
-    text-align: left;
-}
-
-#feature-container{
-    margin: 3px 3px 3px 3px;
-    text-align: center;
-}
-
-.header-text{
-    color: $boldOrange;
-}
-
-.footer-container{
-    text-align: center;
-}
-
-#nutri-text {
-    color: $boldOrange;
-}
-
-#glow-text {
-    color: $darkBrown;
-}
-
-#team-info {
-    background-color: $accentColor;
-}
-
-
-
-$boldOrange: #ff8934;
-$darkBrown: #875c35;
-$backgroundColor: #e5e5e5;
-$backgroundForm: #fff5ed;
-$textColorPrimary: #674e3b;
-$textColorSecondary: #ca8f62;
-$smallText: #b0a297;
-$mediumText: #958678;
-$accentColor: #a7c6c7;
-$buttonsActive: #efa72b;
