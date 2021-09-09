@@ -13,10 +13,19 @@
     padding-left: 10px;
     padding-right: 10px;
 
+    @include mobilePhone {
+      display: flex;
+      flex-direction: column;
+    }
+
     .descriptionContainer {
       .logoFooter {
         display: flex;
         flex-direction: row;
+        @include mobilePhone {
+          display: flex;
+          flex-direction: column;
+        }
 
         .text1 {
           color: $boldOrange;
