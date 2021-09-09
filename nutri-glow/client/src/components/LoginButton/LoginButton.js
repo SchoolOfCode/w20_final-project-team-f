@@ -1,15 +1,13 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
-import "./LoginButton.scss"
+import './LoginButton.scss';
 
-const LogInButton = () => {
+const LoginButton = () => {
   return (
-    <button>
-      <Link className="loginButton" to="/login">
-        Login
-      </Link>
-    </button>
+    <Link to="/login">
+      <button className="loginButtonNav">Login</button>
+    </Link>
   );
 };
 
-export default LogInButton;
+export default LoginButton;

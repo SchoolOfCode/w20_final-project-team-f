@@ -18,6 +18,10 @@
     font-weight: fontWeight(medium);
     color: $boldOrange;
     margin-top: 20px;
+
+    @include mobilePhone {
+      font-size: fontSize(regular);
+    }
   }
 
   ul {
@@ -26,6 +30,12 @@
     list-style: none;
     display: flex;
     margin-top: 20px;
+
+    @include mobilePhone {
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   .articleContainer {

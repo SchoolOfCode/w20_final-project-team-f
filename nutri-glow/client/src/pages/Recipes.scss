@@ -10,6 +10,12 @@
     display: flex;
     width: 100%;
 
+    @include mobilePhone {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
     .recipeFilters {
       display: flex;
       flex-direction: column;
@@ -28,24 +34,38 @@
 
         .recipeIntro {
           margin-left: 20px;
+
+          @include mobilePhone {
+            margin-left: 0;
+          }
           margin-bottom: 20px;
 
           h2 {
             color: $textColorPrimary;
             font-size: 4rem;
             font-weight: fontWeight(bold);
+
+            @include mobilePhone {
+              font-size: fontSize(regular);
+            }
           }
 
           h3 {
             color: $boldOrange;
             font-size: fontSize(large);
             font-weight: fontWeight(medium);
+            @include mobilePhone {
+              font-size: fontSize(small);
+            }
           }
 
           h4 {
             color: $textColorPrimary;
             font-size: fontSize(regular);
             font-weight: fontWeight(regular);
+            @include mobilePhone {
+              font-size: fontSize(small);
+            }
           }
         }
 
@@ -59,6 +79,10 @@
               width: 300px;
               height: 30px;
               border: none;
+
+              @include mobilePhone {
+                width: 150px;
+              }
             }
 
             .searchButton {
@@ -69,6 +93,9 @@
               height: 30px;
               margin-left: 10px;
               cursor: pointer;
+              @include mobilePhone {
+                width: 80px;
+              }
             }
             .searchButton:hover {
               background-color: $boldOrange;
@@ -93,6 +120,10 @@
           display: flex;
           justify-content: center;
           margin-left: 50px;
+
+          @include mobilePhone {
+            margin-left: 0;
+          }
 
           .buttonFilters {
             .selectMeal,

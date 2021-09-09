@@ -9,6 +9,12 @@
   display: flex;
   overflow: hidden;
 
+  @include mobilePhone {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+
   .leftblockContainer {
     flex: 0.5;
     .imgBlockContainer {
