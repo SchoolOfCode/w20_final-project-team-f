@@ -708,3 +708,42 @@ export const cravings = [
     title: 'Carrots are good',
   },
 ];
+
+export const recArticles = [
+  {
+    id: 1,
+    title: 'Time: 2 min read',
+    desc: 'Rules forcing women to give birth alone caused widespread distress',
+    img: '/assets/recArticle1.png',
+  },
+  {
+    id: 1,
+    title: 'Time: 2 min read',
+    desc: 'Rules forcing women to give birth alone caused widespread distress',
+    img: '/assets/recArticle1.png',
+  },
+  {
+    id: 1,
+    title: 'Time: 2 min read',
+    desc: 'Rules forcing women to give birth alone caused widespread distress',
+    img: '/assets/recArticle1.png',
+  },
+  {
+    id: 1,
+    title: 'Time: 2 min read',
+    desc: 'Rules forcing women to give birth alone caused widespread distress',
+    img: '/assets/recArticle1.png',
+  },
+  {
+    id: 1,
+    title: 'Time: 2 min read',
+    desc: 'Rules forcing women to give birth alone caused widespread distress',
+    img: '/assets/recArticle1.png',
+  },
+  {
+    id: 1,
+    title: 'Time: 2 min read',
+    desc: 'Rules forcing women to give birth alone caused widespread distress',
+    img: '/assets/recArticle1.png',
+  },
+];

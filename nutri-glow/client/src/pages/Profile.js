@@ -12,6 +12,7 @@ import RecRecipeCard from '../components/RecRecipeCard/RecRecipeCard';
 import QuoteBlock from '../components/QuoteBlock/QuoteBlock';
 import './Profile.scss';
 import CravingsSlider from '../components/CravingsSlider/CravingsSlider';
+import RecArticles from '../components/RecArticles/RecArticles';
 
 export default function Profile() {
   const [mealType, setMealType] = useState('Dinner');
@@ -74,6 +75,7 @@ export default function Profile() {
         </div>
       </div>
       <CravingsSlider />
+      <RecArticles />
     </div>
   );
 }
