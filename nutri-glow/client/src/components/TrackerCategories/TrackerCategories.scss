@@ -10,6 +10,10 @@
       color: $textColorPrimary;
       font-weight: fontWeight(bold);
       font-size: 3.5rem;
+
+      @include mobilePhone {
+        font-size: fontSize(extraLarge);
+      }
     }
   }
   .trimesterCardContainer {
@@ -17,6 +21,10 @@
     @include flexJustify(center);
     flex-wrap: wrap;
     margin: 30px;
+
+    @include mobilePhone {
+      margin-left: 0;
+    }
 
     .itemCardContainer {
       width: 250px;

@@ -14,6 +14,10 @@
       color: $textColorPrimary;
       font-weight: fontWeight(bold);
       font-size: 3.5rem;
+
+      @include mobilePhone {
+        font-size: fontSize(medium);
+      }
     }
   }
   .tipsCardContainer {
@@ -21,6 +25,11 @@
     @include flexJustify(center);
     // flex-wrap: wrap;
     // margin: 30px;
+
+    @include mobilePhone {
+      display: flex;
+      flex-direction: column;
+    }
 
     .itemTipsContainer {
       width: 250px;

@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     height: 800px;
+    padding-left: 20px;
   }
 
   .leftblockContainer {
@@ -44,6 +45,10 @@
       p {
         color: $textColorPrimary;
         font-size: fontSize(small);
+
+        @include mobilePhone {
+          font-size: 12px;
+        }
       }
     }
   }

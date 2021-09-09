@@ -5,8 +5,18 @@
   overflow: hidden;
   margin-top: 20px;
 
+  @include mobilePhone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
   .leftIntroSection {
     flex: 0.5;
+
+    @include mobilePhone {
+      margin-bottom: 20px;
+    }
     .wrapperIntroSection {
       width: 100%;
       height: 90%;
@@ -27,6 +37,10 @@
 
         p {
           color: $textColorPrimary;
+
+          @include mobilePhone {
+            margin: 10px 0 10px 0;
+          }
         }
       }
 
