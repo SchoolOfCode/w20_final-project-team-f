@@ -9,13 +9,22 @@
     h1 {
       color: $textColorPrimary;
       font-weight: fontWeight(bold);
+      @include mobilePhone {
+        font-size: fontSize(small);
+      }
     }
 
     h2 {
       color: $textColorSecondary;
+      @include mobilePhone {
+        font-size: fontSize(small);
+      }
     }
     p {
       color: $textColorPrimary;
+      @include mobilePhone {
+        font-size: fontSize(small);
+      }
     }
   }
 
@@ -24,10 +33,18 @@
     position: relative;
     height: 500px;
 
+    @include mobilePhone {
+      height: 800px;
+    }
+
     .arrow {
       height: 70px;
       position: absolute;
       cursor: pointer;
+
+      @include mobilePhone {
+        display: none;
+      }
 
       &.left {
         left: 80px;
@@ -45,6 +62,12 @@
       left: 0; // changing the size you can move it as a .slider
       transition: all 1s ease-out;
 
+      @include mobilePhone {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+      }
+
       .cravingsContainer {
         width: 100vw;
         @include flexJustify(center);
@@ -55,6 +78,12 @@
           @include flexCenter(row);
           overflow: hidden;
           width: 60%;
+
+          @include mobilePhone {
+            height: 100px;
+            margin: 20px 0;
+            // width: 150px;
+          }
 
           .leftCravingsContainer {
             flex: 0.5;
@@ -77,10 +106,16 @@
               h3 {
                 color: $textColorPrimary;
                 font-weight: fontWeight(bold);
+                @include mobilePhone {
+                  font-size: 12px;
+                }
               }
 
               p {
                 color: $textColorPrimary;
+                @include mobilePhone {
+                  font-size: 8px;
+                }
               }
             }
           }

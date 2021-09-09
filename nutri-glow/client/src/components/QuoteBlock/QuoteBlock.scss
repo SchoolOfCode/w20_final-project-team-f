@@ -9,6 +9,11 @@
   display: flex;
   flex-direction: row;
 
+  @include mobilePhone {
+    display: flex;
+    flex-direction: column;
+  }
+
   .quoteBlockLeft {
     display: flex;
     flex: 0.15;
@@ -17,6 +22,10 @@
     .quoteBlockImage {
       height: 150px;
       //   width: 100%;
+
+      @include mobilePhone {
+        display: none;
+      }
     }
   }
 
@@ -30,11 +39,19 @@
     .quoteText {
       color: $textColorPrimary;
       text-align: left;
+
+      @include mobilePhone {
+        font-size: fontSize(small);
+      }
     }
 
     .quoteAuthor {
       color: $textColorPrimary;
       text-align: right;
+
+      @include mobilePhone {
+        font-size: fontSize(small);
+      }
     }
   }
 }

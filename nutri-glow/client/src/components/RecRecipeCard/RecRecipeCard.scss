@@ -9,6 +9,11 @@
     @include flexCenter(row);
     overflow: hidden;
 
+    @include mobilePhone {
+      display: flex;
+      flex-direction: column;
+    }
+
     .recipeCardLeft {
       display: flex;
       flex: 0.5;

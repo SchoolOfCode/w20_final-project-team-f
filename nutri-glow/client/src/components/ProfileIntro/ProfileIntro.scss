@@ -9,6 +9,10 @@
     color: $textColorPrimary;
     font-size: fontSize(extraLarge);
     font-weight: fontWeight(bold);
+
+    @include mobilePhone {
+      margin-top: 20px;
+    }
   }
 
   h2 {
@@ -22,6 +26,11 @@
     width: 100%;
     height: 100%;
     @include flexJustify(center);
+
+    @include mobilePhone {
+      flex-direction: column;
+      display: flex;
+    }
 
     .cardContainer {
       width: 250px;

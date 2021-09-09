@@ -60,3 +60,11 @@ $width: 1024px;
     @content;
   }
 }
+
+$widthMobile: 768px;
+
+@mixin mobilePhone {
+  @media (max-width: #{$widthMobile}) {
+    @content;
+  }
+}
