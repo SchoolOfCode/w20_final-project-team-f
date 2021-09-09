@@ -29,12 +29,19 @@ const ProfileMenu = () => {
         auth.signOut()
     }
 
+    const handleRedirectToProfile = () => {
+        window.location.href = "/profile"
+    }
+
     return (
 
         <div className="profileMenu">
             <Avatar alt="Woman Avatar" src="/assets/princess.jpg" onClick={handleOpenProfileMenu} aria-controls="profile-menu" />
             <Menu style={{ marginTop: '50px' }} id="profile-menu" onClose={handleCloseProfileMenu} anchorEl={anchorEl} open={Boolean(anchorEl)} >
-                <MenuItem onClick={handleCloseProfileMenu}>My Profile</MenuItem>
+                <MenuItem onClick={() => {
+                    handleRedirectToProfile();
+                    handleCloseProfileMenu();
+                }}>My Profile</MenuItem>
                 <MenuItem onClick={handleCloseProfileMenu}>Settings</MenuItem>
                 <MenuItem onClick={handleCloseProfileMenu}>Contact</MenuItem>
                 <MenuItem onClick={() => {
