@@ -13,6 +13,8 @@ import QuoteBlock from '../components/QuoteBlock/QuoteBlock';
 import './Profile.scss';
 import CravingsSlider from '../components/CravingsSlider/CravingsSlider';
 import RecArticles from '../components/RecArticles/RecArticles';
+import WaterTracker from '../components/WaterTracker/WaterTracker';
+import VegTacker from '../components/VegTracker/VegTracker';
 
 export default function Profile() {
   const [mealType, setMealType] = useState('Dinner');
@@ -43,6 +45,10 @@ export default function Profile() {
     <div>
       <div>
         <ProfileIntro />
+      </div>
+      <div className="trackerWrapper">
+        <WaterTracker />
+        <VegTacker />
       </div>
       <div className="wrapper">
         <div className="profileQuote">

@@ -1,5 +1,15 @@
 @import '../global.scss';
-
+.trackerWrapper {
+  width: 100%;
+  @include flexJustify(center);
+  flex-wrap: wrap;
+  margin: 30px;
+  width: 90vw;
+  display: grid;
+  grid-gap: 30px;
+  grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
+  margin-bottom: 40px;
+}
 .wrapper {
   width: 100vw;
   @include flexCenter(column);
