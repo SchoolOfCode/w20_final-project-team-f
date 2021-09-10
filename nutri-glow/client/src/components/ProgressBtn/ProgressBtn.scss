@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500&display=swap');
+
+$ff: 'Rubik', sans-serif;
+$dkblue: lighten(#2f416d, 10);
+$ltblue: lighten(#2f416d, 20);
+
+#app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $ff;
+}
+h2{
+  color: $dkblue;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+.outer{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 300px;
+  border: 5px solid $dkblue;
+  border-radius: 50px;
+  background: $ltblue;
+}
+.inner{
+  height: 20px;
+  width: 250px;
+  background: lighten(#14868c, 10);
+  border-radius: 25px;
+  transition: width 100ms ease-out;
+  }
+button{
+  font-family: $ff;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 5px solid darken(#fc7fb2, 6);
+  border-radius: 5px;
+  background: #fc7fb2;
+  color: #fff;
+  width: 110px;
+  padding: 10px;
+  font-weight: bold;
+  outline: none;
+  transition: 50ms ease-out;
+  &:hover{
+    transform: scale(1.04);
+  }
+  &:active{
+    transform: scale(1.01);
+  }
+  }

@@ -28,11 +28,6 @@
 
 
 
-
-
-
-
-
 // import db from "../../firebase";
 
 import { auth,db} from "../../firebase"
@@ -45,8 +40,7 @@ import './ProfileIntro.scss';
 
 export default function ProfileIntro() {
 
-
-
+  
 
 
   let [usersName,setUsersName]=useState("")
@@ -70,7 +64,7 @@ export default function ProfileIntro() {
       }
     })
   
-},[db])
+  },[db])
 
 
 

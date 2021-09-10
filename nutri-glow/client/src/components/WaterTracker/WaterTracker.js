@@ -1,6 +1,7 @@
 import React from 'react';
 import './WaterTracker.scss';
-import ProgressBar from '../ProgressBar/ProgressBar';
+
+import ProgressBtn from '../ProgressBtn/ProgressBtn';
 
 const testData = [{ bgcolor: '#C4E8E9', completed: 60 }];
 
@@ -16,7 +17,19 @@ export default function WaterTracker() {
           </p>
         </div>
 
-        <div className="progressData">
+
+
+        <ProgressBtn/>
+
+
+
+
+
+
+
+
+
+        {/* <div className="progressData">
           {testData.map((item, idx) => (
             <ProgressBar
               key={idx}
@@ -24,7 +37,7 @@ export default function WaterTracker() {
               completed={item.completed}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
