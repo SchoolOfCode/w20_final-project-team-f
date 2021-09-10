@@ -76,6 +76,11 @@ export default function Profile() {
       </div>
       <CravingsSlider />
       <RecArticles />
+      <div className="recArticlesButton">
+        <Link to="/articles">
+          <RecipesButton name="Discover all" />
+        </Link>
+      </div>
     </div>
   );
 }

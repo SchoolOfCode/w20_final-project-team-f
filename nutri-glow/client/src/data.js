@@ -114,26 +114,45 @@ export const Cuisine = [
   },
 ];
 
+// export const ProfileCard = [
+//   {
+//     icon: <RiMentalHealthFill />,
+//     quest: 'How is your mental health today?',
+//     slider: <RangeSlider />,
+//   },
+//   {
+//     icon: <BsFillLightningFill />,
+//     quest: 'How are your energy levels today?',
+//     slider: <RangeSlider />,
+//   },
+//   {
+//     icon: <FaBed />,
+//     quest: 'How many hours did you sleep today?',
+//     slider: <RangeSlider />,
+//   },
+//   {
+//     icon: <RiRestaurantFill />,
+//     quest: 'How is your apetite doing today?',
+//     slider: <RangeSlider />,
+//   },
+// ];
+
 export const ProfileCard = [
   {
     icon: <RiMentalHealthFill />,
-    quest: 'How is your mental health today?',
-    slider: <RangeSlider />,
+    id: 1,
   },
   {
     icon: <BsFillLightningFill />,
-    quest: 'How are your energy levels today?',
-    slider: <RangeSlider />,
+    id: 2,
   },
   {
     icon: <FaBed />,
-    quest: 'How many hours did you sleep today?',
-    slider: <RangeSlider />,
+    id: 3,
   },
   {
     icon: <RiRestaurantFill />,
-    quest: 'How is your apetite doing today?',
-    slider: <RangeSlider />,
+    id: 4,
   },
 ];
 
@@ -673,27 +692,27 @@ export const symptomsCard3 = [
 export const cravings = [
   {
     id: 1,
-    img: '/assets/foods.png',
-    desc: 'Try carrots instead of chocolate',
-    title: 'Carrots are good',
+    img: '/assets/slide1.png',
+    desc: 'One of the perks of being a cauliflower is being super low-carb and low-calorie. This trending crucifer is making its way into all of your favorite recipes: pizza, mashed potatoes, and even fried rice. ',
+    title: 'Replace rice with cauliflower',
   },
   {
     id: 2,
-    img: '/assets/foods.png',
-    desc: 'Try carrots instead of chocolate',
-    title: 'Carrots are good',
+    img: '/assets/slide2.png',
+    desc: 'It can be easy to go overboard when it comes to snacking, particularly when crunchy, salty chips are involved. While there is no need to deprive yourself of lifes simple pleasures (we are looking at you, potato chips), why not try a healthier version? Make your own chips right in your oven using vegetables.',
+    title: 'Swap chips for baked veggies',
   },
   {
     id: 3,
-    img: '/assets/foods.png',
-    desc: 'Try carrots instead of chocolate',
-    title: 'Carrots are good',
+    img: '/assets/slide3.png',
+    desc: 'Cut out the refined sugar and treat yourself to a trail mix of choice@ Simply mix together your favourite nuts, dired fruit and a couple of dark chocolate chunks.',
+    title: 'Swap Candy for Homemade Chocolate Trail Mix',
   },
   {
     id: 4,
-    img: '/assets/foods.png',
-    desc: 'Try carrots instead of chocolate',
-    title: 'Carrots are good',
+    img: '/assets/slide4.png',
+    desc: 'You can source fibre packed bread from your local supermarket, apply a thin layer of your favourite spread and some fruit...voila!',
+    title: 'Replace cereal for a fibre packed breakfast',
   },
   {
     id: 5,
