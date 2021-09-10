@@ -3,7 +3,10 @@
 .loginContainer {
   display: flex;
   overflow: hidden;
-
+  @include mobilePhone {
+    display: flex;
+    flex-direction: column;
+  }
   .leftLogin {
     flex: 0.5;
 
@@ -15,6 +18,11 @@
       align-items: flex-start;
       padding-left: 200px;
       padding-top: 100px;
+
+      @include mobilePhone {
+        padding-left: 10px;
+        padding-top: 20px;
+      }
 
       .loginHeader {
         h1 {
