@@ -2,7 +2,7 @@ import React from 'react';
 import './Tips.scss';
 import { tipsCard1 } from '../../data';
 
-export default function Tips() {
+export default function Tips({ data }) {
   return (
     <div className="tipsIntro">
       <div className="tipsTitle">

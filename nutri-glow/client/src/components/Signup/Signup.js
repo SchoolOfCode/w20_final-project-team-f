@@ -100,7 +100,7 @@ function Signup() {
                   <label className="signupLabel">
                     Current stage of journey
                   </label>
-                  <select ref={stageRef} id="motherhood-stage" name="stage">
+                  <select ref={stageRef} id="stage" name="stage">
                     <option value="blank"></option>
                     <option value="tryingToConceive">Trying to conceive</option>
                     <option value="pregnant">Currently pregnant</option>
@@ -126,7 +126,7 @@ function Signup() {
               <label className="signupLabel">
                 Do you have any medical conditions?
               </label>
-              <select id="medical-conditions" name="medical-conditions">
+              <select id="medical" name="medical-conditions">
                 <option value="blank"></option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>

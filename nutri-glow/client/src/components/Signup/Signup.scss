@@ -4,11 +4,20 @@
   display: flex;
   overflow: hidden;
 
+  @include mobilePhone {
+    display: flex;
+    flex-direction: column;
+  }
+
   .leftForm {
     flex: 0.5;
     background-color: #f5f1ed;
     margin-left: 30px;
     overflow: hidden;
+
+    @include mobilePhone {
+      margin-left: 0;
+    }
     .formWrapper {
       width: 100%;
       height: 100%;
@@ -23,12 +32,19 @@
           color: $textColorPrimary;
           font-weight: fontWeight(bold);
           font-size: 4rem;
+
+          @include mobilePhone {
+            font-size: fontSize(small);
+          }
         }
 
         h2 {
           color: $textColorSecondary;
           font-weight: fontWeight(bold);
           font-size: 3rem;
+          @include mobilePhone {
+            font-size: fontSize(small);
+          }
         }
       }
 
@@ -43,18 +59,21 @@
           flex-direction: column;
           justify-content: space-between;
 
+          input {
+            @include mobilePhone {
+              width: 300px;
+            }
+          }
+
           .signupLabel {
             color: $textColorPrimary;
           }
 
-          // select {
-          //   // background-color: $backgroundForm;
-          // }
-
-          // input {
-          //   // background-color: $backgroundForm;
-          // }
-
+          #height {
+            @include mobilePhone {
+              width: 300px;
+            }
+          }
           .nameForm {
             display: flex;
             flex-direction: column;
@@ -69,6 +88,11 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            @include mobilePhone {
+              display: flex;
+              flex-direction: column;
+            }
             .emailForm {
               display: flex;
               flex-direction: column;
@@ -84,6 +108,11 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            @include mobilePhone {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
 
             .heightForm {
               display: flex;
@@ -94,6 +123,10 @@
               display: flex;
               flex-direction: column;
               margin-left: 30px;
+
+              @include mobilePhone {
+                margin-left: 0;
+              }
             }
           }
 
@@ -101,6 +134,16 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+
+            #stage {
+              @include mobilePhone {
+                width: 300px;
+              }
+            }
+            @include mobilePhone {
+              display: flex;
+              flex-direction: column;
+            }
 
             .pregStage {
               display: flex;
@@ -110,6 +153,12 @@
             .goalsForm {
               display: flex;
               flex-direction: column;
+
+              #goals {
+                @include mobilePhone {
+                  width: 300px;
+                }
+              }
             }
           }
 
@@ -122,6 +171,10 @@
             height: 30px;
             width: 400px;
             cursor: pointer;
+
+            @include mobilePhone {
+              width: 300px;
+            }
           }
 
           h4 {
