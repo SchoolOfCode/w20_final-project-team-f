@@ -2,10 +2,12 @@
 
 .recipeCardAnchor {
   text-decoration: none;
+  border: 5px solid rbg(240, 234, 234);
+  box-shadow: 0px 4px 15px rgba(103, 78, 59, 0.25);
+  background-color: $backgroundForm;
 
   .recipeCard {
     width: 100%;
-    background-color: $backgroundForm;
     @include flexCenter(row);
     overflow: hidden;
 

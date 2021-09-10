@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div>
       <IntroCard
-        title={'Have a wonderful'}
-        desc={'mother journey'}
+        title={'Let us help you'}
+        desc={'on your special journey'}
         text={
-          'Imagine having your own personal helper who helps you to look after yourself and your baby!'
+          'Using research from experienced dietacians, NutriGlow provides a health and wellbeing platform for pregnancy and Parenthood. '
         }
         button={
           <Link to={'/signup'}>

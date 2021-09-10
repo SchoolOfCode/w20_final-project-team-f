@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import { auth } from '../../firebase';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './ProfileMenu.scss';
 import { Menu, MenuItem, Avatar } from '@material-ui/core';
 
@@ -43,7 +43,9 @@ const ProfileMenu = () => {
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
       >
-        <MenuItem onClick={handleCloseProfileMenu}>My Profile</MenuItem>
+        <Link to="/profile">
+          <MenuItem onClick={handleCloseProfileMenu}>My Profile</MenuItem>
+        </Link>
         <MenuItem onClick={handleCloseProfileMenu}>Settings</MenuItem>
         <MenuItem onClick={handleCloseProfileMenu}>Contact</MenuItem>
         <MenuItem
