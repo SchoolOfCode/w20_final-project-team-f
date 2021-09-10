@@ -21,5 +21,5 @@ const db = firebase.firestore();
 
 // // specific authentication instance
 const auth = firebase.auth();
-export { auth };
-export default db;
+export { auth, db };
+// export default db;
