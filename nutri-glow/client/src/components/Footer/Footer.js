@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
           <div className="email">
             <MailOutlineIcon className="iconFooter" />
-            <h5>NutriGlow@hello.com</h5>
+            <h5>hello@nutriglow.com</h5>
           </div>
           <div className="phone">
             <PhoneIcon className="iconFooter" />
