@@ -47,8 +47,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      text-decoration: none;
       .headerFeature {
         color: $boldOrange;
+      }
+      
+      .pregTracker{
+        text-decoration: none;
       }
 
       h5 {
@@ -129,6 +134,8 @@
 
   .createdBy {
     color: $textColorPrimary;
-    margin-left: 20px;
+    margin-left: 0px;
+    background-color: $accentColor;
+    text-align: center;
   }
 }
