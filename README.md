@@ -28,7 +28,7 @@ npm install | npm@latest -g
 1. Get a free API key at https://edamam.com
 2. Get Firebase configuration at https://firebase.google.com
 3. Clone the repo
-4. Install NPM packages
+4. Install NPM packages/dependencies
     - npm install
 6. Enter your configuration key in firebase.js 
 
