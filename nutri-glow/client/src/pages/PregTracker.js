@@ -9,9 +9,9 @@ export default function PregTracker() {
     <div>
       <TrackerIntro
         title={'Pregancy calendar'}
-        desc={'Your trimesterly guide to the stages of your pregnancy'}
+        desc={'Your trimesterly guide to walk you through every stage'}
         text={
-          'We’ve got all the information you need about your body, your emotions and your baby, week-by-week of your pregnancy.'
+          'We’ve got all the information you need to take you through the next 9 months. With this guide you’ll be able to keep track of your progress.'
         }
         intro={'Not sure if you are pregnant?'}
         button={'See early signs'}
