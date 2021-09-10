@@ -10,6 +10,8 @@ import ArticleCard from './components/ArticleCard/ArticleCard';
 import Footer from './components/Footer/Footer';
 import { auth } from './firebase';
 import Signup from './components/Signup/Signup';
+import ProfileMenu from './components/ProfileMenu/ProfileMenu';
+import LoginButton from './components/LoginButton/LoginButton';
 import {
   myths1,
   nutrition1,

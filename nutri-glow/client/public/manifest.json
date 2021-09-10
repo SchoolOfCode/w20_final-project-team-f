@@ -1,0 +1,22 @@
+{
+  "short_name": "NutriGlow",
+  "name": "NutriGlow",
+  "icons": [
+    {
+      "src": "logo-192.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo-512.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/w20_final-project-team-f/",
+  "display": "standalone",
+  "theme_color": "#51ADE2",
+  "background_color": "#ffffff"
+}

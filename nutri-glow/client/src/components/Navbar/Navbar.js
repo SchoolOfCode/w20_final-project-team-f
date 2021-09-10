@@ -1,16 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { auth } from '../../firebase';
 import './Navbar.scss';
 import { NavBarMenuList } from './NavBarMenuList';
 import Searchbar from '../Searchbar/Searchbar';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
 import LoginButton from '../LoginButton/LoginButton';
 
+
 export default function Navbar() {
   //state for the hamburger menu bars
   const [clicked, setClicked] = useState(false);
   // state for login or profile menu display
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+      const user = {
+        uid: userAuth?.uid,
+        email: userAuth?.email,
+      };
+      if (userAuth) {
+        console.log(userAuth);
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+    return unsubscribe;
+  }, []);
+
 
   const handleProfileMenuDisplay = () => {
     setIsLoggedIn(true);
@@ -47,10 +68,12 @@ export default function Navbar() {
         <ul className={clicked ? 'menu' : 'menu close'}>{navBarMenuList}</ul>
       </nav>
       <Searchbar />
+      {user ? <ProfileMenu /> : <LoginButton />}
+
       {/* display login button if user isn't logged in and profile menu when logged in */}
-      <div onClick={handleProfileMenuDisplay}>
+      {/* <div onClick={handleProfileMenuDisplay}>
         {isLoggedIn ? <ProfileMenu /> : <LoginButton />}
-      </div>
+      </div> */}
     </header>
   );
 }

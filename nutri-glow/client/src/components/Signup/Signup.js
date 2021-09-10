@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { auth } from '../../firebase';
 // import { db } from 'firebase';
 // import { RiNurseFill } from 'react-icons/ri';
@@ -42,6 +42,13 @@ function Signup() {
         console.log(err);
       });
   };
+
+  const [user, setUser] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem('userId', JSON.stringify(user))
+
+  }, [user]);
 
   //   // return form to capture user sign up details
 
