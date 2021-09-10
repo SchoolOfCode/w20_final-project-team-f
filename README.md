@@ -2,7 +2,7 @@
 
 ## About the Project
 
-This project was created as a final project for our participation in the School of Code Bootcamp.
+This project was created as a final project for our participation in the 2021 School of Code Bootcamp.
 
 ### Problem statement
 "Guide people (on a motherhood journey) with specific dietary requirements towards a healthy balanced diet and lifestyle."
