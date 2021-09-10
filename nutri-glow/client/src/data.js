@@ -489,7 +489,7 @@ export const foods3 = [
   {
     title: 'Oatmeal',
     desc: "This complex carb is high in fiber and protein, so it will fill you up and keep you satisfied. Oats are also said to help with milk production if you're breastfeeding.",
-    img: '/assets/nutrition2.jpeg',
+    img: '/assets/nutrition2.jpg',
   },
   {
     title: 'Whole grain bread',
