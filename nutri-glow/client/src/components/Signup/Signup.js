@@ -50,8 +50,8 @@ function Signup() {
       <div className="leftForm">
         <div className="formWrapper">
           <div className="signupHeader">
-            <h1 id="signup">Sign up</h1>
-            <h2 id="signupTag">It's free and easy</h2>
+            <h1>Sign up</h1>
+            <h2>It's free and easy</h2>
           </div>
           <div className="formContainer">
             <form action="" className="signupForm">

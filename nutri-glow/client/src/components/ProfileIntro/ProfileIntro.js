@@ -99,7 +99,7 @@ export default function ProfileIntro() {
   // ^ just sets the state, and chnages state with dispatch
 
   return (
-    <div className="profileIntro">
+    <div data-testid="test-1" className="profileIntro">
       <h1>Hi Alina</h1>
       <h2>How are you today?</h2>
       <div className="containerIntro">
@@ -114,10 +114,10 @@ export default function ProfileIntro() {
                   {card.id === 1
                     ? state.qouteCard1
                     : card.id === 2
-                    ? state.qouteCard2
-                    : card.id === 3
-                    ? state.qouteCard3
-                    : state.qouteCard4}
+                      ? state.qouteCard2
+                      : card.id === 3
+                        ? state.qouteCard3
+                        : state.qouteCard4}
                   {/* ^ if the id == the number then return the qoute from the inistialState.qouteCard1 aka state.qouteCard1 */}
                 </h2>
               </div>
