@@ -494,27 +494,27 @@ export const foods3 = [
   {
     title: 'Whole grain bread',
     desc: "This staple is great because you can eat it as is or with a topping of your choice. Eat it fresh or freeze it and defrost slice by slice to preserve it – either way, you will get the protein and fiber you need whether it be for breakfast, lunch or dinner.",
-    img: '/assets/card2.png',
+    img: '/assets/bread.jpg',
   },
   {
     title: ' Eggs',
     desc: "Possibly the most versatile staple, eggs are great for any meal. It takes less than 5 minutes to scramble them up, and if you have time, hard boiling a few at the beginning of the week will ensure you have a protein-filled snack ready to go when you need it. Eggs also contain a lot of nutrients and vitamins that can assist in recovering from birth.",
-    img: '/assets/foods2.jpeg',
+    img: '/assets/eggs.jpg',
   },
   {
     title: 'Frozen fruit and veggies',
     desc: "It can be hard to keep fresh fruit and veggies in the house in the early days when the idea of washing, chopping and cooking seems like too much to handle. Frozen is the perfect solution to making sure they don't go bad. Pop them in the microwave to thaw or blend frozen for a smoothie anytime.",
-    img: '/assets/card4.png',
+    img: '/assets/veg.jpg',
   },
   {
     title: 'Apples',
     desc: "Like sweet potatoes, this staple has a longer shelf life than most other fruits and when eaten with nut butter, is the perfect mix of protein, healthy fat and complex carbs to keep your energy up.",
-    img: '/assets/card5.png',
+    img: '/assets/apples.jpg',
   },
   {
     title: 'Canned beans',
     desc: "The high fiber content in beans will keep your digestive system moving along, which is important following a vaginal birth or c-section. They are also a great source of protein and can be added to any meal for a nutritional boost.",
-    img: '/assets/card6.png',
+    img: '/assets/beans.jpg',
   },
 ];
 
