@@ -21,7 +21,6 @@
 
     .quoteBlockImage {
       height: 150px;
-      //   width: 100%;
 
       @include mobilePhone {
         display: none;

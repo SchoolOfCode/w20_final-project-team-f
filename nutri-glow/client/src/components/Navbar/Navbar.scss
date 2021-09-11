@@ -10,7 +10,7 @@ header {
 
   .logo {
     margin: 0;
-    padding: 0;
+    padding: 0px 20px 0px 20px;
     display: flex;
     align-items: baseline;
 
@@ -107,5 +107,8 @@ header {
   a:hover,
   a.active {
     color: $boldOrange;
+  }
+  .avatarMenu{
+    padding-right: 20px;
   }
 }

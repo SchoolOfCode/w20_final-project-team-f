@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="logoFooter">
             <h4 className="text1">NUTRI</h4>
             <h4 className="text2">GLOW</h4>
-          </div>
+          </div> 
           <p>
             NutriGlow is the pioneer <br /> of bringing together scientifically{' '}
             <br /> proven pregnancy nutrition and <br />

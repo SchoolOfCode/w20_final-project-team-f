@@ -1,7 +1,7 @@
  const ProgressButton = ({ makeProgress, progress }) => (
-  <button onClick={makeProgress}>
+  <button className="progressBtn"onClick={makeProgress}>
     { 
-      progress == 100 ? ' Yay! ' : 'Progress' 
+      progress == 100 ? ' Start Again ' : 'Add' 
     }
   </button>
 );

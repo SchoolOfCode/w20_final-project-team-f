@@ -1,7 +1,6 @@
 @import '../../global.scss';
 .mainFooter {
   background-color: $backgroundColor;
-  //   position: relative;
   bottom: 0;
   width: 100%;
 
@@ -12,6 +11,7 @@
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
 
     @include mobilePhone {
       display: flex;
@@ -19,6 +19,8 @@
     }
 
     .descriptionContainer {
+      padding-left: 20px;
+    
       .logoFooter {
         display: flex;
         flex-direction: row;
@@ -116,6 +118,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      padding-right: 50px;
 
       h4 {
         color: $textColorPrimary;

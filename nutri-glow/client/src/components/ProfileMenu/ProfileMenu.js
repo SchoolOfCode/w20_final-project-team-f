@@ -43,16 +43,16 @@ const ProfileMenu = () => {
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
       >
-        <Link to="/profile">
-          <MenuItem onClick={handleCloseProfileMenu}>My Profile</MenuItem>
+        <Link to="/profile" style={{textDecoration: 'none', color: "black"}}>
+          <MenuItem onClick={handleCloseProfileMenu} >My Profile</MenuItem>
         </Link>
-        <MenuItem onClick={handleCloseProfileMenu}>Settings</MenuItem>
-        <MenuItem onClick={handleCloseProfileMenu}>Contact</MenuItem>
+        <MenuItem onClick={handleCloseProfileMenu} style={{color: "black"}}>Settings</MenuItem>
+        <MenuItem onClick={handleCloseProfileMenu} style={{color: "black"}}>Contact</MenuItem>
         <MenuItem
           onClick={() => {
             handleSignOut();
             handleCloseProfileMenu();
-          }}
+          }} style={{color: "black"}}
         >
           Sign Out
         </MenuItem>

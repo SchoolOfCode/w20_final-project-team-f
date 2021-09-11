@@ -19,8 +19,6 @@
   .tipsCardContainer {
     width: 100%;
     @include flexJustify(center);
-    // flex-wrap: wrap;
-    // margin: 30px;
 
     .itemTipsContainer {
       width: 250px;
@@ -32,7 +30,6 @@
       margin: 20px 20px;
       @include flexJustify(center);
       flex-direction: column;
-      //   position: relative;
 
       .tipsContainerImage {
         flex: 0.6;
@@ -54,7 +51,6 @@
         p {
           color: $textColorPrimary;
           font-size: fontSize(regular);
-          //   position: absolute;
           margin-top: 20px;
         }
       }
