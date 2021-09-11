@@ -205,7 +205,7 @@ export const article3 = [
   {
     id: 1,
     title: 'Myths and Facts',
-    img: '/assets/nutrition1.png',
+    img: '/assets/new.jpg',
     url: '/myths3',
   },
 
@@ -218,7 +218,7 @@ export const article3 = [
   {
     id: 3,
     title: 'Top foods to eat',
-    img: '/assets/foods2.jpeg',
+    img: '/assets/new3.jpg',
     url: '/foods3',
   },
 ];
@@ -544,22 +544,22 @@ export const tipsCard1 = [
   {
     id: 1,
     img: '/assets/tips1.png',
-    desc: 'Learn more about the first months of pregnancy.',
+    desc: 'The first 3 months can be the most diffcult, surround yourself with a strong support network to help you when needs be.',
   },
   {
     id: 2,
     img: '/assets/tips2.png',
-    desc: 'Learn more about the first months of pregnancy.',
+    desc: 'Alot is changing during this period.Take time to connect with your baby and prepare yourself for this journey.',
   },
   {
     id: 3,
     img: '/assets/tips3.png',
-    desc: 'Learn more about the first months of pregnancy.',
+    desc: 'Its easy to forget yourself when youre pregnant, but you are the vessel, help your baby by helping yourself.',
   },
   {
     id: 4,
     img: '/assets/tips4.png',
-    desc: 'Learn more about the first months of pregnancy.',
+    desc: 'Keep an eye on what you are eating and which foods benefit you and your baby.',
   },
 ];
 
@@ -613,26 +613,26 @@ export const symptomsCard1 = [
   {
     id: 1,
     title: 'Morning sickness',
-    desc: 'Learn more about the first months of pregnancy.',
-    img: '/assets/symptopms.png',
+    desc: 'Morning sickness, which can strike at any time of the day or night, often begins one month after you become pregnant. This might be due to rising hormone levels. To help relieve nausea, avoid having an empty stomach',
+    img: '/assets/morningsickness.jpg',
   },
   {
     id: 2,
-    title: 'Morning sickness',
-    desc: 'Learn more about the first months of pregnancy.',
-    img: '/assets/symptopms.png',
+    title: 'Food cravings and aversions.',
+    desc: 'When youre pregnant, you might become more sensitive to certain odors and your sense of taste might change. Like most other symptoms of pregnancy, food preferences can be chalked up to hormonal changes.',
+    img: '/assets/cravings.jpg',
   },
   {
     id: 3,
-    title: 'Morning sickness',
-    desc: 'Learn more about the first months of pregnancy.',
-    img: '/assets/symptopms.png',
+    title: 'Increased urination. ',
+    desc: 'You might find yourself urinating more often than usual. The amount of blood in your body increases during pregnancy, causing your kidneys to process extra fluid that ends up in your bladder.',
+    img: '/assets/toilet2.jpg',
   },
   {
     id: 4,
-    title: 'Morning sickness',
-    desc: 'Learn more about the first months of pregnancy.',
-    img: '/assets/symptopms.png',
+    title: 'Fatigue. ',
+    desc: 'During early pregnancy, levels of the hormone progesterone soar — which can put you to sleep. Rest as much as you can. A healthy diet and exercise might increase your energy.',
+    img: '/assets/sleep.jpg',
   },
 ];
 

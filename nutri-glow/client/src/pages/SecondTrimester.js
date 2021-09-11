@@ -11,9 +11,9 @@ export default function SecondTrimester() {
   return (
     <div>
       <IntroSection
-        title="Guide to your first Trimester"
-        subtitle="Congratulations!"
-        desc="We’ve got all the information you need abou need about your body, your emotions and your baby, week-by-week of your pregnancy"
+        title="Guide to your second Trimester"
+        subtitle="Forwards and updwards!"
+        desc="The second trimester is the middle three months of your pregnancy. This is a time when lots of women tell the world they’re pregnant and begin to feel like the pregnancy is more ‘real’."
         img="/assets/Intro1.png"
         button={
           <Link to={'/signup'}>
@@ -23,17 +23,18 @@ export default function SecondTrimester() {
       />
 
       <TrackerBlock
-        title={'Learn everything you need to know about your first months.'}
+        title={'Learn everything you need to know about your second trimester.'}
         block={
-          'People often talk about pregnancy as being nine months long. In fact it’s usually slightly longer than this. Your pregnancy is measured from the first day of your last period rather than the day you actually conceived.People often talk about pregnancy as being nine months long. In fact it’s usually slightly longer than this. Your pregnancy is measured from the first day of your last period rather than the day you actually conceived.day of your last period rather than the day you actually conceived.People often talk about pregnancy as being nine months long. In fact it’s usually slightly longer than this. Your pregnancy is measured from the first day of your last period rather than the day you actually conceived.'
+          'The second trimester of your pregnancy is from week 13 to week 28 - roughly months four, five and six.As well as feeling and looking more pregnant during these weeks, you may also have more energy than you did in the first trimester. This will come as a great relief if you have been struggling with sickness, tiredness or anxiety about getting through the first trimester. Get weekly updates and views from our expert midwives straight to your inbox. As you go through the second trimester, you’ll gradually see your bump grow and later youll start to feel your baby moving.'
         }
-        img="/assets/block.png"
+        img="/assets/second.jpg"
       />
 
       <BabyInfo
-        title="Your baby within the first trimester"
-        desc="No, there’s no baby or embryo in sight. At least not yet — just an anxious egg and a whole bunch of eager sperm at their respective starting gates.But in weeks 1 and 2 of pregnancy — the week of and immediately following your last menstrual period — your body is working hard to gear up for the event that paves the way for baby: the big O, or ovulation.Right now, your uterus has begun preparing for the arrival of a fertilized egg, though you won't know for sure if that egg has successfully matched up with sperm until next month."
-        img="/assets/yourBaby.png"
+        title="Your baby within the second trimester"
+        desc="Now that all the major organs and systems have formed in the fetus, the following six months will be spent growing. The weight of the fetus will multiply more than seven times over the next few months as the fetus becomes a baby that can survive outside of the uterus.By the end of the second trimester, the fetus will be about 13 to 16 inches long and weighs about 2 to 3 pounds. Fetal development during the second trimester includes the following: - The fetus kicks, moves, and can turn from side to side.The eyes have been gradually moving to the front of the face and the ears have moved from the neck to the sides of the head. The fetus can hear the mother's voice.
+       "
+        img="/assets/group.jpg"
       />
 
       <TipsSecond />
