@@ -26,7 +26,12 @@
 //   );
 // }
 
-import React, { useReducer } from 'react';
+
+
+// import db from "../../firebase";
+
+import { auth,db} from "../../firebase"
+import React, { useReducer , useState, useEffect} from 'react';
 import { ProfileCard } from '../../data';
 // import { auth, db } from '../../firebase';
 import RangeSlider from '../RangeSlider/RangeSlider';
@@ -34,6 +39,35 @@ import RangeSlider from '../RangeSlider/RangeSlider';
 import './ProfileIntro.scss';
 
 export default function ProfileIntro() {
+
+  
+
+
+  let [usersName,setUsersName]=useState("")
+
+
+
+
+  useEffect(()=>{
+
+    db.once("value",(snapshot)=>{
+      try {
+        let profile = snapshot.child(auth.currentUser.uid).val()  
+        try { 
+          console.log(profile)
+          setUsersName(profile.displayFullName)
+        } catch (error) {
+        }
+
+      } catch (error) {
+       
+      }
+    })
+  
+  },[db])
+
+
+
   let initialState = {
     qouteCard1: 'How is your mental health today?',
     qouteCard2: 'How are your energy levels today?',
@@ -100,7 +134,7 @@ export default function ProfileIntro() {
 
   return (
     <div className="profileIntro">
-      <h1>Hi Alina</h1>
+      <h1>{usersName}</h1>
       <h2>How are you today?</h2>
       <div className="containerIntro">
         {ProfileCard.map((card) => {
