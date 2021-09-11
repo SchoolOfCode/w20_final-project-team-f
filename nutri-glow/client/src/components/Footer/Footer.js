@@ -25,12 +25,12 @@ const Footer = () => {
             health guidance with a focus on <br /> achieving realistic outcomes.
           </p>
           <br />
-          <p>&copy; {new Date().getFullYear()}Copyright NutriGlow</p>
+          <p>&copy; {new Date().getFullYear()} Copyright NutriGlow</p>
         </div>
         <div className="featureContainer">
           <h4 className="headerFeature">Feature</h4>
           <Link to="/tracker">
-            <h5>Pregnancy Tracker</h5>
+            <h5 className="pregTracker" >Pregnancy Tracker</h5>
           </Link>
           <Link to="/recipes">
             <h5>Recipe Planner</h5>
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
           <div className="email">
             <MailOutlineIcon className="iconFooter" />
-            <h5>NutriGlow@hello.com</h5>
+            <h5>hello@nutriglow.com</h5>
           </div>
           <div className="phone">
             <PhoneIcon className="iconFooter" />
@@ -78,7 +78,7 @@ const Footer = () => {
           Created by Team NutriGlow &#91;
           <i>Shola Quadri, Alina Savin, Jack Browne &#38; Amina Afzal</i>&#93;
           for School of Code Bootcamp Final Project &copy;
-          {new Date().getFullYear()} | All rights reserved |
+          {new Date().getFullYear()} | All rights Reserved
         </p>
       </div>
     </div>
