@@ -159,22 +159,22 @@ export const ProfileCard = [
 export const article1 = [
   {
     id: 1,
-    title: 'Myths and facts',
-    img: '/assets/myths.jpeg',
+    title: 'Myths and Facts',
+    img: '/assets/mythsCover.jpg',
     url: '/myths1',
   },
 
   {
     id: 2,
-    title: 'Nutrition boost',
-    img: 'assets/nutrition.jpeg',
+    title: 'Nutrition Guide',
+    img: 'assets/nutritionb.jpg',
     url: '/nutrition1',
   },
 
   {
     id: 3,
-    title: 'Best foods to eat',
-    img: 'assets/foods.png',
+    title: 'Top foods to eat',
+    img: 'assets/eatt.jpg',
     url: '/foods1',
   },
 ];
@@ -182,21 +182,21 @@ export const article1 = [
 export const article2 = [
   {
     id: 1,
-    title: 'Myths and facts',
-    img: '/assets/myths.png',
+    title: 'Myths and Facts',
+    img: '/assets/thinking.jpg',
     url: '/myths2',
   },
 
   {
     id: 2,
-    title: 'Nutrition boost',
-    img: '/assets/nutrition.png',
+    title: 'Nutrition Guide',
+    img: '/assets/bunp.jpg',
     url: 'nutrition2',
   },
   {
     id: 3,
-    title: 'Best foods to eat',
-    img: '/assets/foods1.png',
+    title: 'Top foods to eat',
+    img: '/assets/eats.jpg',
     url: '/foods2',
   },
 ];
@@ -204,20 +204,20 @@ export const article2 = [
 export const article3 = [
   {
     id: 1,
-    title: 'Myths and facts',
+    title: 'Myths and Facts',
     img: '/assets/nutrition1.png',
     url: '/myths3',
   },
 
   {
     id: 2,
-    title: 'Nutrition boost',
+    title: 'Nutrition Guide',
     img: '/assets/myths1.jpeg',
     url: '/nutrition3',
   },
   {
     id: 3,
-    title: 'Best foods to eat',
+    title: 'Top foods to eat',
     img: '/assets/foods2.jpeg',
     url: '/foods3',
   },
@@ -489,7 +489,7 @@ export const foods3 = [
   {
     title: 'Oatmeal',
     desc: "This complex carb is high in fiber and protein, so it will fill you up and keep you satisfied. Oats are also said to help with milk production if you're breastfeeding.",
-    img: '/assets/nutrition2.jpg',
+    img: '/assets/oatmeal.jpg',
   },
   {
     title: 'Whole grain bread',
@@ -499,12 +499,12 @@ export const foods3 = [
   {
     title: ' Eggs',
     desc: "Possibly the most versatile staple, eggs are great for any meal. It takes less than 5 minutes to scramble them up, and if you have time, hard boiling a few at the beginning of the week will ensure you have a protein-filled snack ready to go when you need it. Eggs also contain a lot of nutrients and vitamins that can assist in recovering from birth.",
-    img: '/assets/eggs.jpg',
+    img: '/assets/eggss.jpg',
   },
   {
     title: 'Frozen fruit and veggies',
     desc: "It can be hard to keep fresh fruit and veggies in the house in the early days when the idea of washing, chopping and cooking seems like too much to handle. Frozen is the perfect solution to making sure they don't go bad. Pop them in the microwave to thaw or blend frozen for a smoothie anytime.",
-    img: '/assets/veg.jpg',
+    img: '/assets/vegetables.jpg',
   },
   {
     title: 'Apples',
