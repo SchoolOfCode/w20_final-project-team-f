@@ -14,10 +14,15 @@ export default function SecondTrimester() {
         title="Guide to your second Trimester"
         subtitle="Forwards and updwards!"
         desc="The second trimester is the middle three months of your pregnancy. This is a time when lots of women tell the world they’re pregnant and begin to feel like the pregnancy is more ‘real’."
-        img="/assets/Intro1.png"
+        img="/assets/Tri2.jpg"
         button={
           <Link to={'/signup'}>
             <StartButton text={'Create Account'} />
+          </Link>
+        }
+        back={
+          <Link to={'/tracker'}>
+            <StartButton text={'Back to Tracker'} />
           </Link>
         }
       />
@@ -27,7 +32,7 @@ export default function SecondTrimester() {
         block={
           'The second trimester of your pregnancy is from week 13 to week 28 - roughly months four, five and six.As well as feeling and looking more pregnant during these weeks, you may also have more energy than you did in the first trimester. This will come as a great relief if you have been struggling with sickness, tiredness or anxiety about getting through the first trimester. Get weekly updates and views from our expert midwives straight to your inbox. As you go through the second trimester, you’ll gradually see your bump grow and later youll start to feel your baby moving.'
         }
-        img="/assets/second.jpg"
+        img="/assets/Tri21.png"
       />
 
       <BabyInfo

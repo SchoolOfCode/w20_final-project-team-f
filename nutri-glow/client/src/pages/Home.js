@@ -10,7 +10,7 @@ export default function Home() {
         title={'Let us help you'}
         desc={'on your special journey'}
         text={
-          'Using research from experienced dietacians, NutriGlow provides a health and wellbeing platform for pregnancy and Parenthood. '
+          'Using research from experienced dieticians, NutriGlow provides a health and wellbeing platform for pregnancy and Parenthood. '
         }
         button={
           <Link to={'/signup'}>
