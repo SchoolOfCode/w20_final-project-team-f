@@ -71,6 +71,7 @@
       .cravingsContainer {
         width: 100vw;
         @include flexJustify(center);
+        overflow: hidden;
 
         .itemCravings {
           border-radius: 20px;
@@ -103,10 +104,13 @@
               display: flex;
               flex-direction: column;
               justify-content: space-evenly;
+              padding: 30px;
 
               h3 {
                 color: $textColorPrimary;
                 font-weight: fontWeight(bold);
+                font-size: 1.5rem;
+                margin-bottom: 10px;
                 @include mobilePhone {
                   font-size: 12px;
                 }
@@ -114,6 +118,7 @@
 
               p {
                 color: $textColorPrimary;
+                font-size: 1rem;
                 @include mobilePhone {
                   font-size: 8px;
                 }

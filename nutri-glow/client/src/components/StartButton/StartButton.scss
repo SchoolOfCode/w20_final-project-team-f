@@ -2,9 +2,10 @@
 
 .startButton {
   background-color: $boldOrange;
-  color: $backgroundColor;
+  color: white;
   height: 30px;
   width: 150px;
   cursor: pointer;
   border: $boldOrange;
+  overflow: hidden;
 }

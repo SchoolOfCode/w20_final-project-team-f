@@ -1,9 +1,7 @@
 import React, { useRef } from 'react';
 import { auth } from '../../firebase';
 import './LoginForm.scss';
-// import Signup from '../Signup/Signup';
 import { Link } from 'react-router-dom';
-// import LogInButton from '../LoginButton/LoginButton';
 
 // form to capture user credential
 // when user fills form, login and access is given to profile page

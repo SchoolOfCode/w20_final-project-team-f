@@ -17,7 +17,7 @@ export default function CravingsSlider() {
   return (
     <div className="cravingsSection">
       <div className="introCravings">
-        <h1>Its okay to have cravings</h1>
+        <h1>It's okay to have cravings</h1>
         <h2>We have you covered</h2>
         <p>
           Substitute your naughty cravings for healthier ones! You can still

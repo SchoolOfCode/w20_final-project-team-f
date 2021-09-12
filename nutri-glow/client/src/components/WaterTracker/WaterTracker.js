@@ -1,6 +1,6 @@
 import React from 'react';
 import './WaterTracker.scss';
-import ProgressBar from '../ProgressBar/ProgressBar';
+import ProgressBtn from '../ProgressBtn/ProgressBtn';
 
 const testData = [{ bgcolor: '#C4E8E9', completed: 60 }];
 
@@ -12,11 +12,13 @@ export default function WaterTracker() {
           <h2>Water tracker</h2>
           <p>
             Drinking enough water is vital, track your water intake on here.
-            Drink atleast 8 glasses a day to hit your goal!
+            Drink at least 10 glasses a day to hit your goal!
           </p>
         </div>
 
-        <div className="progressData">
+        <ProgressBtn/>
+
+        {/* <div className="progressData">
           {testData.map((item, idx) => (
             <ProgressBar
               key={idx}
@@ -24,7 +26,8 @@ export default function WaterTracker() {
               completed={item.completed}
             />
           ))}
-        </div>
+        </div> */}
+
       </div>
     </div>
   );

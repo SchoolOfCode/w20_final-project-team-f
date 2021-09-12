@@ -65,7 +65,9 @@ export default function Navbar() {
       </nav>
       <Searchbar />
       {/* display login button if user isn't logged in and profile menu when logged in */}
-      {user ? <ProfileMenu /> : <LoginButton />}
+      <div className="avatarMenu">
+        {user ? <ProfileMenu /> : <LoginButton />}
+      </div>
     </header>
   );
 }

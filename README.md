@@ -40,7 +40,7 @@ npm install | npm@latest -g
 ## Created by Team NutriGlow
 - Shola Quadri [Twitter](https://twitter.com/codewurld1) [LinkedIn](linkedin.com/in/shola-quadri-bb6797205/)
 - Alina Savin 
-- Jack Browne
+- Jack Browne [LinkedIn](https://www.linkedin.com/in/jack-b-618710141/)
 - Amina Afzal
 
 ### [Project Link](https://github.com/SchoolOfCode/w20_final-project-team-f)

@@ -1,0 +1,44 @@
+@import '../../global.scss';
+
+h2{
+  color: $boldOrange;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+.outer{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 300px;
+  border: 5px solid $accentColor;
+  border-radius: 50px;
+  background: $backgroundForm;
+}
+
+.inner{
+  height: 20px;
+  width: 250px;
+  background: lighten($accentColor, 10);
+  border-radius: 25px;
+  transition: width 100ms ease-out;
+  }
+
+.progressBtn{
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  background: $boldOrange;
+  color: #fff;
+  width: 110px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  outline: none;
+  transition: 50ms ease-out;
+  &:hover{
+    transform: scale(1.04);
+  }
+  &:active{
+    transform: scale(1.01);
+  }
+  }

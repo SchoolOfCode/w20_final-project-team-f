@@ -1,8 +1,10 @@
 @import '../../global.scss';
+
 .displayRecipe {
   border-radius: 8px;
   background-color: $backgroundForm;
   @include flexCenter(column);
+
   .recipeData {
     width: 100%;
     border-radius: 8px;
@@ -51,6 +53,7 @@
       }
 
       .ingredientButton {
+        
         .buttonRecipe {
           width: 120px;
           background-color: $boldOrange;

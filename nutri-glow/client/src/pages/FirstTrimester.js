@@ -13,7 +13,7 @@ export default function FirstTrimester() {
       <IntroSection
         title="Guide to your first Trimester"
         subtitle="Congratulations!"
-        desc="We’ve got all the information you need abou need about your body, your emotions and your baby, week-by-week of your pregnancy"
+        desc="We’ve got all the information you need about need about your body, your emotions and your baby, week-by-week of your pregnancy"
         img="/assets/Intro1.png"
         button={
           <Link to={'/signup'}>

@@ -114,29 +114,6 @@ export const Cuisine = [
   },
 ];
 
-// export const ProfileCard = [
-//   {
-//     icon: <RiMentalHealthFill />,
-//     quest: 'How is your mental health today?',
-//     slider: <RangeSlider />,
-//   },
-//   {
-//     icon: <BsFillLightningFill />,
-//     quest: 'How are your energy levels today?',
-//     slider: <RangeSlider />,
-//   },
-//   {
-//     icon: <FaBed />,
-//     quest: 'How many hours did you sleep today?',
-//     slider: <RangeSlider />,
-//   },
-//   {
-//     icon: <RiRestaurantFill />,
-//     quest: 'How is your apetite doing today?',
-//     slider: <RangeSlider />,
-//   },
-// ];
-
 export const ProfileCard = [
   {
     icon: <RiMentalHealthFill />,

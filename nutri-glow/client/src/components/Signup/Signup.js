@@ -1,10 +1,5 @@
 import React, { useRef } from 'react';
 import { auth } from '../../firebase';
-// import { db } from 'firebase';
-// import { RiNurseFill } from 'react-icons/ri';
-
-// import { db } from 'firebase'
-
 import './Signup.scss';
 
 // testing early Hook problem/error as per React docs
@@ -88,10 +83,10 @@ function Signup() {
                   <label className="signupLabel">What is your weight?</label>
                   <select ref={stageRef} id="height" name="height">
                     <option value="blank"></option>
-                    <option value="60-89">60-89kg</option>
-                    <option value="90-119">90-119kg</option>
-                    <option value="120-300">100-300kg</option>
-                    <option value="300+">300kg+</option>
+                    <option value="40-60">40-60kg</option>
+                    <option value="60-80">60-80kg</option>
+                    <option value="80-100">80-100kg</option>
+                    <option value="100+">100kg+</option>
                   </select>
                 </div>
               </div>
