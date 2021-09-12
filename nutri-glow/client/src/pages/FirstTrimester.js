@@ -20,11 +20,6 @@ export default function FirstTrimester() {
             <StartButton text={'Create Account'} />
           </Link>
         }
-        back={
-          <Link to={'/tracker'}>
-            <StartButton text={'Back to Tracker'} />
-          </Link>
-        }
       />
 
       <TrackerBlock
@@ -48,6 +43,9 @@ export default function FirstTrimester() {
       <Tips />
 
       <Symptoms />
+      <Link to={'/tracker'}>
+        <StartButton text={'Back to Tracker'} />
+      </Link>
     </div>
   );
 }

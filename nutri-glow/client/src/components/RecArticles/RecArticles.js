@@ -17,10 +17,13 @@ export default function RecArticles() {
             <div className="textSymptomsContainer">
               <h4>{data.title}</h4>
               <p>{data.desc}</p>
+              <div className="readMore">
+                <a href={data.more}>Read More</a>
+              </div>
             </div>
           </div>
         ))}
       </div>
     </div>
-  ); 
+  );
 }

@@ -20,11 +20,6 @@ export default function ThirdTrimester() {
             <StartButton text={'Create Account'} />
           </Link>
         }
-        back={
-          <Link to={'/tracker'}>
-            <StartButton text={'Back to Tracker'} />
-          </Link>
-        }
       />
 
       <TrackerBlock
@@ -48,6 +43,10 @@ export default function ThirdTrimester() {
       <TipsThird />
 
       <SymptomsThird />
+
+      <Link to={'/tracker'}>
+        <StartButton text={'Back to Tracker'} />
+      </Link>
     </div>
   );
 }

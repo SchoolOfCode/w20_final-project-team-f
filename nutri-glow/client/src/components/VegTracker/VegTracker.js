@@ -1,9 +1,6 @@
 import React from 'react';
 import './VegTracker.scss';
-import ProgressBar from '../ProgressBar/ProgressBar';
-import ProgressBtn from '../ProgressBtn/ProgressBtn'
-
-const testData = [{ bgcolor: '#7D9596', completed: 30 }];
+import ProgressBtn from '../ProgressBtn/ProgressBtn';
 
 export default function VegTracker() {
   return (
@@ -13,11 +10,12 @@ export default function VegTracker() {
           <h2>Fruit and veg Tracker</h2>
           <p>
             Eating your daily fruits and veggies has numerous health benefits.
-            It is recommended you eat 10 portions of fruit or vegetables a day to meet your target!
+            It is recommended you eat 10 portions of fruit or vegetables a day
+            to meet your target!
           </p>
         </div>
 
-        <ProgressBtn/>
+        <ProgressBtn />
 
         {/* <div className="progressData">
           {testData.map((item, idx) => (
@@ -32,4 +30,3 @@ export default function VegTracker() {
     </div>
   );
 }
-
