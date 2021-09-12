@@ -625,7 +625,7 @@ export const symptomsCard2 = [
   },
   {
     title: 'Leg cramps.',
-    desc: 'Learn more about the first months of pregnancy.',
+    desc: 'Leg cramps are the feeling of sudden, sharp pain, usually in the calf muscles or feet that happen when a muscle suddenly shortens and becomes tight (spasms). They can last from a few seconds to 10 minutes and it can even be difficult to move when they hit. Even when the leg cramp has stopped, you might feel tenderness in the muscle for up to 24 hours.',
     img: '/assets/symptoms/S4.jpg',
   },
   {
@@ -685,15 +685,15 @@ export const cravings = [
   },
   {
     id: 5,
-    img: '/assets/foods.png',
-    desc: 'Try carrots instead of chocolate',
-    title: 'Carrots are good',
+    img: '/assets/bread.jpg',
+    desc: 'Sometimes that second piece of bread is really unnecessary. By eating your lunch open faced, you cut 120 calories. And if you take it with a fork and knife, youll eat more slowly, allowing your body to tell you when you feel full before youve scarfed down the whole thing.',
+    title: 'Swap 2 slices for one',
   },
   {
     id: 6,
-    img: '/assets/foods.png',
-    desc: 'Try carrots instead of chocolate',
-    title: 'Carrots are good',
+    img: '/assets/water1.jpg',
+    desc: 'It is important to stay hydrated through pregnancy, but many of us are drinking a lot of extra sugar at the same time. A bottle of water contains 0g of sugar, in comparison to a bottle of fizzy drink which can contain around 54g of sugar.',
+    title: 'Changing up your drinks',
   },
 ];
 
