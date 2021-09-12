@@ -140,13 +140,13 @@ function App() {
               ))}
             </div>
           </Route>
-          <Route parth="/trimester1">
+          <Route path="/trimester1">
             <FirstTrimester />
           </Route>
-          <Route parth="/trimester2">
+          <Route path="/trimester2">
             <SecondTrimester />
           </Route>
-          <Route parth="/trimester3">
+          <Route path="/trimester3">
             <ThirdTrimester />
           </Route>
         </Switch>
