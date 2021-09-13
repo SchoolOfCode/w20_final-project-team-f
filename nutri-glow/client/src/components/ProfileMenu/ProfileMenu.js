@@ -32,9 +32,10 @@ const ProfileMenu = () => {
     <div className="profileMenu">
       <Avatar
         alt="Woman Avatar"
-        src="/assets/princess.jpg"
+        src="/assets/avatar.png"
         onClick={handleOpenProfileMenu}
         aria-controls="profile-menu"
+        style={{ color: '#ca8f62' }}
       />
       <Menu
         style={{ marginTop: '50px' }}
@@ -43,16 +44,21 @@ const ProfileMenu = () => {
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
       >
-        <Link to="/profile" style={{textDecoration: 'none', color: "black"}}>
-          <MenuItem onClick={handleCloseProfileMenu} >My Profile</MenuItem>
+        <Link to="/profile" style={{ textDecoration: 'none', color: 'black' }}>
+          <MenuItem onClick={handleCloseProfileMenu}>My Profile</MenuItem>
         </Link>
-        <MenuItem onClick={handleCloseProfileMenu} style={{color: "black"}}>Settings</MenuItem>
-        <MenuItem onClick={handleCloseProfileMenu} style={{color: "black"}}>Contact</MenuItem>
+        <MenuItem onClick={handleCloseProfileMenu} style={{ color: 'black' }}>
+          Settings
+        </MenuItem>
+        <MenuItem onClick={handleCloseProfileMenu} style={{ color: 'black' }}>
+          Contact
+        </MenuItem>
         <MenuItem
           onClick={() => {
             handleSignOut();
             handleCloseProfileMenu();
-          }} style={{color: "black"}}
+          }}
+          style={{ color: 'black' }}
         >
           Sign Out
         </MenuItem>

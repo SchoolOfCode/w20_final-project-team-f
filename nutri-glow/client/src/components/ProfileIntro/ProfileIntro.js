@@ -37,12 +37,17 @@ export default function ProfileIntro() {
             // check if the slider value is between 1 or 5 if true set the qoute to you are great
             return {
               ...state,
-              qouteCard1: 'Would you like to talk to someone?',
+              qouteCard1:
+                "Each morning we are born again. What we do today is what matters most...Talk to your midwife, they're here to help.",
             };
           }
           if (action.sliderValue > 5 && action.sliderValue <= 10) {
             // check if the slider value is between 5 & 10 if true set the qoute to you are great
-            return { ...state, qouteCard1: "Hey sunshine, you're awesome!" };
+            return {
+              ...state,
+              qouteCard1:
+                "You're doing great! Your baby can pick up on your emotions, so staying positive is the best thing you can do for them.",
+            };
           }
           // ^^ you can add more conditions based on the slider value
         }
@@ -53,11 +58,15 @@ export default function ProfileIntro() {
             return {
               ...state,
               qouteCard2:
-                'Check out your recommended articles for energy boosting food!',
+                'Nothing wipes you out like a good dose of pregnancy. Check out your recommended articles for energy boosting meals!',
             };
           }
           if (action.sliderValue > 5 && action.sliderValue <= 10) {
-            return { ...state, qouteCard2: "Who's kicking butts? You are!" };
+            return {
+              ...state,
+              qouteCard2:
+                'Pregnancy is such an exciting time for new parents. Keep track of what makes you feel good so you always have a go to',
+            };
           }
         }
 
@@ -66,13 +75,15 @@ export default function ProfileIntro() {
           if (action.sliderValue >= 1 && action.sliderValue < 6) {
             return {
               ...state,
-              qouteCard3: 'Try and aim for between 6 and 8 hours sleep',
+              qouteCard3:
+                'Between 7 and 9 hours of sleep is ideal. Try relaxing two hours before bedtime to slowly wind down.',
             };
           }
           if (action.sliderValue >= 6 && action.sliderValue <= 8) {
             return {
               ...state,
-              qouteCard3: 'Sleeping beauty, you are doing great!',
+              qouteCard3:
+                'Getting a good amount of sleep is especially important when youre pregnant because it can affect your labor and delivery, good job!',
             };
           }
           if (action.sliderValue > 8 && action.sliderValue < 10) {
@@ -89,13 +100,14 @@ export default function ProfileIntro() {
             return {
               ...state,
               qouteCard4:
-                'Check out our recipes for delicous tasting food ideas!',
+                'Use the filters on the recipe page to find the best recipes for you. Implement snacking on healthy foods!',
             };
           }
           if (action.sliderValue > 5 && action.sliderValue <= 10) {
             return {
               ...state,
-              qouteCard4: "Guess who's coming for dinner? 😀 ",
+              qouteCard4:
+                'Eating a healthy diet during pregnancy is linked to good brain development, a healthy birth weight, and can reduce the risk of many birth defects.',
             };
           }
         }
