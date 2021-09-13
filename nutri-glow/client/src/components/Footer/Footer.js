@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="logoFooter">
             <h4 className="text1">NUTRI</h4>
             <h4 className="text2">GLOW</h4>
-          </div> 
+          </div>
           <p>
             NutriGlow is the pioneer <br /> of bringing together scientifically{' '}
             <br /> proven pregnancy nutrition and <br />
@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="featureContainer">
           <h4 className="headerFeature">Feature</h4>
           <Link to="/tracker">
-            <h5 className="pregTracker" >Pregnancy Tracker</h5>
+            <h5 className="pregTracker">Pregnancy Tracker</h5>
           </Link>
           <Link to="/recipes">
             <h5>Recipe Planner</h5>
@@ -73,14 +73,14 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="createdBy">
+      {/* <div className="createdBy">
         <p>
           Created by Team NutriGlow &#91;
           <i>Shola Quadri, Alina Savin, Jack Browne &#38; Amina Afzal</i>&#93;
           for School of Code Bootcamp Final Project &copy;
           {new Date().getFullYear()} | All rights Reserved
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

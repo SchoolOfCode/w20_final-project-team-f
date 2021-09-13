@@ -1,5 +1,4 @@
-import { RiCommunityFill, RiMentalHealthFill } from 'react-icons/ri';
-import RangeSlider from './components/RangeSlider/RangeSlider';
+import { RiMentalHealthFill } from 'react-icons/ri';
 import { BsFillLightningFill } from 'react-icons/bs';
 import { RiRestaurantFill } from 'react-icons/ri';
 import { FaBed } from 'react-icons/fa';

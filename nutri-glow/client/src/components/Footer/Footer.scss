@@ -20,7 +20,7 @@
 
     .descriptionContainer {
       padding-left: 20px;
-    
+
       .logoFooter {
         display: flex;
         flex-direction: row;
@@ -53,8 +53,8 @@
       .headerFeature {
         color: $boldOrange;
       }
-      
-      .pregTracker{
+
+      .pregTracker {
         text-decoration: none;
       }
 
@@ -135,10 +135,10 @@
     }
   }
 
-  .createdBy {
-    color: $textColorPrimary;
-    margin-left: 0px;
-    background-color: $accentColor;
-    text-align: center;
-  }
+  // .createdBy {
+  //   color: $textColorPrimary;
+  //   margin-left: 0px;
+  //   background-color: $accentColor;
+  //   text-align: center;
+  // }
 }
