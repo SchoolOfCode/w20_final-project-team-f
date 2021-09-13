@@ -29,6 +29,9 @@
     grid-gap: 30px;
     grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
     margin-bottom: 40px;
+    @include mobilePhone {
+      grid-template: auto/repeat(auto-fit, minmax(150px, 1fr));
+    }
 
     .itemSymptomsContainer {
       border-radius: 20px;

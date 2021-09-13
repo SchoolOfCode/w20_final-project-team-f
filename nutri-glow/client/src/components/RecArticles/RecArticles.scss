@@ -31,6 +31,10 @@
     grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
     margin-bottom: 40px;
 
+    @include mobilePhone {
+      grid-template: auto/repeat(auto-fit, minmax(150px, 1fr));
+    }
+
     .itemrecArticleContainer {
       // border-radius: 20px;
       border: 5px solid rbg(240, 234, 234);

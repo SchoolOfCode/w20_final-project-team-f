@@ -10,6 +10,10 @@
   grid-gap: 30px;
   grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
   margin-bottom: 40px;
+
+  @include mobilePhone {
+    grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 .wrapper {
