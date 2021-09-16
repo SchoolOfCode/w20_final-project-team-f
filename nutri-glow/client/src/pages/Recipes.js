@@ -102,13 +102,16 @@ export default function Recipes() {
             <div className="searchRecipes">
               <form onSubmit={getSearch} className="searchForm">
                 <input
+
                   className="searchBar"
                   type="text"
                   placeholder="Enter ingredient"
                   value={search}
                   onChange={updateSearch}
                 ></input>
-                <button className="searchButton" type="submit">
+                <button
+                  data-testid="recipes-button"
+                  className="searchButton" type="submit">
                   Get recipes
                 </button>
               </form>
