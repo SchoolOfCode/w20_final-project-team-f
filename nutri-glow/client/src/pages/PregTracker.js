@@ -13,8 +13,8 @@ export default function PregTracker() {
         text={
           'We’ve got all the information you need to take you through the next 9 months. With this guide you’ll be able to keep track of your progress.'
         }
-        intro={'Not sure if you are pregnant?'}
-        button={'See early signs'}
+        // intro={'Not sure if you are pregnant?'}
+        // button={'See early signs'}
         img="/assets/tracker1.png"
       />
 

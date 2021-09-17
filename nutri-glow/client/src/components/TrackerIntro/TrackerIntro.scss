@@ -29,7 +29,7 @@
           color: $textColorPrimary;
           font-weight: fontWeight(bold);
           font-size: 3.5rem;
-          margin-bottom: 20px;
+          margin-bottom: 40px;
 
           @include mobilePhone {
             font-size: fontSize(extraLarge);
@@ -40,7 +40,7 @@
           color: $textColorSecondary;
           font-weight: fontWeight(bold);
           font-size: 3rem;
-          margin-bottom: 20px;
+          margin: 50px 0px 20px 0px;
           @include mobilePhone {
             font-size: fontSize(large);
           }
@@ -51,8 +51,12 @@
         p {
           display: block;
           color: $textColorPrimary;
-          font-size: fontSize(regular);
+          font-size: fontSize(extraLarge);
           margin-bottom: 20px;
+
+          @include mobilePhone {
+            font-size: fontSize(regular);
+          }
         }
 
         h4 {

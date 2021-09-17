@@ -6,14 +6,14 @@
   margin-top: 20px;
 
   .trimesterTitle {
-    
     h1 {
       color: $textColorPrimary;
       font-weight: fontWeight(bold);
       font-size: 3.5rem;
 
       @include mobilePhone {
-        font-size: fontSize(extraLarge);
+        font-size: fontSize(large);
+        margin-left: 10px;
       }
     }
   }

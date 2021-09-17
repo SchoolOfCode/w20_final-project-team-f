@@ -14,7 +14,7 @@ export default function TrackerIntro(props) {
             <p>{props.text}</p>
             <h4>{props.intro}</h4>
           </div>
-          <button className="trackerButton">{props.button}</button>
+          {/* <button className="trackerButton">{props.button}</button> */}
         </div>
       </div>
       <div className="rightTracker">

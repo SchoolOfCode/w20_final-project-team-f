@@ -24,13 +24,14 @@
     @include flexJustify(center);
     flex-wrap: wrap;
     margin: 30px;
-    width: 90vw;
+    width: 100%;
     display: grid;
     grid-gap: 30px;
     grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
     margin-bottom: 40px;
     @include mobilePhone {
-      grid-template: auto/repeat(auto-fit, minmax(150px, 1fr));
+      grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+      display: grid;
     }
 
     .itemSymptomsContainer {
@@ -43,12 +44,20 @@
       overflow: hidden;
       display: flex;
 
+      @include mobilePhone {
+        display: flex;
+        flex-direction: column;
+      }
+
       .symptomsContainerImage {
         flex: 0.5;
         display: flex;
 
         .symptomsImage {
           height: 100%;
+          @include mobilePhone {
+            height: 200px;
+          }
         }
       }
       .textSymptomsContainer {

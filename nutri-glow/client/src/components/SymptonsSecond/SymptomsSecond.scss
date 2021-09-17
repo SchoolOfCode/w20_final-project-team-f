@@ -13,6 +13,9 @@
       color: $textColorPrimary;
       font-weight: fontWeight(bold);
       font-size: 3.5rem;
+      @include mobilePhone {
+        font-size: fontSize(medium);
+      }
     }
   }
   .symptomsCardContainer {
@@ -25,6 +28,10 @@
     grid-gap: 30px;
     grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
     margin-bottom: 40px;
+    @include mobilePhone {
+      grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+      display: grid;
+    }
 
     .itemSymptomsContainer {
       border-radius: 20px;
@@ -35,6 +42,10 @@
       @include flexCenter(row);
       overflow: hidden;
       display: flex;
+      @include mobilePhone {
+        display: flex;
+        flex-direction: column;
+      }
 
       .symptomsContainerImage {
         flex: 0.5;
@@ -42,6 +53,9 @@
 
         .symptomsImage {
           height: 100%;
+          @include mobilePhone {
+            height: 200px;
+          }
         }
       }
       .textSymptomsContainer {

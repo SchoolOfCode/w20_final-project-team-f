@@ -591,7 +591,7 @@ export const tipsCard3 = [
 export const symptomsCard1 = [
   {
     title: 'Morning sickness',
-    desc: 'Morning sickness, which can strike at any time of the day or night, often begins one month after you become pregnant. This might be due to rising hormone levels. To help relieve nausea, avoid having an empty stomach',
+    desc: 'Morning sickness begins one month after you become pregnant. This might be due to rising hormone levels. To help relieve nausea, avoid having an empty stomach',
     img: '/assets/Symptoms/S1.jpg',
   },
   {
@@ -614,7 +614,7 @@ export const symptomsCard1 = [
 export const symptomsCard2 = [
   {
     title: 'Nasal problems.',
-    desc: 'During pregnancy, your hormone levels increase and your body makes more blood. This can cause your mucous membranes to swell and bleed easily, resulting in stuffiness and nosebleeds. Saline drops or a saline rinse can help relieve congestion.',
+    desc: 'During pregnancy, hormone levels increase and your body makes more blood. This can cause your mucous membranes to swell and bleed easily, resulting in stuffiness and nosebleeds. Saline drops or a saline rinse can help relieve congestion.',
     img: '/assets/symptoms/S2.jpg',
   },
   {
@@ -624,7 +624,7 @@ export const symptomsCard2 = [
   },
   {
     title: 'Leg cramps.',
-    desc: 'Leg cramps are the feeling of sudden, sharp pain, usually in the calf muscles or feet that happen when a muscle suddenly shortens and becomes tight (spasms). They can last from a few seconds to 10 minutes and it can even be difficult to move when they hit. Even when the leg cramp has stopped, you might feel tenderness in the muscle for up to 24 hours.',
+    desc: 'Leg cramps are the feeling of sudden, sharp pain, usually in the calf muscles or feet. They can last from a few seconds to 10 minutes and it can even be difficult to move when they hit. Even when the leg cramp has stopped, you might feel tenderness in the muscle for up to 24 hours.',
     img: '/assets/symptoms/S4.jpg',
   },
   {

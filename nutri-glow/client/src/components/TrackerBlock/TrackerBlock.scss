@@ -40,6 +40,9 @@
         color: $boldOrange;
         font-size: fontSize(medium);
         margin-bottom: 20px;
+        @include mobilePhone {
+          font-size: fontSize(small);
+        }
       }
 
       p {
@@ -47,7 +50,7 @@
         font-size: fontSize(small);
 
         @include mobilePhone {
-          font-size: 12px;
+          font-size: 9px;
         }
       }
     }

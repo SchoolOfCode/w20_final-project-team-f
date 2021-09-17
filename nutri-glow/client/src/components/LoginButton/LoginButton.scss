@@ -7,4 +7,9 @@
   width: 80px;
   cursor: pointer;
   border: none;
+
+  @include mobilePhone {
+    margin-left: 50px;
+    width: 50px;
+  }
 }
