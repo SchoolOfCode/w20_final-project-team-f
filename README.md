@@ -32,7 +32,7 @@ NutriGlow is a health and wellbeing web-app for pregnancy and parenthood designe
 3. Clone the project
 
 ```bash
-  git clone https://github.com/SchoolOfCode/w15_collaborative-react-project-team-f-plantasty.git
+  git clone https://github.com/SchoolOfCode/w20_final-project-team-f.git
 ```
 
 4. Go to the project directory
