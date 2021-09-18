@@ -1,5 +1,11 @@
 # NutriGlow
 
+### [Project Link](https://github.com/SchoolOfCode/w20_final-project-team-f)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8566414f-0e79-481b-9c87-7275d2f62e34/deploy-status)](https://app.netlify.com/sites/nutri-glow/deploys)
+
+### [Live Link](https://nutri-glow.netlify.app/)
+
 ## About the Project
 
 This project was created as a final project for our participation in the 2021 School of Code Bootcamp. NutriGlow React app was created by Alina Savin, Amina Afzal, Shola Quadri and Jack Browne in collaboration with Health Life Nutrition.
@@ -81,8 +87,6 @@ We also has stand-ups every morning where we would outline the plan for the day 
 - Jack Browne [LinkedIn](https://www.linkedin.com/in/jack-b-618710141/)
 - Amina Afzal
 
-### [Project Link](https://github.com/SchoolOfCode/w20_final-project-team-f)
-
 ## Acknowledgments
 
 - School of Code
@@ -91,4 +95,3 @@ We also has stand-ups every morning where we would outline the plan for the day 
 - Arshi Sheikh
 - Tom Dodd
 
-### [Live Link]
