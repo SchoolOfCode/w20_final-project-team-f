@@ -308,7 +308,7 @@ export const myths2 = [
   {
     title: 'Pregnant women should avoid exercise.',
     desc: ' Actually, when a pregnant woman exercises, her fetus gets a beneficial workout, too. Research shows that the fetuses of pregnant women who are physically active have heart rates that are slower and more variable; both signs of cardiovascular health. The babies of exercisers have lower birth weights, and may even become more intelligent adults because of their bigger brains.',
-    img: '/assets/Pregnant/Myths/M2.jpg',
+    img: '/assets/M2missing.jpeg',
   },
   {
     title:
@@ -352,7 +352,7 @@ export const nutrition2 = [
   {
     title: 'Increase your fiber',
     desc: 'Being pregnant can cause constipation (and sometimes uncomfortable hemorrhoids). Eating foods that are high in fiber can help keep your digestive system healthy; plus it helps keep you full and has additional health benefits. Try whole grain breads and cereal and include plenty of fresh fruits and vegetables.',
-    img: '/assets/Pregnant/Nutrition/N4.jpg',
+    img: '/assets/N4missing.jpeg',
   },
   {
     title: 'Include enough calcium',
@@ -418,12 +418,12 @@ export const myths3 = [
   {
     title: 'You can’t do the things you want to do because you had a baby.',
     desc: 'If you think you can’t, and your reasoning has anything to do with peeing yourself, a prolapsed organ or lack of strength- let’s talk. I watch folks give birth on the regular and birthing is as badass as it gets. If you can do that- no matter how that baby was born- I’m pretty confident we can help you do just about anything else.',
-    img: '/assets/NewMum/Myths/M4.jpg',
+    img: '/assets/M4missing.jpeg',
   },
   {
     title: 'You can go back to your old exercise routine after 6 weeks',
     desc: 'This is one of the most pervasive myths in postpartum recovery. As far as exercise goes, your six-week check up is nothing more than a green-light to progress back to gentle exercise.This myth persists, at least in part, because we are all so damn ready to feel like ourselves again. And because there is so much pressure to get back to the “pre-baby” body.',
-    img: '/assets/NewMum/Myths/M5.jpg',
+    img: '/assets/M5missing.jpeg',
   },
   {
     title: 'It’s normal to pee your pants after pregnancy.',
@@ -493,7 +493,7 @@ export const foods3 = [
   {
     title: 'Canned beans',
     desc: 'The high fiber content in beans will keep your digestive system moving along, which is important following a vaginal birth or c-section. They are also a great source of protein and can be added to any meal for a nutritional boost.',
-    img: '/assets/NewMum/Food/F6.jpg',
+    img: '/assets/F6missing.jpeg',
   },
 ];
 

@@ -31,11 +31,12 @@
     grid-template: auto/repeat(auto-fit, minmax(500px, 1fr));
     margin-bottom: 40px;
 
-    @include mobilePhone {
-      grid-template: auto/repeat(auto-fit, minmax(150px, 1fr));
+   @include mobilePhone {
+      grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+      display: grid;
     }
 
-    .itemrecArticleContainer {
+    .itemSymptomsContainer{
       // border-radius: 20px;
       border: 5px solid rbg(240, 234, 234);
       box-shadow: 0px 4px 15px rgba(103, 78, 59, 0.25);
@@ -45,20 +46,33 @@
       overflow: hidden;
       display: flex;
 
+        @include mobilePhone {
+        display: flex;
+        flex-direction: column;
+      }
+
       .symptomsContainerImage {
-        flex: 0.3;
+        flex: 0.5;
         display: flex;
 
         .symptomsImage {
           height: 100%;
+           @include mobilePhone {
+            height: 200px;
+            width: 300px;
+          }
         }
       }
       .textSymptomsContainer {
         align-items: flex-start;
         display: flex;
         justify-content: center;
-        flex: 0.7;
+        flex: 0.5;
         flex-direction: column;
+
+        @include mobilePhone{
+          margin-left: 10px;
+        }
 
         h4 {
           color: $textColorPrimary;
