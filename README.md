@@ -8,7 +8,7 @@
 
 ## About the Project
 
-This project was created as a final project for our participation in the 2021 School of Code Bootcamp. NutriGlow React app was created by Alina Savin, Amina Afzal, Shola Quadri and Jack Browne in collaboration with Health Life Nutrition.
+This project was created as a final project for our participation in the 2021 School of Code Bootcamp. NutriGlow React app was created by Shola Quadri, Alina Savin, Amina Afzal and Jack Browne in collaboration with Health Life Nutrition.
 
 ### Overview
 
@@ -63,8 +63,8 @@ NutriGlow is a health and wellbeing web-app for pregnancy and parenthood designe
 
 ### Dependencies
 
-**App:** react, react-countdown, react-dom, react-router-dom, react-scripts, react-icons, node-sass,  
-**Testing:** react-testing-library
+**App:** react, react-countdown, react-dom, react-router-dom, react-scripts, react-icons, node-sass  
+**Testing:** react-testing-library, Jest
 
 ## Running Tests
 
@@ -74,11 +74,11 @@ To run the unit tests (utilising Jest and react-testing-library), enter the foll
     npm test
 ```
 
-## Project management and understanding the problem
+## Project Management and Understanding the Problem
 
-We have used [Trello](https://trello.com/b/upYLypOD/team-f-final-project) and **Jira** to keep track of what everyone is doing. We have also outline a [Project timeline](https://docs.google.com/spreadsheets/d/1xzCqbwaTbaTGuGkP9K4_n0n45luToIkwK0QMOIoKTI4/edit#gid=0) to manage our coding sprints and progress. All screenshots and ideas were saved and recorded in a shared _Google drive_.
+We have used [Trello](https://trello.com/b/upYLypOD/team-f-final-project) and **Jira** to define and keep track of epics and team progress. We have also outlined a [Project timeline](https://docs.google.com/spreadsheets/d/1xzCqbwaTbaTGuGkP9K4_n0n45luToIkwK0QMOIoKTI4/edit#gid=0) to manage our coding sprints, expectations and progress. All screenshots and ideas were saved and recorded in a shared _Google drive_.
 
-We also has stand-ups every morning where we would outline the plan for the day and any issues that we had during the previous day.
+We also had stand-ups every morning where we would outline the plans for the day and any issues that team members encountered during the previous day.
 
 ## Created by Team NutriGlow
 
