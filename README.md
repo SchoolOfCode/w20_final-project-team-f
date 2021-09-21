@@ -1,10 +1,12 @@
 # NutriGlow
 
 ### [Project Link](https://github.com/SchoolOfCode/w20_final-project-team-f)
+<!-- 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8566414f-0e79-481b-9c87-7275d2f62e34/deploy-status)](https://app.netlify.com/sites/nutri-glow/deploys) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/39b8c826-bc21-4250-a19a-d1e6518c7b75/deploy-status)](https://app.netlify.com/sites/nutriglow/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8566414f-0e79-481b-9c87-7275d2f62e34/deploy-status)](https://app.netlify.com/sites/nutri-glow/deploys)
-
-### [Live Link](https://nutri-glow.netlify.app/)
+<!-- ### [Live Link](https://nutri-glow.netlify.app/) -->
+### [Live Link](https://nutriglow.netlify.app/)
 
 ## About the Project
 
