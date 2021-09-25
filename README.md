@@ -14,7 +14,7 @@ This project was created as a final project for our participation in the 2021 Sc
 
 ### Overview
 
-NutriGlow is a health and wellbeing web-app for pregnancy and parenthood designed to guide people with specific dietary requirements towards a healthy balanced diet and lifestyle. The app allows the user to access information, tailored recipes and track their progress with a sign up account feature
+NutriGlow is a health and wellbeing web-app for pregnancy and parenthood designed to guide people with specific dietary requirements towards a healthy balanced diet and lifestyle. The app allows the user to access information, tailored recipes and track their progress with a sign up account feature.
 
 ### Built with
 
@@ -78,7 +78,7 @@ To run the unit tests (utilising Jest and react-testing-library), enter the foll
 
 ## Project Management and Understanding the Problem
 
-We have used [Trello](https://trello.com/b/upYLypOD/team-f-final-project) and **Jira** to define and keep track of epics and team progress. We have also outlined a [Project timeline](https://docs.google.com/spreadsheets/d/1xzCqbwaTbaTGuGkP9K4_n0n45luToIkwK0QMOIoKTI4/edit#gid=0) to manage our coding sprints, expectations and progress. All screenshots and ideas were saved and recorded in a shared _Google drive_.
+We have used [Trello](https://trello.com/b/upYLypOD/team-f-final-project) and **Jira** to define and keep track of epics and team progress. We have also outlined a [Project timeline](https://docs.google.com/spreadsheets/d/1xzCqbwaTbaTGuGkP9K4_n0n45luToIkwK0QMOIoKTI4/edit#gid=0) to manage our coding sprints, expectations and progress. All screenshots, documents and ideas were saved and recorded in a shared _Google drive_.
 
 We also had stand-ups every morning where we would outline the plans for the day and any issues that team members encountered during the previous day.
 
