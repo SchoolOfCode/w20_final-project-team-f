@@ -82,12 +82,14 @@ We have used [Trello](https://trello.com/b/upYLypOD/team-f-final-project) and **
 
 We also had stand-ups every morning where we would outline the plans for the day and any issues that team members encountered during the previous day.
 
-## Created by Team NutriGlow
 
-- Shola Quadri [Twitter](https://twitter.com/codewurld1) [LinkedIn](linkedin.com/in/shola-quadri-bb6797205/)
-- Alina Savin [LinkedIn](https://www.linkedin.com/in/alina-savin-40142982/)
-- Jack Browne [LinkedIn](https://www.linkedin.com/in/jack-b-618710141/)
-- Amina Afzal
+
+## Team Members & Project Contribution
+
+- Shola Quadri (Project Manager, Marketing Expert, UX/UI & Full Stack Development) [Twitter](https://twitter.com/codewurld1) [LinkedIn](linkedin.com/in/shola-quadri-bb6797205/)
+- Alina Savin (Front End Development, UX/UI) [LinkedIn](https://www.linkedin.com/in/alina-savin-40142982/)
+- Jack Browne (Front End Development, UX/UI) [LinkedIn](https://www.linkedin.com/in/jack-b-618710141/)
+- Amina Afzal (UX/UI)
 
 ## Acknowledgments
 
@@ -96,4 +98,6 @@ We also had stand-ups every morning where we would outline the plans for the day
 - Jordan Linton
 - Arshi Sheikh
 - Tom Dodd
+
+## Created by Team NutriGlow
 
